@@ -1,6 +1,4 @@
-# CIS Documentation Index
-
-TODO: do more than todo# WDS Documentation
+# WDS Documentation
 
 Complete documentation for Whiteport Design Studio - a design-first methodology for creating software that people love.
 
@@ -10,7 +8,7 @@ Complete documentation for Whiteport Design Studio - a design-first methodology 
 
 **New to WDS?** Start here:
 
-- **[About WDS](./getting-started/about-wds.md)** - What WDS is and why it exists (5 min)
+- **[About WDS](getting-started/about-wds.md)** - What WDS is and why it exists (5 min)
 - **[Installation](getting-started/installation.md)** - Set up WDS in your project (5 min)
 - **[Quick Start](getting-started/quick-start.md)** - Your first 5 minutes with WDS
 - **[Where to Go Next](getting-started/where-to-go-next.md)** - Choose your learning path
