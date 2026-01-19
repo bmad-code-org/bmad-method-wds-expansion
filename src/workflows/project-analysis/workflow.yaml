@@ -1,10 +1,12 @@
-workflow:
-  id: project-analysis
-  name: Project Status Analysis
-  description: Systematic analysis of project structure and completion status
-  agent: freya-ux
+---
+name: project-analysis
+description: Systematic analysis of project structure and completion status
+author: "Whiteport Design Studio"
+web_bundle: true
+standalone: true
+primary_agent: "freya-ux"
 
-  trigger:
+trigger:
     on_activation: true
     keywords: ["analyze", "status", "where are we", "project overview"]
 
@@ -77,3 +79,4 @@ workflow:
     phase_6_7_8_development:
       agent: idunn-pm
       reason: "Idunn WDS PM Agent - Handles deliveries, testing, and ongoing development"
+---

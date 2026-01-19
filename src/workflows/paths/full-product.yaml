@@ -1,9 +1,9 @@
-# WDS Full Product Path
-# All 6 phases - complete design journey from vision to handoff
-
+---
 path_name: "Full Product"
 path_id: "full-product"
 description: "Complete design methodology for new products, platforms, and complex applications"
+
+# All 6 phases - complete design journey from vision to handoff
 
 phases:
   - phase: 1
@@ -93,3 +93,4 @@ phases:
         command: "prd-finalization"
         output: "Complete PRD, development roadmap, handoff package"
         note: "Can run multiple times as design progresses"
+---

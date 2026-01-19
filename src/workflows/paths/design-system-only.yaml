@@ -1,9 +1,9 @@
-# WDS Design System Only Path
-# Context + Phases 4, 5 - for building component libraries
-
+---
 path_name: "Design System Only"
 path_id: "design-system-only"
 description: "Build a component library without full product design"
+
+# Context + Phases 4, 5 - for building component libraries
 
 phases:
   - phase: 1
@@ -59,3 +59,4 @@ phases:
         command: "design-system"
         output: "Complete component documentation, HTML showcase"
         note: "The primary deliverable for this path"
+---

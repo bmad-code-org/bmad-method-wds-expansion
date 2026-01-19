@@ -1,9 +1,9 @@
-# WDS Quick Prototype Path
-# Context + Phase 4 - rapid prototyping with context
-
+---
 path_name: "Quick Prototype"
 path_id: "quick-prototype"
 description: "Rapid prototyping with essential context"
+
+# Context + Phase 4 - rapid prototyping with context
 
 phases:
   - phase: 1
@@ -36,3 +36,4 @@ phases:
         command: "ux-design"
         output: "Quick specifications and HTML prototypes"
         note: "Focus on getting something visible fast"
+---

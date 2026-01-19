@@ -1,9 +1,9 @@
-# WDS Landing Page Path
-# Context + Phases 4, optional 5 - streamlined for simple projects
-
+---
 path_name: "Landing Page"
 path_id: "landing-page"
 description: "Streamlined design for marketing sites, single-page apps, and simple projects"
+
+# Context + Phases 4, optional 5 - streamlined for simple projects
 
 phases:
   - phase: 1
@@ -51,3 +51,4 @@ phases:
         command: "design-system"
         output: "Component documentation"
         note: "Optional - skip for truly simple one-off pages"
+---

@@ -1,9 +1,9 @@
-# WDS Digital Strategy Path
-# Phases 1, 2 only - discovery and research without design execution
-
+---
 path_name: "Digital Strategy"
 path_id: "digital-strategy"
 description: "Discovery and strategic planning without design execution"
+
+# Phases 1, 2 only - discovery and research without design execution
 
 phases:
   - phase: 1
@@ -36,3 +36,4 @@ phases:
         command: "trigger-mapping"
         output: "Trigger Map with personas, business goals, Feature Impact Analysis"
         note: "Strategic user research and prioritization"
+---
