@@ -25,11 +25,11 @@ Before you write any specification, ask:
 
 ---
 
-## Object ID Structure & Hierarchy
+## Area Label Structure & Hierarchy
 
-**Object IDs follow a consistent hierarchical pattern**
+**Area Labels follow a consistent hierarchical pattern to identify UI locations across sketch, specification, and code.**
 
-### Structural Object IDs (Containers)
+### Structural Area Labels (Containers)
 These define the page architecture and visual grouping:
 
 - `{page-name}-page` - Top-level page wrapper
@@ -39,9 +39,9 @@ These define the page architecture and visual grouping:
 - `{page-name}-{section}-section` - Section containers
 - `{page-name}-{section}-header-bar` - Section header bars
 
-**Purpose:** Organize page structure, enable Figma layer naming, support testing selectors
+**Purpose:** Organize page structure, enable Figma layer naming (via aria-label), support testing selectors (via id attribute)
 
-### Interactive Object IDs (Components)
+### Interactive Area Labels (Components)
 These identify specific interactive elements:
 
 - `{page-name}-{section}-{element}` - Standard pattern
@@ -49,7 +49,9 @@ These identify specific interactive elements:
 - `{page-name}-button-{action}` - Buttons
 - `{page-name}-error-{field}` - Error messages
 
-**Purpose:** Enable user interaction, form validation, accessibility
+**Purpose:** Enable user interaction, form validation, accessibility, and location tracking across design and code
+
+**Note:** Area Labels become both `id` and `aria-label` attributes in HTML implementation.
 
 ### Purpose-Based Naming
 
@@ -115,17 +117,17 @@ These identify specific interactive elements:
 
 ### Right Approach (Top-Down)
 1. **Define structural containers** - Page, header, main, sections
-2. **Assign structural Object IDs** - `{page}-page`, `{page}-header`, etc.
+2. **Assign structural Area Labels** - `{page}-page`, `{page}-header`, etc.
 3. **Identify page sections** - What major areas exist?
 4. **Define section purposes** - Why does each section exist?
 5. **Confirm flow logic** - Does the story make sense?
 6. **Detail each section** - Now design components
 7. **Specify components** - With clear purpose and context
-8. **Assign interactive Object IDs** - `{page}-{section}-{element}`
+8. **Assign interactive Area Labels** - `{page}-{section}-{element}`
 
-**Result:** Logical flow, no gaps, confident specifications, complete Object ID coverage
+**Result:** Logical flow, no gaps, confident specifications, complete Area Label coverage
 
-### Object ID Coverage Checklist
+### Area Label Coverage Checklist
 - [ ] Page container (`{page}-page`)
 - [ ] Header section (`{page}-header`)
 - [ ] Main content area (`{page}-main`)
@@ -164,17 +166,44 @@ These identify specific interactive elements:
 
 Before marking a spec "complete":
 
+### Core Quality
 - [ ] **Logical Explanation** - Can I explain WHY and HOW?
 - [ ] **Purpose-Based Names** - Named by function, not content?
 - [ ] **Clear Purpose** - Every component has a job description?
 - [ ] **Section-First** - Whole page flows logically?
-- [ ] **Structural Object IDs** - Page, header, main, sections all have IDs?
-- [ ] **Interactive Object IDs** - All buttons, inputs, links have IDs?
-- [ ] **Object ID Hierarchy** - IDs follow `{page}-{section}-{element}` pattern?
 - [ ] **Multi-Language** - All product languages included?
 - [ ] **No Hand-Waving** - No "probably" or "maybe" or "users will figure it out"?
+
+### Area Labels
+- [ ] **Structural Area Labels** - Page, header, main, sections all have labels?
+- [ ] **Interactive Area Labels** - All buttons, inputs, links have labels?
+- [ ] **Area Label Hierarchy** - Labels follow `{page}-{section}-{element}` pattern?
+- [ ] **Figma-Ready** - Area Labels support html.to.design layer naming?
+
+### Accessibility
+- [ ] **ARIA Labels** - All interactive elements have aria-label attributes?
+- [ ] **Alt Text** - All images have descriptive alt attributes?
+- [ ] **Form Labels** - All inputs have associated labels?
+- [ ] **Keyboard Navigation** - Tab order and focus management documented?
+- [ ] **Screen Reader Support** - Semantic HTML and ARIA attributes specified?
+- [ ] **Color Contrast** - WCAG AA compliance (4.5:1 for text)?
+- [ ] **Error Announcements** - Error messages accessible to screen readers?
+- [ ] **Heading Hierarchy** - Logical H1-H6 structure documented?
+
+### Content Completeness
+- [ ] **All Text Defined** - No placeholder content?
+- [ ] **Error Messages** - All error states have messages in all languages?
+- [ ] **Success Messages** - Confirmation messages defined?
+- [ ] **Empty States** - Messages for no-data scenarios?
+- [ ] **Loading States** - Loading indicators and messages?
+- [ ] **Meta Content** - Page title and meta description for public pages?
+- [ ] **Social Sharing** - Social media title, description, and image for public pages?
+
+### Implementation Ready
 - [ ] **Developer-Ready** - Could someone build this confidently?
-- [ ] **Figma-Ready** - Object IDs support html.to.design layer naming?
+- [ ] **Component References** - All design system components linked?
+- [ ] **API Endpoints** - Data requirements documented?
+- [ ] **Validation Rules** - Form validation clearly specified?
 
 ---
 
@@ -185,7 +214,10 @@ Before marking a spec "complete":
 🚩 **Missing purpose:** "There's a button... because buttons are good?"  
 🚩 **Illogical flow:** "This section comes after that one... because?"  
 🚩 **English-only:** "We'll translate later..."  
-🚩 **Gaps in logic:** "Users will just know what to do here"
+🚩 **Gaps in logic:** "Users will just know what to do here"  
+🚩 **Missing accessibility:** "We'll add ARIA labels during development..."  
+🚩 **No alt text:** Images without descriptive alternatives  
+🚩 **Unlabeled inputs:** Form fields without associated labels
 
 **When you spot these, pause and dig deeper.**
 

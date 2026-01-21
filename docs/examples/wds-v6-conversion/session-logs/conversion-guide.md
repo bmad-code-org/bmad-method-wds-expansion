@@ -23,6 +23,13 @@ Each session gets its own log file:
 ### December 2025
 
 - **[2025-12-09-micro-steps-concepts.md](./session-2025-12-09-micro-steps-concepts.md)** - Phase 6/7/8 micro-steps, Greenfield/Brownfield, Kaizen/Kaikaku, DD-XXX simplification
+- **[2025-12-31-content-production-workshop.md](./session-2025-12-31-content-production-workshop.md)** - Content creation workshop integration
+
+### January 2026
+
+- **[2026-01-04-eira-visual-design-integration.md](./2026-01-04-eira-visual-design-integration.md)** - Eira visual design agent integration
+- **[2026-01-08-html-to-design.md](./agent-log-2026-01-08-html-to-design.md)** - HTML to Figma design integration tools
+- **[2026-01-20-seo-optimization-specifications.md](./session-2026-01-20-seo-optimization-specifications.md)** - SEO requirements for page specifications (planned for car mechanics project)
 
 ---
 
