@@ -221,36 +221,11 @@ stepsCompleted:
 
 ---
 
-## Example: SaaS Onboarding Tool
+## Example
 
-**Context:** B2B SaaS for employee onboarding, target users are HR managers (stressed, overwhelmed, want to feel capable)
+**See:** [substeps/11-tone-of-voice-example.md](substeps/11-tone-of-voice-example.md)
 
-**Suggested Tone of Voice:**
-
-### Tone Attributes
-
-1. **Supportive & Reassuring**: HR managers are stressed about onboarding. Our tone should reduce anxiety, not add to it.
-2. **Professional but Warm**: B2B context requires professionalism, but warmth builds trust.
-3. **Clear & Concise**: Busy users need straightforward communication, no fluff.
-4. **Empowering**: Frame actions around user capability, not system features.
-
-### Examples
-
-**Error Message:**
-- ✅ "We couldn't find that email. Double-check for typos?"
-- ❌ "Error 404: User not found"
-
-**Button Text:**
-- ✅ "Add your first employee"
-- ❌ "Create new record"
-
-**Empty State:**
-- ✅ "Your onboarding dashboard is ready. Let's add your first employee to get started."
-- ❌ "No employees added yet"
-
-**Success Message:**
-- ✅ "Perfect! Sarah's onboarding is set up. We'll send her the welcome email tomorrow at 9 AM."
-- ❌ "Employee record created successfully"
+This shows a complete Tone of Voice definition for a B2B SaaS onboarding tool, demonstrating how to define attributes based on user context (stressed HR managers) and provide clear before/after examples.
 
 ---
 

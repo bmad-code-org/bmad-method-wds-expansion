@@ -223,9 +223,9 @@ Store as: `01-Business-Goals.md` in trigger map folder
 
 ## Next Step
 
-<output>Ready for Step 3: Generate Persona Documents</output>
+<output>Ready for Step 3a: Generate Primary Persona</output>
 
-<action>Load and execute: step-03-generate-personas.md</action>
+<action>Load and execute: step-03a-generate-primary-persona.md</action>
 
 Do NOT skip ahead.
 
