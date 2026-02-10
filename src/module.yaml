@@ -48,11 +48,13 @@ design_system_mode:
   result: "{value}"
   single-select:
     - value: "none"
-      label: "No Design System - Page-specific components only"
-    - value: "figma"
-      label: "Custom Figma Design System - Link to Figma components"
+      label: "1. None - Ad-hoc styling, no reusable components"
+    - value: "building"
+      label: "2. Building - Design system grows organically from your design work"
     - value: "component_library"
-      label: "Component Library - Use shadcn/Radix/similar library"
+      label: "3. Component Library - Use shadcn/Radix/MUI + apply your branding"
+    - value: "existing"
+      label: "4. Existing - Import your design system from previous projects"
 
 methodology_version:
   prompt: "Which WDS methodology version would you like to use?"

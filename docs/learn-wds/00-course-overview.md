@@ -8,7 +8,7 @@
 
 ## Welcome to the WDS Course
 
-This comprehensive course teaches you the complete WDS workflow through **practical modules** that transform how you design products.
+This comprehensive course teaches you the complete WDS workflow through **18 practical modules** that transform how you design products.
 
 **The paradigm shift:**
 
@@ -70,58 +70,78 @@ Each module contains:
 
 ## Course Modules
 
-### Foundation
+### Foundation (Modules 1-2)
 
-- [Module 01: Why WDS Matters](module-01-why-wds-matters/module-01-overview.md)
-- [Module 02: Installation & Setup](module-02-installation-setup/module-02-overview.md) • [Tutorial →](module-02-installation-setup/tutorial-02.md)
+| Module | Title | Agent | Time |
+|--------|-------|-------|------|
+| 01 | [Why WDS Matters](module-01-why-wds-matters/module-01-overview.md) | — | 30 min |
+| 02 | [Installation & Setup](module-02-installation-setup/module-02-overview.md) | — | 45 min |
 
-### Pre-Phase 1: Alignment & Signoff (Optional)
+### Alignment (Module 3) — Optional
 
-- [Module 03: Alignment & Signoff](module-03-alignment-signoff/module-03-overview.md) • [Tutorial →](module-03-alignment-signoff/tutorial-03.md)  
-  *Skip if doing it yourself - go straight to Project Brief*
+| Module | Title | Agent | Time |
+|--------|-------|-------|------|
+| 03 | [Alignment & Signoff](module-03-alignment-signoff/module-03-overview.md) | Saga | 30 min |
 
-### Phase 1: Project Brief
+*Skip if doing it yourself — go straight to Project Brief*
 
-- [Module 04: Create Project Brief](module-04-project-brief/) • [Tutorial →](module-04-project-brief/tutorial-04.md)
+### Strategy Phase (Modules 4-6) — Agent: Saga
 
-### Phase 2: Trigger Mapping
+| Module | Title | Agent | Time |
+|--------|-------|-------|------|
+| 04 | [Project Brief](module-04-product-brief/module-04-overview.md) | Saga | 60 min |
+| 05 | [Trigger Mapping](module-05-trigger-mapping/module-05-overview.md) | Saga | 60 min |
+| 06 | [Platform Requirements](module-06-platform-requirements/module-06-platform-requirements-overview.md) | Saga | 30 min |
 
-- [Module 04: Identify Target Groups](module-04-identify-target-groups/)
-- [Module 05: Map Triggers & Outcomes](module-05-map-triggers-outcomes/) • [Tutorial →](module-05-map-triggers-outcomes/tutorial-05.md)
-- [Module 06: Prioritize Features](module-06-prioritize-features/)
+### UX & Visual Design Phase (Modules 7-15) — Agent: Freya
 
-### Phase 3: Platform Requirements
+| Module | Title | Agent | Time |
+|--------|-------|-------|------|
+| 07 | [Design Phase Introduction](module-07-design-phase/module-07-design-phase-overview.md) | Freya | 15 min |
+| 08 | [Outline Scenarios](module-08-outline-scenarios/module-08-outline-scenarios-overview.md) | Freya | 30 min |
+| 09 | [Conceptual Sketching](module-09-conceptual-sketching/module-09-conceptual-sketching-overview.md) | Freya | 60 min |
+| 10 | [Storyboarding](module-10-storyboarding/module-10-storyboarding-overview.md) | Freya | 45 min |
+| 11 | [Conceptual Specifications](module-11-conceptual-specifications/module-11-conceptual-specifications-overview.md) | Freya | 60 min |
+| 12 | [Functional Interface Components](module-12-functional-interface-components/module-12-functional-interface-components-overview.md) | Freya | 45 min |
+| 13 | [Visual Design](module-13-visual-design/module-13-visual-design-overview.md) | Freya | 60 min |
+| 14 | [Design System Modes](module-14-design-system-modes/module-14-design-system-modes-overview.md) | Freya | 30 min |
+| 15 | [Design Delivery](module-15-design-delivery/module-15-design-delivery-overview.md) | Freya | 45 min |
 
-- [Module 07: Platform Requirements](module-07-platform-requirements/)
-- [Module 08: Functional Requirements](module-08-functional-requirements/)
+### Implementation Phase (Modules 16-18) — Agent: Idunn
 
-### Phase 4: Conceptual Design (UX Design)
-
-- [Module 09: Initialize Scenario](module-09-initialize-scenario/) • [Tutorial →](module-09-initialize-scenario/tutorial-09.md)
-- [Module 10: Sketch Interfaces](module-10-sketch-interfaces/)
-- [Module 11: Analyze with AI](module-11-analyze-with-ai/)
-- [Module 12: Decompose Components](module-12-decompose-components/)
-- [Module 13: Conceptual Specifications](module-13-conceptual-specs/) • [Tutorial →](module-13-conceptual-specs/tutorial-13.md)
-- [Module 14: Validate Specifications](module-14-validate-specifications/)
-
-### Phase 5: Design System
-
-- [Module 15: Extract Design Tokens](module-15-extract-design-tokens/)
-- [Module 16: Component Library](module-16-component-library/)
-
-### Phase 6: Development Integration
-
-- [Module 17: UI Roadmap](module-17-ui-roadmap/)
+| Module | Title | Agent | Time |
+|--------|-------|-------|------|
+| 16 | [Agentic Development](module-16-agentic-development/module-16-agentic-development-overview.md) | Idunn | 60 min |
+| 17 | [Testing](module-17-testing/module-17-testing-overview.md) | Idunn | 45 min |
+| 18 | [Product Evolution](module-18-product-evolution/module-18-product-evolution-overview.md) | Idunn | 30 min |
 
 ---
 
 ## Learning Paths
 
-**Complete Course:** All 17 modules (~12 hours)
+**Complete Course:** All 18 modules (~10 hours)
 
-**Quick Start:** Modules 1, 2, 5, 9, 13 (~4 hours)
+**Quick Start:** Modules 1, 2, 4, 5, 9, 11 (~5 hours)
+
+**Strategy Only:** Modules 1-6 (~4 hours)
+
+**Design Deep Dive:** Modules 7-15 (~6 hours)
 
 **Phase-Specific:** Jump to any phase as needed
+
+---
+
+## The Three Agents
+
+WDS uses three AI agents, each with a specific domain:
+
+| Agent | Domain | Phase | Modules |
+|-------|--------|-------|---------|
+| **Saga** | Strategy | 1-Strategy | 3-6 |
+| **Freya** | UX & Visual Design | 2-Design | 7-15 |
+| **Idunn** | Implementation | 3-Implementation | 16-18 |
+
+Each agent maintains focus on their domain while coordinating with the others.
 
 ---
 
