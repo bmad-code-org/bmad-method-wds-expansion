@@ -192,8 +192,9 @@ Convert specifications into visual designs or code.
 - **Rate limit hit** - Wait a few minutes between batches
 - **Content filter triggered** - Simplify prompt, remove potentially problematic terms
 - **"no text" in prompt** - Sometimes triggers filters, rephrase as positive instruction
+- **`output_path` parameter** - Can cause 0 returns on some systems. Generate to default path first, then copy to project folder
 
-**Fix:** Simplify prompt, remove brands, wait for rate limit reset.
+**Fix:** Simplify prompt, remove brands, wait for rate limit reset. If `output_path` fails, omit it and copy the file manually.
 
 ### MCP server not showing up
 
