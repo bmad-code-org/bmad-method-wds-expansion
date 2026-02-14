@@ -1,7 +1,6 @@
 ---
 name: Value Trigger Chain Workshop
 description: Create or select VTC based on available strategic context (Trigger Map or from scratch)
-web_bundle: true
 ---
 
 # Value Trigger Chain (VTC) Workshop

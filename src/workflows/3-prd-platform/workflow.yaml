@@ -3,8 +3,6 @@ name: prd-platform
 description: Establish technical foundation, validate risky features, and set up experimental endpoints
 author: "Whiteport Design Studio"
 phase: 3
-web_bundle: true
-standalone: true
 primary_agent: "idunn-pm"
 version: "1.0.0"
 

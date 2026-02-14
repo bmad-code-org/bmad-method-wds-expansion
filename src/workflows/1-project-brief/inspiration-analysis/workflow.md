@@ -1,7 +1,6 @@
 ---
 name: Inspiration Analysis Workflow
 description: Analyze reference sites to document visual/UX preferences for Dream Up
-web_bundle: true
 ---
 
 # Inspiration Analysis Workflow

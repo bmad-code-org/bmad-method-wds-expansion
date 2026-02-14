@@ -1,7 +1,6 @@
 ---
 name: Content Creation Workshop
 description: Strategic, multi-model content generation framework for WDS
-web_bundle: true
 ---
 
 # Content Creation Workshop

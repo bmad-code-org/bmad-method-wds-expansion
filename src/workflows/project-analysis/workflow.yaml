@@ -2,8 +2,6 @@
 name: project-analysis
 description: Systematic analysis of project structure and completion status
 author: "Whiteport Design Studio"
-web_bundle: true
-standalone: true
 primary_agent: "freya-ux"
 
 trigger:

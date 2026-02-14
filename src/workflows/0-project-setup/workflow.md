@@ -2,7 +2,6 @@
 
 **The starting point for every WDS project.**
 
----
 
 ## Purpose
 

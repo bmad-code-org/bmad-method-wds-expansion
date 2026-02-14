@@ -2,7 +2,6 @@
 name: UX Design Workflow
 description: Transform ideas into detailed visual specifications through scenario-driven design
 main_config: '{project-root}/_bmad/wds/config.yaml'
-web_bundle: true
 ---
 
 # UX Design Workflow

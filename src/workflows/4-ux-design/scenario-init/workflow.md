@@ -1,7 +1,6 @@
 ---
 name: Scenario Initialization
 description: Connect Trigger Map to first sketch by finding natural starting point and shortest path to mutual success
-web_bundle: true
 ---
 
 # Scenario Initialization Workflow

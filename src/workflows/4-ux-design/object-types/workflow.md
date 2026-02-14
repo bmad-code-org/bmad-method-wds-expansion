@@ -1,7 +1,6 @@
 ---
 name: Object Type Router
 description: Intelligent object detection and routing system for page specification
-web_bundle: true
 ---
 
 # Object Type Router

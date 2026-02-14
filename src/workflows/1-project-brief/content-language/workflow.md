@@ -1,7 +1,6 @@
 ---
 name: Content & Language Workflow
 description: Define tone of voice, language strategy, and content guidelines
-web_bundle: true
 ---
 
 # Content & Language Workflow

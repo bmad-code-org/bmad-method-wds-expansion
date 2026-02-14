@@ -1,7 +1,6 @@
 ---
 name: Platform Requirements Workflow
 description: Define technical boundaries and platform decisions that constrain UX and development
-web_bundle: true
 ---
 
 # Platform Requirements Workflow

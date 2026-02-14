@@ -3,8 +3,6 @@ name: scenarios
 description: "Create UX scenarios from Trigger Map using Dialog, Suggest, or Dream modes"
 author: "Whiteport Design Studio"
 phase: 3
-web_bundle: true
-standalone: true
 primary_agent: "freya-ux"
 
 # Context-aware initiation based on Trigger Map Initiation Pattern

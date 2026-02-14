@@ -1,7 +1,6 @@
 ---
 name: Agentic Development
 description: AI-assisted development for non-technical designers using Agent Dialogs and structured collaboration
-web_bundle: true
 ---
 
 # Agentic Development Workflow

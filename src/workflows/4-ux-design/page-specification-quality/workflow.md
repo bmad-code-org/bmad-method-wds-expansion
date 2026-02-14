@@ -1,7 +1,6 @@
 ---
 name: Page Specification Quality Workflow
 description: Validate WDS page specifications through sequential quality checks
-web_bundle: true
 ---
 
 # Page Specification Quality Workflow

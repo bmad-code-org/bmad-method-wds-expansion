@@ -3,8 +3,6 @@ name: design-system
 description: Extract and maintain design system components (optional)
 author: "Whiteport Design Studio"
 phase: 5
-web_bundle: true
-standalone: true
 primary_agent: "freya-ux"
 version: 1.0.0
 

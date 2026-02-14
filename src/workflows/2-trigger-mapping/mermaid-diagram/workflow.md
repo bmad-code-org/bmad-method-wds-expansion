@@ -1,7 +1,6 @@
 ---
 name: Trigger Map Mermaid Diagram
 description: Generate mermaid flowchart diagram from trigger map YAML data
-web_bundle: true
 ---
 
 # Trigger Map Mermaid Diagram Workflow

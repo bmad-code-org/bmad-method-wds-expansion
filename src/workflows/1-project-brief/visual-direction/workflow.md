@@ -1,7 +1,6 @@
 ---
 name: Visual Direction Workflow
 description: Establish visual style, brand aesthetics, and design direction
-web_bundle: true
 ---
 
 # Visual Direction Workflow

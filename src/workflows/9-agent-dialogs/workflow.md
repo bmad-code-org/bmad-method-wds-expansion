@@ -1,7 +1,6 @@
 ---
 name: Agent Dialog Workflow
 description: Create structured agent dialog folders for implementation tasks with isolated context and reproducible instructions
-web_bundle: true
 ---
 
 # Agent Dialog Workflow

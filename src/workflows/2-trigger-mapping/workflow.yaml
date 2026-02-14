@@ -3,8 +3,6 @@ name: trigger-mapping
 description: "Map business goals to user psychology through structured workshops"
 author: "Whiteport Design Studio"
 phase: 2
-web_bundle: true
-standalone: true
 primary_agent: "saga-analyst"
 
 # Based on Effect Mapping by Mijo Balic & Ingrid Domingues (inUse)

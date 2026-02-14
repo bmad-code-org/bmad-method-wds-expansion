@@ -1,7 +1,6 @@
 ---
 name: Trigger Map Document Generation
 description: Generate comprehensive documentation from trigger map YAML data
-web_bundle: true
 ---
 
 # Trigger Map Document Generation Workflow

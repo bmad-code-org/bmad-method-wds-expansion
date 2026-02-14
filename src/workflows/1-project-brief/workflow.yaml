@@ -3,8 +3,6 @@ name: project-brief
 description: Establish project context - foundation for all design work
 author: "Whiteport Design Studio"
 phase: 1
-web_bundle: true
-standalone: true
 primary_agent: "saga-analyst"
 
 # Critical variables from config

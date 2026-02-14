@@ -1,7 +1,6 @@
 ---
 name: Product Brief Workflow
 description: Create comprehensive product briefs through collaborative step-by-step discovery
-web_bundle: true
 ---
 
 # Product Brief Workflow
