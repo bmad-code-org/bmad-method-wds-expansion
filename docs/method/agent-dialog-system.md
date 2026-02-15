@@ -330,7 +330,7 @@ Fresh context, sharp AI
 ### Agent Signing Off
 
 **Template:**
-```markdown
+````markdown
 Perfect! [Task completed] is ready.
 
 I've documented:
@@ -340,17 +340,23 @@ I've documented:
 
 Everything is captured in `[dialog-file-path]`.
 
-Next up: [Next task description]
-
-Start me over with /[agent-name] and we'll tackle that next.
+**Ready to continue? Copy this snippet for your next session:**
 ```
+/[agent-name]
+
+Resume from: [absolute-path-to-dialog-file]
+Next: [Brief task description]
+```
+````
 
 **Key Elements:**
 - Summarize what was completed
 - Reference dialog file (reassures nothing lost)
-- Name next task clearly
-- Explicit restart instruction
-- Specific agent to invoke
+- Provide copy-paste snippet with:
+  - Agent command (e.g., `/saga`)
+  - Absolute path to dialog file
+  - Brief next task description
+- User can click copy button → paste in new session → continue seamlessly
 
 ### User Restarting
 
