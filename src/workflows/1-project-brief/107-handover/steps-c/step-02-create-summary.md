@@ -42,5 +42,5 @@ This creates a strategic foundation that ensures every design decision serves bo
 
 ## What Happens Next
 
-<action>Load and execute: step-03-provide-activation.md</action>
+<action>Load and execute: step-03-update-design-log.md</action>
 

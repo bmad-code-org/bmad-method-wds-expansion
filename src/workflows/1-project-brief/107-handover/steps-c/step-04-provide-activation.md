@@ -1,4 +1,4 @@
-# Step 3: Provide Next Phase Activation
+# Step 04: Provide Next Phase Activation
 
 <critical>Guiding user to Phase 2</critical>
 
@@ -40,5 +40,7 @@ Would you like to proceed to Trigger Mapping now, or take a break and continue l
 
 ## Handover Complete
 
-<action>Await user decision to proceed or pause.</action>
+---
+
+_End of Phase 1: Product Brief workflow._
 

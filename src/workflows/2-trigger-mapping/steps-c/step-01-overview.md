@@ -39,7 +39,7 @@ Connect business goals to user psychology. This creates your strategic North Sta
 
     <action>Load dream-up-approach.md micro-guide</action>
     <action>Inform user: "I'm creating an agent dialog to track my learning, research, generation, and self-review process."</action>
-    <action>Create agent dialog using ../../templates/dream-up-agent-dialog.template.md at {output_folder}/_progress/agent-dialogs/{date}-trigger-map-{{mode}}.md</action>
+    <action>Create agent dialog using {project-root}/_bmad/wds/templates/dream-up-agent-dialog.template.md at {output_folder}/_progress/agent-dialogs/{date}-trigger-map-{{mode}}.md</action>
 
     <action>Execute Layer 1: Learn WDS Form (Static - loaded once)
       - Read docs/method/phase-2-trigger-mapping-guide.md
@@ -115,22 +115,22 @@ Connect business goals to user psychology. This creates your strategic North Sta
 </step>
 
 <step n="2" goal="Run Workshop 1: Business Goals">
-<action>Load and execute: workshops/1-business-goals/instructions.md</action>
+<action>Load and execute: ../201-business-goals/workflow.md</action>
 <action>Store outputs: vision, objectives, prioritization</action>
 </step>
 
 <step n="3" goal="Run Workshop 2: Target Groups">
-<action>Load and execute: workshops/2-target-groups/instructions.md</action>
+<action>Load and execute: ../202-target-groups/workflow.md</action>
 <action>Store outputs: target_groups, personas with details</action>
 </step>
 
 <step n="4" goal="Run Workshop 3: Driving Forces">
-<action>Load and execute: workshops/3-driving-forces/instructions.md</action>
+<action>Load and execute: ../203-driving-forces/workflow.md</action>
 <action>Store outputs: driving_forces_positive, driving_forces_negative for each persona</action>
 </step>
 
 <step n="5" goal="Run Workshop 4: Prioritization">
-<action>Load and execute: workshops/4-prioritization/instructions.md</action>
+<action>Load and execute: ../204-prioritization/workflow.md</action>
 <action>Store outputs: prioritized_groups, prioritized_drivers, focus_statement</action>
 </step>
 
@@ -140,7 +140,7 @@ Connect business goals to user psychology. This creates your strategic North Sta
 This is optional but valuable - it analyzes which features best serve your prioritized personas and goals, creating a scored priority list for design and development.</ask>
 
 <check if="yes">
-  <action>Load and execute: workshops/5-feature-impact/instructions.md</action>
+  <action>Load and execute: ../205-feature-impact/workflow.md</action>
   <action>Store feature_impact_analysis</action>
 </check>
 
@@ -154,7 +154,7 @@ This is optional but valuable - it analyzes which features best serve your prior
 
 Now let me prepare the handover to Phase 4: UX Design...</output>
 
-<action>Load and execute: handover/instructions.md</action>
+<action>Load and execute: ../208-handover/workflow.md</action>
 </step>
 
 </workflow>

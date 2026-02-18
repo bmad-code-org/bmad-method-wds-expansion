@@ -379,9 +379,32 @@ Automatically derive:
 
 1. **Create root folder:** `{{root_folder}}/`
 2. **Create progress folder:** `{{root_folder}}/_progress/`
-3. **Create phase folders:**
-   - Greenfield: `{{root_folder}}/A-Product-Brief/`, `B-Trigger-Map/`, `C-UX-Scenarios/`, `D-Design-System/`, `E-PRD/`, `F-Testing/`
+3. **Create agent dialogs folder:** `{{root_folder}}/_progress/agent-dialogs/`
+4. **Create phase folders:**
+   - Greenfield: `{{root_folder}}/A-Product-Brief/`, `B-Trigger-Map/`, `C-UX-Scenarios/`, `D-Design-System/`
    - Brownfield: `{{root_folder}}/A-Product-Brief/`, `improvements/`, `deliveries/`
+   - **D-Design-System subfolders** (always created):
+     - `D-Design-System/01-Visual-Design/mood-boards/`
+     - `D-Design-System/01-Visual-Design/design-concepts/`
+     - `D-Design-System/01-Visual-Design/color-exploration/`
+     - `D-Design-System/01-Visual-Design/typography-tests/`
+     - `D-Design-System/02-Assets/logos/`
+     - `D-Design-System/02-Assets/icons/`
+     - `D-Design-System/02-Assets/images/`
+     - `D-Design-System/02-Assets/graphics/`
+     - `D-Design-System/components/interactive/`
+     - `D-Design-System/components/form/`
+     - `D-Design-System/components/layout/`
+     - `D-Design-System/components/content/`
+     - `D-Design-System/components/feedback/`
+     - `D-Design-System/components/navigation/`
+5. **Install folder guide files** (from `_bmad/wds/templates/folder-guides/`):
+   - `00-progress.template.md` → `{{root_folder}}/_progress/00-progress.md`
+   - `00-product-brief.template.md` → `{{root_folder}}/A-Product-Brief/00-product-brief.md`
+   - `00-trigger-map.template.md` → `{{root_folder}}/B-Trigger-Map/00-trigger-map.md`
+   - `00-ux-scenarios.template.md` → `{{root_folder}}/C-UX-Scenarios/00-ux-scenarios.md`
+   - `00-design-system.template.md` → `{{root_folder}}/D-Design-System/00-design-system.md`
+   Replace `{{project_name}}` and `{{date}}` placeholders in each file.
 
 **Generate `{{root_folder}}/_progress/wds-project-outline.yaml`:**
 
@@ -432,44 +455,13 @@ folders:
   trigger_map: "{{root_folder}}/B-Trigger-Map"
   scenarios: "{{root_folder}}/C-UX-Scenarios"
   design_system: "{{root_folder}}/D-Design-System"
-  prd: "{{root_folder}}/E-PRD"
-  testing: "{{root_folder}}/F-Testing"
 
 phases:
   {{generated_phases}}
 ```
 </action>
 
-**Generate `{{root_folder}}/progress/design-log.md`:**
-
-```markdown
-# Design Process Log
-
-Project: {{project_name}}
-Started: {{date}}
-
----
-
-## {{date}} - Project Initialized (Phase 0)
-
-**Configuration:**
-- Type: {{greenfield/brownfield}}
-- Complexity: {{product_complexity}}
-- Tech Stack: {{tech_stack}}
-- Brief Level: {{brief_level}}
-
-**Next Steps:**
-- Phase 1: Product Brief
-{{#if strategic_analysis == "full"}}
-- Phase 2: Trigger Mapping
-{{/if}}
-
----
-
-_Use this log to track major decisions, insights, and progress through the design process._
-```
-
-**Create agent dialogs folder:** `{{root_folder}}/_progress/agent-dialogs/`
+**Fill in `00-progress.md` with initial Phase 0 entry** (project name, date, configuration from steps above).
 
 </action>
 

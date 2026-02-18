@@ -47,7 +47,7 @@ Load and read full config from `{project-root}/_bmad/wds/config.yaml` and resolv
 
 ### 2. First Step
 
-Load and execute `{installed_path}/instructions.md` to begin the trigger mapping workflow.
+Load and execute `{installed_path}/steps-c/step-01-overview.md` to begin the trigger mapping workflow.
 
 ### Output
 

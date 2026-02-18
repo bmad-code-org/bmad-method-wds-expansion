@@ -8,7 +8,7 @@ Generate the complete Feature Impact Analysis document with the confirmed assess
 
 ## Document Structure
 
-Use the template: `../../templates/feature-impact.template.md`
+Use the template: `{project-root}/_bmad/wds/templates/2-trigger-mapping/feature-impact.template.md`
 
 Include:
 1. **Header** with project name, date, and scoring legend

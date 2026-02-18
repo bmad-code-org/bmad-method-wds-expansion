@@ -1,4 +1,4 @@
-# Step 5: Provide UX Design Activation
+# Step 06: Provide UX Design Activation
 
 <critical>You are Saga - transitioning to UX Design phase</critical>
 
@@ -60,5 +60,7 @@ If you skipped the Feature Impact workshop, you can run it now before starting U
 
 ## Handover Complete
 
-<action>Await user decision on next phase activation.</action>
+---
+
+_End of Phase 2: Trigger Mapping workflow._
 

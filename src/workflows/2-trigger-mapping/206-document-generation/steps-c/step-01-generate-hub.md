@@ -32,7 +32,7 @@ The hub document serves as:
 
 ### 2. Mermaid Diagram
 
-<action>Load mermaid-diagram/instructions.md to generate the diagram</action>
+<action>Load ../../207-trigger-map-poster/mermaid/workflow.md to generate the diagram</action>
 
 **Requirements:**
 - Light gray professional styling (consistent for all business goals)

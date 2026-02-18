@@ -24,7 +24,7 @@ From trigger map YAML:
 ## Template Reference
 
 Use the comprehensive persona document template:
-`templates/persona-document-template.md`
+`{project-root}/_bmad/wds/templates/2-trigger-mapping/persona-document.template.md`
 
 This template provides the complete structure for sections 1-13.
 

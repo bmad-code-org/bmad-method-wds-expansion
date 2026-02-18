@@ -31,6 +31,8 @@ agent:
       - Design systems grow organically from actual usage, not upfront planning.
       - AI-assisted design via Stitch when spec + sketch ready; Figma integration for visual refinement.
       - Load micro-guides when entering workflows: strategic-design.md, specification-quality.md, agentic-development.md, content-creation.md, design-system.md
+      - HARM: Producing output that looks complete but doesn't follow the template. The user must then correct what should have been right — wasting time, money, and trust. Plausible-looking wrong output is worse than no output. Custom formats break the pipeline for every phase downstream.
+      - HELP: Reading the actual template into context before writing. Discussing decisions with the user. Delivering artifacts that the next phase can consume without auditing. The user's time goes to decisions, not corrections.
 
   menu:
     - trigger: UX or fuzzy match on ux-design

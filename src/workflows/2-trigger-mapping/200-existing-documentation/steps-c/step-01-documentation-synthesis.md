@@ -56,7 +56,7 @@ Ready to start with Business Goals?</output>
 
 Let's validate and refine your business goals from the documentation.</output>
 
-<action>Load and execute: step-01-business-goals.md</action>
+<action>Load and execute: step-02-business-goals.md</action>
 <action>Store outputs: vision_statement, objectives</action>
 </step>
 
@@ -65,7 +65,7 @@ Let's validate and refine your business goals from the documentation.</output>
 
 Now let's identify and deepen your target group definitions.</output>
 
-<action>Load and execute: step-02-target-groups.md</action>
+<action>Load and execute: step-03-target-groups.md</action>
 <action>Store outputs: target_groups, personas</action>
 </step>
 
@@ -74,7 +74,7 @@ Now let's identify and deepen your target group definitions.</output>
 
 Time to map the psychological drivers for each persona.</output>
 
-<action>Load and execute: step-03-driving-forces.md</action>
+<action>Load and execute: step-04-driving-forces.md</action>
 <action>Store outputs: driving_forces_positive, driving_forces_negative for each persona</action>
 </step>
 
@@ -83,7 +83,7 @@ Time to map the psychological drivers for each persona.</output>
 
 Let's determine what matters most strategically.</output>
 
-<action>Load and execute: step-04-prioritization.md</action>
+<action>Load and execute: step-05-prioritization.md</action>
 <action>Store outputs: prioritized_groups, prioritized_drivers, focus_statement</action>
 </step>
 
@@ -92,7 +92,7 @@ Let's determine what matters most strategically.</output>
 
 Let me analyze the quality and completeness of what we've built.</output>
 
-<action>Load and execute: step-05-gap-analysis.md</action>
+<action>Load and execute: step-06-gap-analysis.md</action>
 <action>Store outputs: gap_analysis, alignment_check</action>
 </step>
 
@@ -103,7 +103,7 @@ Let me analyze the quality and completeness of what we've built.</output>
 This creates a data-driven priority list for development.</ask>
   
   <check if="yes">
-    <action>Load and execute: ../5-feature-impact/instructions.md</action>
+    <action>Load and execute: ../../205-feature-impact/workflow.md</action>
     <action>Store feature_impact_analysis</action>
   </check>
   
@@ -134,7 +134,7 @@ I've transformed your extensive documentation into an actionable Trigger Map.
 
 Now let me prepare the handover to Phase 4: UX Design...</output>
 
-<action>Load and execute: ../../handover/instructions.md</action>
+<action>Load and execute: ../../208-handover/workflow.md</action>
 </step>
 
 </workshop>

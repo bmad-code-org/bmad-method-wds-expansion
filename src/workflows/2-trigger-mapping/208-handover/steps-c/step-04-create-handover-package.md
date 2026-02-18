@@ -69,5 +69,5 @@ docs/2-trigger-map/
 
 ## What Happens Next
 
-<action>Load and execute: step-05-provide-activation.md</action>
+<action>Load and execute: step-05-update-design-log.md</action>
 

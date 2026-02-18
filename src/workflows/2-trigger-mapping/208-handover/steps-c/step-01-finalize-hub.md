@@ -13,7 +13,7 @@ Generate the complete trigger map documentation structure:
 
 ## Execute Document Generation
 
-<action>Load and execute: ../document-generation/instructions.md</action>
+<action>Load and execute: ../../206-document-generation/workflow.md</action>
 
 This will create all documents following the standard trigger map structure.
 

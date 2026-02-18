@@ -51,7 +51,7 @@ This uses **step-file architecture** for disciplined execution:
 
 ### 2. First Step Execution
 
-Load, read full file and then execute `steps-c/step-01-initialize-structure.md` to begin workflow.
+Load and execute `{installed_path}/mermaid/workflow.md` to begin Mermaid diagram generation.
 
 ---
 
