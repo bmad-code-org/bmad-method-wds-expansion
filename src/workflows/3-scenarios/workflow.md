@@ -61,7 +61,7 @@ This uses **step-file architecture** for disciplined execution:
 
 ---
 
-## INITIALIZATION SEQUENCE
+## INITIALIZATION
 
 ### 1. Configuration Loading
 
@@ -69,13 +69,42 @@ Load and read full config from `{project-root}/_bmad/wds/config.yaml` and resolv
 
 - `project_name`, `output_folder`, `user_name`, `communication_language`, `document_output_language`
 
-### 2. First Step
+### 2. Agent Dialog Gate
+
+1. Check `{output_folder}/_progress/agent-dialogs/` for pending scenario dialogs
+2. If pending, present with status
+3. If none, suggest creating one
+
+### 3. Mode Determination
+
+**Check invocation:**
+- "validate" / -v → Load and execute `{installed_path}/workflow-validate.md`
+- Default (create) → Continue to step 3
+
+### 4. First Step
 
 Load and execute `{installed_path}/steps-c/step-01-load-context.md` to begin.
 
 ---
 
-## Output
+## REFERENCE CONTENT
+
+| Location | Purpose |
+|----------|---------|
+| `data/quality-checklist.md` | Scenario quality checklist |
+| `data/scenario-outline-template.md` | Scenario outline template |
+| `data/validation-standards.md` | Validation standards |
+
+---
+
+## OUTPUT
 
 - `{output_folder}/C-UX-Scenarios/00-ux-scenarios.md` — Scenario index with coverage matrix
 - `{output_folder}/C-UX-Scenarios/NN-[scenario-name]/NN-[scenario-name].md` — Individual scenario outlines
+
+---
+
+## AFTER COMPLETION
+
+1. Update design log
+2. Suggest next action or proceed to Phase 4: UX Design

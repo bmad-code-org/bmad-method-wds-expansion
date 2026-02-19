@@ -1,105 +1,100 @@
 ---
 name: agentic-development
-description: AI-assisted development for non-technical designers using Agent Dialogs and structured collaboration
+description: AI-assisted development, testing, and reverse engineering through structured agent collaboration
 web_bundle: true
 ---
 
 # Phase 5: Agentic Development
 
-**Goal:** Enable non-technical designers to build production-ready code through structured AI collaboration
+**Goal:** AI-assisted software development, testing, analysis, and reverse engineering through structured agent collaboration.
 
-**Your Role:** Implementation partner guiding step-by-step development with clear feedback protocols and approval gates
-
----
-
-## WHEN TO USE
-
-- Page specifications are complete and approved
-- Ready to build working implementations with AI
-- Want iterative development with approval gates
-
-**Skip when:** Specifications incomplete, still sketching, simple one-file changes, or pure exploration.
+**Your Role:** Implementation partner guiding structured development activities with clear feedback protocols and approval gates.
 
 ---
 
-## ESSENTIAL GUIDES (Read Before Starting)
+## WORKFLOW ARCHITECTURE
 
-- **[Feedback Protocol](guides/FEEDBACK-PROTOCOL.md)** — Classify feedback before acting (Bug/Quick/Addition/Change)
-- **[Session Protocol](guides/SESSION-PROTOCOL.md)** — Read dialog, verify plan, present status before implementing
-- **[Execution Principles](guides/EXECUTION-PRINCIPLES.md)** — Document-first, sketch fidelity, plan-then-execute pattern
+Phase 5 is **menu-driven**, not linear. The user picks an activity.
 
-**Process Guides:**
-- [Agentic Development Guide](guides/AGENTIC-DEVELOPMENT-GUIDE.md)
-- [Inline Testing Guide](guides/INLINE-TESTING-GUIDE.md)
-- [Creation Guide](guides/CREATION-GUIDE.md)
-- [Prototype Initiation Dialog](guides/PROTOTYPE-INITIATION-DIALOG.md)
-- [Prototype Analysis](guides/PROTOTYPE-ANALYSIS.md)
-- [File Index](guides/FILE-INDEX.md)
+### Core Principles
 
----
+- **Activity-Based**: Pick the right activity for the current need
+- **Non-Linear**: Start anywhere, switch between activities freely
+- **Agent Dialog Driven**: Every activity creates/resumes agent dialogs for high-level planning
+- **Specification as Truth**: All work traces back to approved specifications
 
-## THE 5 PHASES
+### Step Processing Rules
 
-### Phase 1: Prototype Setup (one-time per scenario)
-Set up prototype environment and folder structure.
-**Go to:** [steps-c/1-prototype-setup.md](steps-c/1-prototype-setup.md)
-
-### Phase 2: Scenario Analysis (one-time per scenario)
-Analyze all scenario steps and identify logical views.
-**Go to:** [steps-c/2-scenario-analysis.md](steps-c/2-scenario-analysis.md)
-
-### Phase 3: Logical View Selection & Breakdown (per view)
-Identify objects and break view into sections.
-**Go to:** [steps-c/3-logical-view-breakdown.md](steps-c/3-logical-view-breakdown.md)
-
-### Phase 4: Section Story & Implementation Loop (per section)
-
-| Step | Task | File |
-|------|------|------|
-| 4a | Announce & Gather | [4a-announce-and-gather.md](steps-c/4a-announce-and-gather.md) |
-| 4b | Create Story File | [4b-create-story-file.md](steps-c/4b-create-story-file.md) |
-| 4c | Implement Section | [4c-implement-section.md](steps-c/4c-implement-section.md) |
-| 4d | Present for Testing | [4d-present-for-testing.md](steps-c/4d-present-for-testing.md) |
-| 4e | Handle Issue | [4e-handle-issue.md](steps-c/4e-handle-issue.md) |
-| 4f | Handle Improvement | [4f-handle-improvement.md](steps-c/4f-handle-improvement.md) |
-| 4g | Section Approved | [4g-section-approved.md](steps-c/4g-section-approved.md) |
-
-**Flow:** 4a → 4b → 4c → [Puppeteer verify] → 4d → [4e/4f if needed → 4d] → 4g → [next section]
-
-### Phase 5: Finalization (per view)
-Integration test all states and final approval.
-**Go to:** [steps-c/5-finalization.md](steps-c/5-finalization.md)
+1. **READ COMPLETELY**: Always read the entire step file before taking any action
+2. **FOLLOW SEQUENCE**: Execute all sections in order within a step
+3. **WAIT FOR INPUT**: Halt at menus and wait for user selection
+4. **SAVE STATE**: Update dialog tracking when completing steps
 
 ---
 
-## CRITICAL RULES
+## INITIALIZATION
 
-- **ALWAYS** complete Phase 1 setup before starting
-- **ALWAYS** analyze scenario before selecting views
-- **ALWAYS** use section-by-section approach (Phase 4 loop)
-- **ALWAYS** get approval before moving to next section
-- **ALWAYS** create story files just-in-time (not upfront)
-- **ALWAYS** verify measurable criteria with Puppeteer before presenting to user (see [Inline Testing Guide](guides/INLINE-TESTING-GUIDE.md))
-- **ALWAYS** capture baseline state before modifying existing features
+### 1. Configuration Loading
+
+Load and read full config from `{project-root}/_bmad/wds/config.yaml` and resolve:
+- `project_name`, `output_folder`, `user_name`
+- `communication_language`, `document_output_language`
+
+### 2. Agent Dialog Gate
+
+1. Check `{output_folder}/_progress/agent-dialogs/` for pending development dialogs
+2. If pending dialogs exist, present them with status
+3. User can resume existing or start new
+
+### 3. Activity Menu
+
+Present:
+
+```
+What would you like to do?
+
+[P] Prototyping            — Build interactive prototype from specs
+[D] Development            — Write production code
+[F] Bugfixing              — Fix bugs in existing code
+[E] Evolution              — Add features to existing product
+[A] Analysis               — Understand your own codebase
+[R] Reverse Engineering    — Any software/site → specs & extraction
+[T] Acceptance Testing     — Design & run tests from spec criteria
+```
+
+### Activity Routing
+
+| Choice | Workflow File | Steps Folder |
+|--------|--------------|--------------|
+| [P] | workflow-prototyping.md | steps-p/ |
+| [D] | workflow-development.md | steps-d/ |
+| [F] | workflow-bugfixing.md | steps-f/ |
+| [E] | workflow-evolution.md | steps-e/ |
+| [A] | workflow-analysis.md | steps-a/ |
+| [R] | workflow-reverse-engineering.md | steps-r/ |
+| [T] | workflow-acceptance-testing.md | steps-t/ |
+
+---
+
+## REFERENCE CONTENT
+
+| Location | Purpose |
+|----------|---------|
+| `data/guides/` | Development guides, protocols, analysis |
+| `data/testing-guide.md` | Acceptance testing guide |
+| `data/test-result-templates.md` | Test result templates |
+| `data/issue-templates.md` | Issue reporting templates |
+| `templates/` | Page, story, work file, roadmap templates |
 
 ---
 
 ## OUTPUT
 
-```
-[Scenario]-Prototype/
-├── [View].html files (one per logical view)
-├── shared/ (shared code)
-├── components/ (reusable components)
-├── pages/ (page-specific scripts)
-├── data/ (demo data JSON)
-├── stories/ (section dev files, created just-in-time)
-├── work/ (planning files)
-└── PROTOTYPE-ROADMAP.md
-```
+Activity-specific output in project structure.
 
 ---
 
-## FIRST STEP
+## AFTER COMPLETION
 
-Load, read and execute `steps-c/1-prototype-setup.md` to begin.
+1. Update design log
+2. Suggest next action or return to Activity Menu

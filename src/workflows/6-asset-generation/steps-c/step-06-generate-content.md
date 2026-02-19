@@ -45,7 +45,7 @@ This is where the strategic work from Steps 1-5 becomes actual content. The agen
 
 ### Generation Process
 
-**Reference:** See [substeps/06-generation-instructions.md](substeps/06-generation-instructions.md) for detailed instructions on:
+**Reference:** See [data/06-generation-instructions.md](../data/06-generation-instructions.md) for detailed instructions on:
 1. Synthesizing all context
 2. Generating 2-3 variations (wish-focused, fear-focused, balanced)
 3. Presentation format
@@ -208,7 +208,7 @@ This creates a complete record:
 
 ## Example
 
-**See:** [substeps/06-example-hairdresser-newsletter.md](substeps/06-example-hairdresser-newsletter.md)
+**See:** [data/06-example-hairdresser-newsletter.md](../data/06-example-hairdresser-newsletter.md)
 
 This shows a complete example of:
 - Three variations (wish-focused, fear-focused, balanced)

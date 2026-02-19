@@ -1,96 +1,158 @@
 ---
 name: asset-generation
-description: External service integrations for generating images, video, and frontend code
+description: Generate visual and text assets from specifications through AI-powered creative production
 web_bundle: true
 ---
 
-# Content Creation Workshop
+# Phase 6: Asset Generation
 
-**Goal:** Generate strategically grounded content using five strategic models in sequence
+**Goal:** Transform UX specifications into production-ready assets — wireframes, page designs, UI elements, icons, images, videos, and strategic content — using AI-powered creative tools.
 
-**Your Role:** Content strategist facilitating multi-model framework for creating purposeful, empowering content.
+**Your Role:** Creative production partner. You read specifications, craft precise prompts using style libraries, and orchestrate batch generation through MCP services. The user brings creative direction; you bring systematic execution.
 
 ---
 
 ## WORKFLOW ARCHITECTURE
 
-This uses **step-file architecture** for disciplined execution:
+Phase 6 is **menu-driven**, not linear. The user picks what to generate.
 
 ### Core Principles
 
-- **Multi-Model Framework**: Five strategic models applied sequentially
-- **Strategic Grounding**: Content serves business goals
-- **Awareness-Appropriate**: Language matches user's understanding
-- **Action-Focused**: Enables specific user behaviors
-- **Empowering**: Makes users feel capable
+- **Specification-Driven**: Every asset traces back to an approved page spec or design system
+- **Style Library**: Design styles and content styles ensure visual consistency
+- **Prompt Crafting**: WDS translates specs + style into optimized generation prompts
+- **Batch Automation**: Generate all assets of a type in one session (e.g., "17 vehicle images for Källa")
+- **Reference Image Support**: Send reference images with prompts for visual consistency across batches
+- **Service Flexibility**: MCP-powered generation preferred; prompt export as fallback for external services
 
-### Critical Rules
+### Step Processing Rules
 
-- 🎯 **ALWAYS** apply all five models in sequence
-- 📊 **ALWAYS** start with Content Purpose
-- 🎯 **ALWAYS** follow WHY → HOW → WHAT structure (Golden Circle)
-- ⏸️ **ALWAYS** validate against Action Mapping
-- 💪 **ALWAYS** use empowering language (Badass Users framework)
-
----
-
-## WHEN TO USE
-
-**Use this workshop for:**
-- Page headlines and hero content
-- Section content and feature descriptions
-- Value propositions and benefit statements
-- CTAs with strategic importance
-- Landing page content
-- Any user-facing text where purpose and context matter
-
-**Skip for:**
-- Standard UI microcopy (form labels, generic buttons)
-- System messages (loading, errors, confirmations)
-- Navigation labels
-- Technical documentation
-
----
-
-## THE FIVE-MODEL FRAMEWORK
-
-1. **Content Purpose** - The job to do
-2. **VTC** - Strategic foundation
-3. **Customer Awareness Cycle** - Content strategy
-4. **Action Mapping** - Content filter
-5. **Badass Users** - Tone & frame
-6. **Golden Circle** - Structural order (WHY → HOW → WHAT)
+1. **READ COMPLETELY**: Always read the entire step file before action
+2. **FOLLOW SEQUENCE**: Execute all sections in order
+3. **WAIT FOR INPUT**: Halt at menus and wait for user selection
+4. **SAVE STATE**: Update dialog tracking when completing steps
 
 ---
 
 ## INITIALIZATION
 
-### Guide Reference
+### 1. Configuration Loading
 
-Refer to `content-creation-workshop-guide.md` for comprehensive framework explanation.
+Load and read full config from `{project-root}/_bmad/wds/config.yaml` and resolve:
+- `project_name`, `output_folder`, `user_name`
+- `communication_language`, `document_output_language`
 
-### First Step Execution
+### 2. Agent Dialog Gate
 
-Load, read and execute `steps-c/step-01-content-purpose.md` to begin workshop.
+1. Check `{output_folder}/_progress/agent-dialogs/` for pending asset generation dialogs
+2. If pending, present with status
+3. If none, suggest creating one
+
+### 3. Activity Menu
+
+```
+What would you like to generate?
+
+[W] Wireframes            — Outline wireframes from page specs
+[P] Page Designs          — Full page design compositions
+[U] UI Elements           — Buttons, cards, forms, components
+[I] Icons                 — Icon sets and individual icons
+[M] Images                — Photos, illustrations, backgrounds
+[V] Videos                — Motion content and animations
+[C] Content               — Strategic text content (5-model framework)
+[E] Export to Figma       — Push specs and assets to Figma
+```
+
+### Activity Routing
+
+| Choice | Workflow File | Steps Folder |
+|--------|--------------|--------------|
+| [W] | workflow-wireframes.md | steps-w/ |
+| [P] | workflow-page-designs.md | steps-p/ |
+| [U] | workflow-ui-elements.md | steps-u/ |
+| [I] | workflow-icons.md | steps-i/ |
+| [M] | workflow-images.md | steps-m/ |
+| [V] | workflow-videos.md | steps-v/ |
+| [C] | workflow-content.md | steps-c/ |
+| [E] | workflow-figma.md | steps-f/ |
+
+---
+
+## SHARED GENERATION PATTERN
+
+All visual activities (W, P, U, I, M, V) follow this pattern:
+
+1. **Load Context** — Read relevant page specs, design system, visual direction
+2. **Asset Inventory** — Identify all assets needed (single or batch)
+3. **Select Style** — Choose design style + content style from libraries
+4. **Reference Images** — Attach reference images for visual consistency (when supported)
+5. **Craft Prompts** — Translate spec + style + references into generation prompts
+6. **Select Service** — Route to MCP service or export prompts for external use
+7. **Generate & Review** — Execute generation, review results, iterate
+
+### Batch Mode
+
+For batch generation (e.g., "generate all hero images for the site"):
+- Inventory all assets of the type from specs
+- Apply consistent style across the batch
+- Cycle through generation, using earlier results as reference for consistency
+- Review as a set, flag outliers for regeneration
+
+### Prompt Export Fallback
+
+When MCP service is unavailable or user prefers external tools:
+- Craft the full prompt with all context
+- Format for copy-paste into target service
+- Include style parameters, dimensions, and reference notes
+
+---
+
+## STYLE LIBRARIES
+
+### Design Styles
+
+Predefined visual approaches loaded from `data/styles/design-styles/`:
+- Minimal, Brutalist, Organic, Corporate, Playful, etc.
+- Each defines: color treatment, spacing, typography feel, mood
+
+### Content Styles
+
+Visual rendering styles loaded from `data/styles/content-styles/`:
+- Photorealistic, Illustration, Watercolor, Comic Book, Pencil Sketch
+- Isometric, Flat Design, 3D Render, Hyper-realistic, Line Art, etc.
+- Each defines: rendering approach, detail level, texture, lighting
+
+Style selection happens per activity session and can be mixed within a project.
+
+---
+
+## REFERENCE CONTENT
+
+| Location | Purpose |
+|----------|---------|
+| `data/styles/design-styles/` | Design style definitions |
+| `data/styles/content-styles/` | Content style definitions |
+| `data/` | Framework guides, examples, service integration docs |
+| `templates/` | Content output, prompt templates |
 
 ---
 
 ## OUTPUT
 
-Generated content that is:
-- ✅ Strategically grounded (serves business goals)
-- ✅ Awareness-appropriate (speaks to user's current understanding)
-- ✅ Action-focused (enables specific user behaviors)
-- ✅ Empowering (makes users feel capable)
-- ✅ Structurally persuasive (WHY → HOW → WHAT flow)
+- Wireframe images and annotated layouts
+- Page design compositions
+- UI element assets (buttons, cards, forms)
+- Icon sets (SVG, PNG)
+- Images (hero, product, background, illustration)
+- Video/motion assets
+- Strategic text content
+- Figma design files
 
-Use template: `content-output.template.md`
+Output stored in `{output_folder}/E-Assets/` organized by type.
 
 ---
 
-## SUB-WORKFLOWS
+## AFTER COMPLETION
 
-| # | Name | Purpose |
-|---|------|---------|
-| 601 | [Stitch Generation](601-stitch-generation/workflow.md) | AI-assisted UI generation with Google Stitch |
-| 602 | [Figma Integration](602-figma-integration/) | Code-to-Figma and Figma-to-code workflows |
+1. Update design log
+2. Suggest next action or return to Activity Menu

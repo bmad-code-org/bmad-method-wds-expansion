@@ -210,7 +210,7 @@ Once the required action is clear and information is filtered:
 
 ## Example
 
-**See:** [substeps/03-action-filter-example.md](substeps/03-action-filter-example.md)
+**See:** [data/03-action-filter-example.md](../data/03-action-filter-example.md)
 
 This shows complete Action Mapping for hairdresser newsletter signup, demonstrating how to filter essential information through required action, identify barriers, and create a cut list.
 

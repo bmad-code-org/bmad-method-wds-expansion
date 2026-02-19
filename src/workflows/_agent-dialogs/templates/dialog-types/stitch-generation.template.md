@@ -247,7 +247,7 @@ Store each screen's prompt in a separate file in the dialog folder.
 
 **Examples:** `1.2-sign-in-stitch-prompt.md`, `1.3-profile-setup-stitch-prompt.md`
 
-Use the [stitch-prompt.template.md](../../../6-asset-generation/601-stitch-generation/stitch-prompt.template.md) to create each prompt file.
+Use the [stitch-prompt.template.md](../../../6-asset-generation/templates/stitch-prompt.template.md) to create each prompt file.
 
 ---
 

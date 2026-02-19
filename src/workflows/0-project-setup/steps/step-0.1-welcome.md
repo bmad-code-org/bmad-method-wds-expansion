@@ -134,7 +134,7 @@ Based on user responses:
 
 **If alignment = [B] Need to pitch:**
 1. Confirm: "Let's create your pitch and alignment documents first."
-2. Route to: `{project-root}/_bmad/wds/workflows/1-project-brief/100-alignment-signoff/workflow.md`
+2. Route to: `{project-root}/_bmad/wds/workflows/0-alignment-signoff/workflow.md`
 3. After alignment complete → Return here for project configuration
 
 **If alignment = [A] Ready to start:**

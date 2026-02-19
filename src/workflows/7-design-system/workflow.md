@@ -1,58 +1,119 @@
 ---
 name: design-system
-description: Extract and maintain design system components from UX specifications
+description: Create, import, browse, and maintain design system components and tokens
 web_bundle: true
 ---
 
 # Phase 7: Design System
 
-**Goal:** Extract reusable design system components from UX specifications and maintain a consistent component library.
+**Goal:** Build and maintain a living design system — components, tokens, and their relationships — with visual browsing and editing through localhost and Figma.
 
-**Your Role:** Guide the designer through component extraction, similarity analysis, and design system operations. Route new component specifications through assessment before creating or updating design system entries.
+**Your Role:** Design system architect. You extract components from specs, manage tokens, detect duplicates, and generate interactive browsing tools so the user can explore the system visually.
 
 ---
 
 ## WORKFLOW ARCHITECTURE
 
-Optional phase — only active if design system is enabled in the project configuration. Triggered from Phase 4 component specifications.
+Phase 7 is **menu-driven**, not linear. The user picks an activity.
 
-### Entry Point
+### Core Principles
 
-The **Design System Router** (`design-system-router.md`) is the primary entry point, routing component specifications to the appropriate operation.
+- **Code as Source of Truth**: All tokens and components stored in code
+- **Visual Browsing**: Localhost apps for exploring tokens, components, and relationships
+- **Intent-Based Discovery**: Search by what you want to do, not by token name
+- **Duplicate Detection**: Similarity analysis when adding new components
+- **Figma Integration**: Edit components visually in Figma
 
-### Sub-Areas
+### Step Processing Rules
 
-| # | Name | Purpose |
-|---|------|---------|
-| 700 | [Assessment](700-assessment/) | 7-step similarity analysis for new components |
-| 702 | [Operations](702-operations/) | Component CRUD operations (create, update, add variant) |
-
-### Reference Content
-
-- `design-system-guide.md` — Comprehensive design system guide
-- `design-system-router.md` — Router logic for component routing
-- `templates/` — Component and token templates
-
-### Prerequisites
-
-- Phase 4: UX Design (component specifications required)
+1. **READ COMPLETELY**: Always read the entire step file before action
+2. **FOLLOW SEQUENCE**: Execute all sections in order
+3. **WAIT FOR INPUT**: Halt at decision points and wait for user
+4. **SAVE STATE**: Update dialog tracking when completing steps
 
 ---
 
-## INITIALIZATION SEQUENCE
+## INITIALIZATION
 
 ### 1. Configuration Loading
 
 Load and read full config from `{project-root}/_bmad/wds/config.yaml` and resolve:
+- `project_name`, `output_folder`, `user_name`
+- `communication_language`, `document_output_language`
+- `design_system_mode` (none / basic / full)
 
-- `project_name`, `output_folder`, `user_name`, `communication_language`, `document_output_language`
+### 2. Agent Dialog Gate
 
-### 2. First Step
+1. Check `{output_folder}/_progress/agent-dialogs/` for pending design system dialogs
+2. If pending, present with status
+3. If none, suggest creating one
 
-Load and execute `design-system-router.md` to route the component specification.
+### 3. Activity Menu
 
-### Output
+```
+What would you like to do?
+
+[C] Create Design System     — Build a new design system from specs
+[I] Import Design System     — Bring in an existing design system
+[V] View Components          — Preview selected components in localhost
+[E] Edit Components          — Open selected components in Figma
+[B] Browse Design System     — Search and explore tokens and components in localhost
+```
+
+### Activity Routing
+
+| Choice | Workflow File | Steps Folder |
+|--------|--------------|--------------|
+| [C] | workflow-create.md | steps-c/ |
+| [I] | workflow-import.md | steps-i/ |
+| [V] | workflow-view.md | steps-v/ |
+| [E] | workflow-edit.md | steps-e/ |
+| [B] | workflow-browse.md | steps-b/ |
+
+---
+
+## CREATE DESIGN SYSTEM
+
+When creating or adding components, WDS runs duplicate detection internally:
+1. Scan existing components for similarity
+2. Compare attributes systematically
+3. Present decision if near-match found (reuse, extend, or create new)
+
+This replaces the old assessment-first router — duplicate detection is a step within creation, not a separate workflow.
+
+---
+
+## BROWSE DESIGN SYSTEM
+
+WDS generates a disposable localhost application from the current design system data:
+
+- **Token Explorer**: Airtable-style filterable/sortable view of all tokens
+- **Relationship Viewer**: Visualize how tokens connect (e.g., button styles → color tokens → spacing tokens)
+- **Intent Search**: "I need a shadow for cards" → shows relevant tokens with live previews
+- **Component Catalog**: Browse all components with rendered previews and state variations
+
+The app is regenerated from current data each time — always reflects the latest state.
+
+---
+
+## REFERENCE CONTENT
+
+| Location | Purpose |
+|----------|---------|
+| `data/design-system-guide.md` | Comprehensive design system guide |
+| `templates/` | Component, tokens, config, catalog templates |
+
+---
+
+## OUTPUT
 
 - `{output_folder}/D-Design-System/components/*.md`
 - `{output_folder}/D-Design-System/design-tokens.md`
 - `{output_folder}/D-Design-System/component-library-config.md`
+
+---
+
+## AFTER COMPLETION
+
+1. Update design log
+2. Suggest next action or return to Activity Menu

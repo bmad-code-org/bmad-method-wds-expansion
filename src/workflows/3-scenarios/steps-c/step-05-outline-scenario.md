@@ -15,7 +15,7 @@ If returning from a loop, continue with the next unfinished scenario.
 
 ## Template
 
-Load the full template: `{installed_path}/substeps/scenario-outline-template.md`
+Load the full template: `{installed_path}/data/scenario-outline-template.md`
 
 ---
 
@@ -116,7 +116,7 @@ Before proceeding to the next scenario, verify:
 
 1. Create folder: `{output_folder}/C-UX-Scenarios/[NN-slug]/`
 2. Create file: `{output_folder}/C-UX-Scenarios/[NN-slug]/[NN-slug].md`
-3. Use the template from substeps to structure the content
+3. Use the template from data/ to structure the content
 
 ---
 

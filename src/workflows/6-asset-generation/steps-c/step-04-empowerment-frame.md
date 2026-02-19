@@ -34,7 +34,7 @@ This step frames content to make users feel capable, show their transformation, 
 
 ## Badass Users Framework
 
-**Quick Reference:** See [substeps/04-badass-users-principles.md](substeps/04-badass-users-principles.md) for detailed framework.
+**Quick Reference:** See [data/04-badass-users-principles.md](../data/04-badass-users-principles.md) for detailed framework.
 
 **Core:** "You'll be able to..." not "Our product has..."
 
@@ -228,7 +228,7 @@ Once empowerment framing is defined:
 
 ## Example
 
-**See:** [substeps/04-example-empowerment-frame.md](substeps/04-example-empowerment-frame.md)
+**See:** [data/04-example-empowerment-frame.md](../data/04-example-empowerment-frame.md)
 
 This shows complete Badass Users framework application for hairdresser newsletter, demonstrating transformation framing, aha moment, capability reframing, cognitive load reduction, and skill focus
 

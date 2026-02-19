@@ -6,7 +6,7 @@
 
 ## Checklist
 
-Load the full checklist: `{installed_path}/substeps/quality-checklist.md`
+Load the full checklist: `{installed_path}/data/quality-checklist.md`
 
 ---
 

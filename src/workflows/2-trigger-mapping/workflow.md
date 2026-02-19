@@ -16,28 +16,34 @@ web_bundle: true
 
 Based on Effect Mapping by Mijo Balic & Ingrid Domingues (inUse). Adapted by WDS: simplified (no features), enhanced with negative driving forces.
 
+This uses **step-file architecture** for disciplined execution:
+
+### Step Processing Rules
+
+1. **READ COMPLETELY**: Always read entire step file before taking any action
+2. **FOLLOW SEQUENCE**: Execute all sections in order
+3. **LOAD NEXT**: When directed, load and execute next step
+4. **CHECKPOINT**: When a step says "wait for user", do NOT auto-proceed
+
+### Critical Rules (NO EXCEPTIONS)
+
+- **NEVER** load multiple step files simultaneously
+- **ALWAYS** read entire step file before execution
+- **NEVER** skip steps or optimize the sequence
+- **ALWAYS** follow the exact instructions in step file
+
 ### Two Paths
 
-- **From scratch** → Run workshops 201-205 in sequence
-- **From existing documentation** → Run 200-existing-documentation (synthesizes existing docs, fills gaps through conversation)
+- **From scratch** → step-01-overview.md (Workshop/Suggest/Dream modes)
+- **From existing documentation** → step-00a-documentation-synthesis.md
 
-### Sub-Workflows
+### Prerequisites
 
-| # | Name | Purpose |
-|---|------|---------|
-| 200 | [Existing Documentation](200-existing-documentation/workflow.md) | Extract Trigger Map from existing documentation (alternative to workshops) |
-| 201 | [Business Goals](201-business-goals/workflow.md) | Define vision and SMART objectives |
-| 202 | [Target Groups](202-target-groups/workflow.md) | Create personas with descriptions |
-| 203 | [Driving Forces](203-driving-forces/workflow.md) | Map positive and negative drivers per group |
-| 204 | [Prioritization](204-prioritization/workflow.md) | Rank groups and drivers |
-| 205 | [Feature Impact](205-feature-impact/workflow.md) | Score features against priorities |
-| 206 | [Document Generation](206-document-generation/workflow.md) | Transform trigger map data into comprehensive documentation |
-| 207 | [Trigger Map Poster](207-trigger-map-poster/workflow.md) | Generate visual trigger map poster |
-| 208 | [Handover](208-handover/workflow.md) | Package Phase 2 artifacts for handover |
+- Phase 1: Product Brief (required)
 
 ---
 
-## INITIALIZATION SEQUENCE
+## INITIALIZATION
 
 ### 1. Configuration Loading
 
@@ -45,12 +51,41 @@ Load and read full config from `{project-root}/_bmad/wds/config.yaml` and resolv
 
 - `project_name`, `output_folder`, `user_name`, `communication_language`, `document_output_language`
 
-### 2. First Step
+### 2. Agent Dialog Gate
 
-Load and execute `{installed_path}/steps-c/step-01-overview.md` to begin the trigger mapping workflow.
+1. Check `{output_folder}/_progress/agent-dialogs/` for pending trigger mapping dialogs
+2. If pending, present with status
+3. If none, suggest creating one
 
-### Output
+### 3. Mode Determination
+
+**Check invocation:**
+- "validate" / -v → Load and execute `{installed_path}/workflow-validate.md`
+- "existing" / from docs → Load and execute `{installed_path}/steps-c/step-00a-documentation-synthesis.md`
+- Default (create from scratch) → Load and execute `{installed_path}/steps-c/step-01-overview.md`
+
+---
+
+## REFERENCE CONTENT
+
+| Location | Purpose |
+|----------|---------|
+| `data/business-goals-template.md` | Business goals template |
+| `data/key-insights-structure.md` | Key insights structure |
+| `data/mermaid-formatting-guide.md` | Mermaid diagram formatting |
+| `data/quality-checklist.md` | Quality checklist |
+
+---
+
+## OUTPUT
 
 - `{output_folder}/B-Trigger-Map/trigger-map.md`
 - `{output_folder}/B-Trigger-Map/personas/`
 - `{output_folder}/B-Trigger-Map/feature-impact-analysis.md`
+
+---
+
+## AFTER COMPLETION
+
+1. Update design log
+2. Suggest next action or proceed to Phase 3: UX Scenarios

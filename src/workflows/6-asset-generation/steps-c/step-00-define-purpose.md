@@ -171,7 +171,7 @@ Once purpose is defined:
 
 ## Examples & Templates
 
-**See:** [substeps/00-purpose-examples.md](substeps/00-purpose-examples.md)
+**See:** [data/00-purpose-examples.md](../data/00-purpose-examples.md)
 
 This shows three complete examples:
 - Landing page hero (Problem Aware targeting)

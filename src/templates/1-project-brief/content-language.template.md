@@ -113,7 +113,26 @@
 
 ---
 
-## SEO Keywords
+## SEO Strategy
+
+### Page-Keyword Map
+
+| Page | URL Slug | Primary Keyword (SE) | Primary Keyword (EN) | {{#if has_german}}Primary Keyword (DE) |{{/if}}
+|------|----------|---------------------|---------------------|{{#if has_german}}---------------------|{{/if}}
+{{#each page_keyword_map}}
+| {{this.page}} | {{this.slug}} | {{this.keyword_se}} | {{this.keyword_en}} | {{#if ../has_german}}{{this.keyword_de}} |{{/if}}
+{{/each}}
+
+### URL Structure
+
+**Pattern:**
+```
+{{url_primary}}          → {{primary_language}}
+{{url_secondary}}        → {{secondary_language}}
+{{#if url_tertiary}}
+{{url_tertiary}}         → {{tertiary_language}}
+{{/if}}
+```
 
 ### Primary Keywords (by language)
 
@@ -123,6 +142,30 @@
 - {{this}}
 {{/each}}
 
+{{/each}}
+
+### Local SEO
+
+{{#if is_local_business}}
+| Property | Value |
+|----------|-------|
+| **Business Name** | {{business_name}} |
+| **Address** | {{business_address}} |
+| **Phone** | {{business_phone}} |
+| **Email** | {{business_email}} |
+| **Opening Hours** | {{business_hours}} |
+| **Google Business Profile** | {{google_business_status}} |
+| **Business Category** | {{business_category}} |
+{{else}}
+*Not a local business — skip this section*
+{{/if}}
+
+### Structured Data Plan
+
+| Page Type | Schema Type | Key Properties |
+|-----------|-------------|----------------|
+{{#each structured_data_plan}}
+| {{this.page_type}} | {{this.schema_type}} | {{this.properties}} |
 {{/each}}
 
 ### Keyword Usage Guidelines

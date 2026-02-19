@@ -126,6 +126,50 @@
 - {{this}}
 {{/each}}
 
+### Structured Data
+
+| Page Type | Schema Type | Key Properties |
+|-----------|-------------|----------------|
+{{#each structured_data}}
+| {{this.page_type}} | {{this.schema_type}} | {{this.properties}} |
+{{/each}}
+
+### Local SEO (if applicable)
+
+{{#if is_local_business}}
+- [ ] Google Business Profile claimed and verified
+- [ ] NAP consistency (Name, Address, Phone) across all pages
+- [ ] Business category set correctly
+- [ ] Service area defined
+- [ ] Photos uploaded
+{{else}}
+*Not a local business*
+{{/if}}
+
+### Performance & Infrastructure
+
+| Metric | Target |
+|--------|--------|
+| **Largest Contentful Paint (LCP)** | < 2.5 seconds |
+| **First Input Delay (FID)** | < 100ms |
+| **Cumulative Layout Shift (CLS)** | < 0.1 |
+| **Page Load (4G)** | < 3 seconds |
+| **Total Page Weight** | < 3MB |
+| **Individual Image Size** | < 200KB (hero < 400KB) |
+| **Mobile-Friendly** | Yes |
+| **Favicon** | All sizes (16, 32, 180, 192px) |
+
+### Security Headers
+
+| Header | Purpose |
+|--------|---------|
+| **Strict-Transport-Security (HSTS)** | Force HTTPS |
+| **Content-Security-Policy (CSP)** | Prevent XSS |
+| **X-Content-Type-Options** | Prevent MIME sniffing |
+| **X-Frame-Options** | Prevent clickjacking |
+| **Referrer-Policy** | Control referrer info |
+| **Permissions-Policy** | Restrict browser features |
+
 ### SEO Plugin/Tools
 
 {{seo_tools}}

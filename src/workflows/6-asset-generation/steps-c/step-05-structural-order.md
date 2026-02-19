@@ -33,7 +33,7 @@ Simon Sinek's Golden Circle provides the structural order that makes content per
 
 ## The Golden Circle
 
-**Quick Reference:** See [substeps/05-golden-circle-guide.md](substeps/05-golden-circle-guide.md) for detailed framework explanation.
+**Quick Reference:** See [data/05-golden-circle-guide.md](../data/05-golden-circle-guide.md) for detailed framework explanation.
 
 ```
 WHY (Emotion) → HOW (Method) → WHAT (Specifics)
@@ -207,7 +207,7 @@ Once structure is determined:
 
 ## Example
 
-**See:** [substeps/05-example-golden-circle.md](substeps/05-example-golden-circle.md)
+**See:** [data/05-example-golden-circle.md](../data/05-example-golden-circle.md)
 
 This shows complete WHY → HOW → WHAT sequencing for hairdresser newsletter content, with detailed rationale for each element's placement and order
 

@@ -14,31 +14,18 @@ web_bundle: true
 
 ## WORKFLOW ARCHITECTURE
 
-This phase routes to the appropriate brief workflow based on project configuration.
+This phase routes to the appropriate workflow mode and brief level.
 
-### Brief Level Routing
+### Step Processing Rules
 
-Load `brief_level` from `{output_folder}/wds-workflow-status.yaml:config.brief_level`:
-
-- **complete** → `{installed_path}/101-project-brief/workflow.md`
-- **simplified** → `{installed_path}/102-project-brief-simplified/workflow.md`
-
-### Sub-Workflows
-
-| # | Name | Purpose |
-|---|------|---------|
-| 100 | [Alignment & Signoff](100-alignment-signoff/workflow.md) | Secure stakeholder alignment before starting (optional, pre-Phase 1) |
-| 101 | [Project Brief](101-project-brief/workflow.md) | Full product brief through collaborative step-by-step discovery |
-| 102 | [Project Brief Simplified](102-project-brief-simplified/workflow.md) | Quick brief for smaller projects (5-10 minutes) |
-| 103 | [Content Language](103-content-language/workflow.md) | Define tone of voice, language strategy, and content guidelines |
-| 104 | [Inspiration Analysis](104-inspiration-analysis/workflow.md) | Analyze reference sites to document visual/UX preferences |
-| 105 | [Visual Direction](105-visual-direction/workflow.md) | Establish visual style, brand aesthetics, and design direction |
-| 106 | [Platform Requirements](106-platform-requirements/workflow.md) | Define technical boundaries and platform decisions |
-| 107 | [Handover](107-handover/workflow.md) | Package Phase 1 artifacts for handover to Phase 2 |
+1. **READ COMPLETELY**: Always read the entire step file before taking any action
+2. **FOLLOW SEQUENCE**: Execute all sections in order within a step
+3. **WAIT FOR INPUT**: Halt at decision points and wait for user
+4. **LOAD NEXT**: When directed, load and execute the next step
 
 ---
 
-## INITIALIZATION SEQUENCE
+## INITIALIZATION
 
 ### 1. Configuration Loading
 
@@ -47,10 +34,93 @@ Load and read full config from `{project-root}/_bmad/wds/config.yaml` and resolv
 - `project_name`, `output_folder`, `user_name`, `communication_language`, `document_output_language`
 - `brief_level` from `{output_folder}/wds-workflow-status.yaml:config.brief_level`
 
-### 2. Route to Brief Workflow
+### 2. Agent Dialog Gate
 
-Based on `brief_level`, load and execute the appropriate sub-workflow.
+1. Check `{output_folder}/_progress/agent-dialogs/` for pending project brief dialogs
+2. If pending, present with status
+3. If none, suggest creating one
 
-### Output
+### 3. Mode Determination
+
+**Check invocation:**
+- "validate" / -v → Load and execute `{installed_path}/workflow-validate.md`
+- Default (create) → Continue to step 3
+
+### 4. Brief Level Routing
+
+Based on `brief_level`:
+
+- **simplified** → Load and execute `{installed_path}/steps-c/step-00-simplified-brief.md`
+- **complete** → Load and execute `{installed_path}/steps-c/step-01-init.md`
+
+---
+
+## STEPS
+
+### Complete Brief Flow
+
+| Step | Name | Purpose |
+|------|------|---------|
+| 01 | Init | Load context, confirm readiness |
+| 02 | Vision | Explore and document project vision |
+| 03 | Positioning | Define market positioning |
+| 04 | Create VTC | Value Trigger Chain (refs `shared/vtc-workshop/`) |
+| 05 | Business Model | Define revenue/business model |
+| 06 | Business Customers | Identify B2B customers (if applicable) |
+| 07 | Target Users | Define end users |
+| 07a | Product Concept | Clarify product concept |
+| 08 | Success Criteria | Define measurable success metrics |
+| 09 | Competitive Landscape | Analyze competition |
+| 10 | Constraints | Document project constraints |
+| 10a | Platform Strategy | Define platform approach |
+| 11 | Tone of Voice | Establish brand voice |
+| 11a | Create VTC | Second VTC opportunity (refs `shared/vtc-workshop/`) |
+| 12 | Synthesize | Create the Product Brief document |
+| 13 | Content Init | Initialize content & language strategy |
+| 14 | Personality | Define brand personality |
+| 15 | Tone | Refine tone guidelines |
+| 16 | Languages | Language strategy |
+| 17 | SEO Keywords | Define keyword map |
+| 17a | Content Structure | Content architecture |
+| 18 | Content Synthesize | Create Content & Language document |
+| 19 | Inspiration Workshop | Analyze reference sites |
+| 20 | Visual Init | Initialize visual direction |
+| 21 | Existing Brand | Document existing brand assets |
+| 22 | References | Collect visual references |
+| 23 | Design Style | Define design style |
+| 24 | Layout & Effects | Layout patterns and effects |
+| 25 | Imagery | Photography and illustration direction |
+| 26 | Visual Synthesize | Create Visual Direction document |
+| 27 | Platform Init | Initialize platform requirements |
+| 28 | Tech Stack | Define technology choices |
+| 29 | Integrations | Third-party integrations |
+| 30 | Contact Strategy | Contact forms and communication |
+| 31 | Multilingual | Multi-language setup |
+| 32 | Platform Synthesize | Create Platform Requirements document |
+| 33 | Analyze Brief | Review all Phase 1 artifacts |
+| 34 | Create Summary | Generate handover summary |
+| 35 | Update Design Log | Record Phase 1 decisions |
+| 36 | Provide Activation | Activation prompt for Phase 2 |
+
+---
+
+## REFERENCE CONTENT
+
+| Location | Purpose |
+|----------|---------|
+| `data/vision-*.md` | Vision workshop guides |
+| `data/positioning-*.md` | Positioning workshop guides |
+| `data/tone-of-voice-*.md` | Tone of voice templates and examples |
+
+---
+
+## OUTPUT
 
 - `{output_folder}/A-Product-Brief/project-brief.md`
+
+---
+
+## AFTER COMPLETION
+
+1. Update design log
+2. Suggest next action or proceed to Phase 2: Trigger Mapping
