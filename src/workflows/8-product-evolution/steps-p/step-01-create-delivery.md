@@ -79,7 +79,7 @@ Key focus areas:
 After creating the delivery:
 
 ```
-[C] Continue to step-05-hand-off.md
+[C] Continue to step-02-hand-off.md (next step in this activity)
 ```
 
 ---

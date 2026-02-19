@@ -152,7 +152,7 @@ delivery:
 After validation:
 
 ```
-[C] Continue to step-07-monitor.md
+[M] Return to Activity Menu — suggest [P] Deploy
 ```
 
 ---

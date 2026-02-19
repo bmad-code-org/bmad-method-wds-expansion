@@ -144,7 +144,7 @@ delivery:
 After handoff:
 
 ```
-[C] Continue to step-06-validate.md
+[M] Return to Activity Menu — suggest [T] Acceptance Test
 ```
 
 ---

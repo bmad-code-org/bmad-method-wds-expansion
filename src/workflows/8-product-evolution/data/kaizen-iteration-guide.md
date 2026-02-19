@@ -87,7 +87,7 @@ From monitoring and feedback - tackle new issues.
 **Return to Step 01 with your next opportunity:**
 
 ```
-[K] Return to step-01-identify-opportunity.md
+[M] Return to Activity Menu — start next cycle with [A] Analyze Product
 ```
 
 **See:** [data/monitoring-templates.md](../data/monitoring-templates.md) for Kaizen Cycle Log template
@@ -118,7 +118,7 @@ From monitoring and feedback - tackle new issues.
 ### Path A: Continue Kaizen Cycle
 
 ```
-[K] Return to step-01-identify-opportunity.md
+[M] Return to Activity Menu — start next cycle with [A] Analyze Product
     Start next improvement cycle
 ```
 

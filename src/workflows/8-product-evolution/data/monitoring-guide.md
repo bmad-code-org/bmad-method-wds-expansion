@@ -105,7 +105,7 @@ delivery:
 After monitoring and learning:
 
 ```
-[C] Continue to step-08-iterate.md
+[M] Return to Activity Menu — see also data/kaizen-iteration-guide.md
 ```
 
 ---

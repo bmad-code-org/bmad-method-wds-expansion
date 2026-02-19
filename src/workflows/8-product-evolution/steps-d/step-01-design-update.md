@@ -103,7 +103,7 @@ Key sections:
 After designing the update:
 
 ```
-[C] Continue to step-04-create-delivery.md
+[M] Return to Activity Menu — suggest [I] Implement
 ```
 
 ---

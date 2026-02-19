@@ -100,7 +100,7 @@ Key elements:
 After gathering context:
 
 ```
-[C] Continue to step-03-design-update.md
+[M] Return to Activity Menu — suggest [S] Scope Improvement
 ```
 
 ---

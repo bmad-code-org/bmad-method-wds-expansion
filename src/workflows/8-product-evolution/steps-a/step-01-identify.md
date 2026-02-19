@@ -116,7 +116,7 @@ Talk to your team:
 After identifying the opportunity:
 
 ```
-[C] Continue to step-02-gather-context.md
+[C] Continue to step-02-gather-context.md (next step in this activity)
 ```
 
 ---
