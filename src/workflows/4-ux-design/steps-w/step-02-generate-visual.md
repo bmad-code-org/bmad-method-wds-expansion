@@ -9,10 +9,17 @@
 ### By Tool
 
 **Nano Banana:**
-1. Compose prompt describing the page layout, sections, and style
-2. Generate image
-3. Present to user for feedback
-4. Iterate if needed
+
+<action>Load and execute: step-02w-nb-compose-prompt.md</action>
+
+This sub-workflow handles:
+- Agent dialog creation (tracks prompts and generation history)
+- Image description extraction from the page spec
+- User creative direction (overrides and enhancements)
+- Prompt composition with compression strategy
+- Generation, review, and iteration loop
+
+Reference guide: `{installed_path}/data/guides/NANO-BANANA-PROMPT-GUIDE.md`
 
 **Figma:**
 1. Guide user through creating the design in Figma

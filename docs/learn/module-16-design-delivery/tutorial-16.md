@@ -376,9 +376,11 @@ Design phase complete. Ready for implementation.
 
 ---
 
-## You've Completed the Design Phase!
+## You've Completed the Design & Delivery Phase!
 
 **Congratulations!** You've completed:
+
+**Design (Modules 7-13):**
 - ✅ Module 07: Design Phase Introduction
 - ✅ Module 08: Outline Scenarios
 - ✅ Module 09: Conceptual Sketching
@@ -386,15 +388,17 @@ Design phase complete. Ready for implementation.
 - ✅ Module 11: Conceptual Specifications
 - ✅ Module 12: Functional Components
 - ✅ Module 13: Design System
+
+**Build & Deliver (Modules 14-16):**
 - ✅ Module 14: Agentic Development
-- ✅ Module 15: Visual Design
+- ✅ Module 15: Visual Design & Assets
 - ✅ Module 16: Design Delivery
 
-**Your design work is complete and ready for implementation.**
+**Your design work is complete and handed off for implementation.**
 
 ---
 
-## Next Phase: Implementation
+## Next: Validate & Evolve
 
 **[Module 17: Usability Testing →](../module-17-usability-testing/module-17-usability-testing-overview.md)**
 

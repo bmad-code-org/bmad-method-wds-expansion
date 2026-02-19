@@ -321,7 +321,7 @@ Do not use inline styles for elements that have component definitions.
 
 ---
 
-## You've Completed Module 14!
+## You've Completed Module 13!
 
 **Your design system mode is optimized.** You understand:
 - How your mode works

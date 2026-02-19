@@ -29,6 +29,7 @@ Execute steps in `{installed_path}/steps-w/`:
 
 **Reference data:**
 - `{installed_path}/data/guides/HTML-VS-VISUAL-STYLES.md` — choosing between approaches
+- `{installed_path}/data/guides/NANO-BANANA-PROMPT-GUIDE.md` — prompt composition for AI image generation
 
 ---
 

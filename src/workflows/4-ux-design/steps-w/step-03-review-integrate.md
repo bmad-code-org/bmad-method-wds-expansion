@@ -13,6 +13,11 @@ Show the generated visual to the user with notes on:
 - Any deviations from the specification
 - Suggested improvements
 
+**For Nano Banana results:**
+- AI-generated text in images is often garbled — do NOT rely on the image for exact text content. The spec is the source of truth for all text.
+- Focus review on: **layout correctness**, **color accuracy**, **mood/feeling**, **section presence and order**
+- The image is a design exploration tool, not a pixel-perfect mockup
+
 ### 2. Collect Feedback
 
 - Does this match your vision?
@@ -28,7 +33,13 @@ Update the page specification with:
 
 ### 4. Save
 
-Store visual artifact in `{output_folder}/D-UX-Design/[scenario]/visuals/`
+Store visual artifact in the appropriate location:
+
+- **UI mockups (page/section):** `{output_folder}/D-Design-System/01-Visual-Design/design-concepts/`
+- **Image assets (photos/illustrations):** `{output_folder}/D-Design-System/01-Visual-Design/design-concepts/` (move to `02-Assets/images/` when finalized)
+- **Legacy path:** `{output_folder}/D-UX-Design/[scenario]/visuals/` (if project uses older folder structure)
+
+**Update the agent dialog** with the accepted result and save path.
 
 ---
 

@@ -14,7 +14,7 @@ We read through the BMM PRD workflow (all 11 steps, nice work!) and have a few q
 
 **Placement** — Where do platform requirements land in the PRD? Background context the agent just uses? A dedicated "Technical Foundation" section? Or folded naturally into Steps 7/9/10?
 
-**Timing** — Platform requirements are ready early, but design deliveries come after Phase 6. Does the PRD support incremental updates as WDS phases complete?
+**Timing** — Platform requirements are ready early, but design deliveries come from Phase 4 [H] Handover. Does the PRD support incremental updates as WDS phases complete?
 
 **Reference format** — Simple file reference, summary + link to source, or inline content with attribution? We lean toward summary + reference.
 

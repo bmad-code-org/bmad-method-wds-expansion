@@ -24,7 +24,16 @@ How would you like to create the visual design?
 [W] Wireframe — Quick layout sketch (fast, structural)
 ```
 
-### 3. Capture Choice
+### 3. Setup Gate (Nano Banana only)
+
+If user selects [N]:
+1. Check for existing agent dialog for this page in `{output_folder}/_progress/agent-dialogs/`
+   - If active dialog found: offer to resume previous visual generation session
+2. If first time using Nano Banana in this project:
+   - Route to `step-00-nb-setup.md` to verify MCP connection
+   - Return here after verification succeeds
+
+### 4. Capture Choice
 
 Record the chosen approach and any specific instructions (style preferences, reference images, etc.).
 
