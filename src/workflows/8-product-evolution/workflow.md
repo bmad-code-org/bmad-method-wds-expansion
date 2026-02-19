@@ -1,32 +1,35 @@
 ---
 name: product-evolution
-description: Continuous improvement through strategic, incremental changes (Kaizen)
+description: Brownfield improvements — the full WDS pipeline in miniature for existing products
 web_bundle: true
 ---
 
-# Phase 8: Product Evolution (Kaizen)
+# Phase 8: Product Evolution
 
-**Goal:** Continuous improvement through strategic, incremental changes.
+**Goal:** Improve existing products through targeted, incremental changes — running the full WDS pipeline in miniature for each improvement.
 
-**Your Role:** Guide the designer through targeted improvements to existing products using Kaizen methodology.
+**Your Role:** You work like a developer on the team. Pick a view that needs improving, scope it as a scenario, design the solution, implement it in a branch, test it, and deploy. Each cycle is one focused improvement.
 
 ---
 
 ## WORKFLOW ARCHITECTURE
 
-Phase 8 uses step-file architecture for disciplined execution.
+Phase 8 is **menu-driven**, not linear. Each activity is a compressed version of a full WDS phase.
 
 ### Core Principles
 
-- **Kaizen**: Small, incremental, data-driven changes
-- **Two contexts**: Existing product entry point OR post-launch continuous improvement
-- **Iterative cycles**: Each cycle focuses on one improvement, measures impact, informs next cycle
+- **Brownfield First**: You're joining an existing product, not building from scratch
+- **Focused Scope**: One view, one scenario, one improvement at a time
+- **Full Pipeline in Miniature**: Analyze → Scope → Design → Implement → Test → Deploy
+- **Branch-Based**: Every change lives in its own branch until deployed
+- **Kaizen**: Small, incremental, data-driven — each cycle informs the next
 
 ### Step Processing Rules
 
 1. **READ COMPLETELY**: Always read the entire step file before action
 2. **FOLLOW SEQUENCE**: Execute all sections in order
 3. **WAIT FOR INPUT**: Halt at decision points and wait for user
+4. **SAVE STATE**: Update dialog tracking when completing steps
 
 ---
 
@@ -44,28 +47,29 @@ Load and read full config from `{project-root}/_bmad/wds/config.yaml` and resolv
 2. If pending, present with status
 3. If none, suggest creating one
 
-### 3. Context Determination
+### 3. Activity Menu
 
-Two entry contexts:
-- **Existing Product Entry**: Joining a product to solve a strategic challenge -> Start at step-01
-- **Continuous Improvement**: Iterating on a live product based on data -> Start at step-01
+```
+What would you like to do?
 
----
+[A] Analyze Product          — Understand current state, find improvement targets
+[S] Scope Improvement        — Create a scenario for a specific update
+[D] Design Solution          — Sketch and specify the update
+[I] Implement                — Code in a new branch
+[T] Acceptance Test          — Test against spec
+[P] Deploy                   — PR and deliver to the team
+```
 
-## STEPS
+### Activity Routing
 
-Execute steps in `{installed_path}/steps-c/`:
-
-| Step | File | Purpose |
-|------|------|---------|
-| 01 | step-01-identify-opportunity.md | Identify strategic challenge or improvement |
-| 02 | step-02-gather-context.md | Understand current state |
-| 03 | step-03-design-update.md | Design targeted improvements |
-| 04 | step-04-create-delivery.md | Package as DD-XXX |
-| 05 | step-05-hand-off.md | Hand off to BMad |
-| 06 | step-06-validate.md | Validate implementation |
-| 07 | step-07-monitor.md | Monitor impact |
-| 08 | step-08-iterate.md | Start next Kaizen cycle |
+| Choice | Workflow File | Steps Folder | Borrows From |
+|--------|--------------|--------------|--------------|
+| [A] | workflow-analyze.md | steps-a/ | Phase 3 (scenarios) |
+| [S] | workflow-scope.md | steps-s/ | Phase 3 (scenarios) |
+| [D] | workflow-design.md | steps-d/ | Phase 4 (UX design) |
+| [I] | workflow-implement.md | steps-i/ | Phase 5 (development) |
+| [T] | workflow-test.md | steps-t/ | Phase 5 [T] (testing) |
+| [P] | workflow-deploy.md | steps-p/ | Phase 4 [H] (delivery) |
 
 ---
 
@@ -84,13 +88,14 @@ Execute steps in `{installed_path}/steps-c/`:
 
 ## OUTPUT
 
-- Design Deliveries: `{output_folder}/deliveries/DD-XXX.yaml`
-- Test Scenarios: `{output_folder}/test-scenarios/TS-XXX.yaml`
-- Impact Reports: `{output_folder}/analytics/DD-XXX-impact-report.md`
+- Scenarios: `{output_folder}/evolution/scenarios/`
+- Specifications: `{output_folder}/evolution/specs/`
+- Test Reports: `{output_folder}/evolution/test-reports/`
+- Git branches with implementation
 
 ---
 
 ## AFTER COMPLETION
 
 1. Update design log
-2. Return to step-01 for next Kaizen cycle (continuous improvement never stops!)
+2. Suggest next improvement or return to Activity Menu
