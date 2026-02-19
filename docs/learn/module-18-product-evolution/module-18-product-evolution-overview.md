@@ -113,31 +113,48 @@ Same structure. Same discipline. The steps are the same — the scope is smaller
 
 ---
 
+## The 6-Activity Kaizen Cycle
+
+Phase 8 is **menu-driven** — each improvement cycle picks the activity it needs:
+
+```
+[A] Analyze Product      — Understand what exists, identify targets
+[S] Scope Improvement    — Define the change, write the scenario
+[D] Design Solution      — Design the change (borrows from Phase 4)
+[I] Implement            — Build the change (borrows from Phase 5)
+[T] Acceptance Test      — Verify against specs (borrows from Phase 5)
+[P] Deploy               — Package and deliver (borrows from Phase 4)
+```
+
+This is a **Kaizen cycle** — continuous, incremental improvement. After deploying one change, you return to [A] Analyze for the next opportunity.
+
+---
+
 ## Types of Evolution
 
-### Feature Additions
+### Feature Additions → [A] → [S] → [D] → [I] → [T] → [P]
 
 A new capability that didn't exist before. This is the closest to greenfield within brownfield — you're adding something new to an existing product.
 
-**Full WDS cycle:** Trigger map → Scenario → Specification → Build → Test → Deliver
+**Full cycle through all 6 activities.**
 
-### Feature Modifications
+### Feature Modifications → [A] → [S] → [D] → [I] → [T] → [P]
 
 An existing capability needs to change. User feedback, business pivot, or better idea.
 
-**Compressed cycle:** Trigger map → Update spec → Build change → Test → Deliver
+**Same cycle, but [A] Analyze focuses on the existing implementation and [S] Scope defines what changes vs what stays.**
 
-### Bug Fixes
+### Bug Fixes → [A] → [I] → [T] → [P]
 
 Something doesn't work as specified.
 
-**Quick cycle:** Check spec → Fix implementation (or fix spec) → Test → Document
+**Shortened cycle — skip [S] Scope and [D] Design if the spec is correct. Go straight to implementation.**
 
-### Optimizations
+### Optimizations → [A] → [S] → [I] → [T] → [P]
 
 Same functionality, better experience. Faster, smoother, more accessible.
 
-**Focused cycle:** Identify improvement → Update spec if needed → Implement → Test
+**Skip [D] Design unless the optimization changes the visual. Focus on implementation and verification.**
 
 ---
 

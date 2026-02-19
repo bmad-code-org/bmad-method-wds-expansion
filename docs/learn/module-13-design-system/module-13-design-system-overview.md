@@ -116,6 +116,22 @@ No design system at all. Each page is self-contained with inline styling. Best f
 
 ---
 
+## The 5-Activity Workflow
+
+In the WDS workflow (Phase 7), the design system is managed through a menu-driven approach:
+
+```
+[C] Create Design System    — Build from scratch or from component library
+[I] Import Design System    — Capture an existing system from a live product
+[V] View Components         — Preview components in a disposable localhost app
+[E] Edit Components         — Open components in Figma for visual refinement
+[B] Browse Design System    — Explore tokens, relationships, and components
+```
+
+The [B] Browse activity generates a disposable localhost application that lets you search tokens by intent ("I need a calm background color"), view relationships between design tokens, and browse the component catalog — like an Airtable-like interface for your design system.
+
+---
+
 ## Lessons
 
 ### [Lesson 1: Understanding the Four Modes](lesson-01-understanding-modes.md)

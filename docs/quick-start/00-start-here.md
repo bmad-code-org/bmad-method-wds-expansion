@@ -36,8 +36,8 @@ You work with AI agents to design your product step by step — from understandi
 | Agent | Domain | What They Do |
 |-------|--------|--------------|
 | **Saga** | Strategy | Project Brief, Trigger Map, Platform Requirements |
-| **Freya** | Design | Scenarios, Sketches, Specifications, Components |
-| **Idunn** | Implementation | Development, Testing, Evolution |
+| **Freya** | Design & Assets | Scenarios, Sketches, Specifications, Components, Asset Generation, Handover |
+| **Idunn** | Development & Evolution | 7-activity menu: Prototyping, Development, Bugfixing, Evolution, Analysis, Reverse Engineering, Testing |
 
 You talk to agents. They guide you through each step.
 
@@ -91,11 +91,12 @@ WDS creates this in your `docs/` folder:
 
 | Folder | Phase | Contains |
 |--------|-------|----------|
-| `A-Product-Brief/` | 1 | Vision, goals, constraints |
-| `B-Trigger-Map/` | 2 | Personas, driving forces, features |
-| `C-UX-Scenarios/` | 4 | User journeys, page specs, sketches |
-| `D-Design-System/` | 5 | Components, tokens, patterns |
-| `E-PRD/` | 3 | Technical requirements (optional) |
+| `A-Product-Brief/` | 1 — Project Brief | Vision, goals, constraints |
+| `B-Trigger-Map/` | 2 — Trigger Mapping | Personas, driving forces, features |
+| `C-UX-Scenarios/` | 3-4 — Scenarios & UX Design | User journeys, page specs, sketches |
+| `D-Design-System/` | 7 — Design System | Components, tokens, patterns |
+| `E-Assets/` | 6 — Asset Generation | Generated images, icons, wireframes |
+| `E-PRD/` | — | Technical requirements (optional) |
 | `F-Agent-Dialogs/` | — | Conversation logs, decisions |
 
 ---
@@ -120,10 +121,10 @@ WDS creates this in your `docs/` folder:
 | 06 | [Storyboarding](06-storyboarding.md) | 10 min |
 | 07 | [Conceptual Specifications](07-conceptual-specifications.md) | 20 min |
 | 08 | [Functional Components](08-functional-components.md) | 10 min |
-| 09 | [Visual Design](09-visual-design.md) | 15 min |
-| 10 | [Design Delivery](10-design-delivery.md) | 10 min |
+| 09 | [Visual Design & Assets](09-visual-design.md) | 15 min |
+| 10 | [Design Handover](10-design-delivery.md) | 10 min |
 
-### Implementation Phase (Idunn)
+### Build & Evolve Phase (Idunn)
 
 | # | Tutorial | Time |
 |---|----------|------|

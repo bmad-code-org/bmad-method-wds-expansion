@@ -93,7 +93,7 @@ Each module contains:
 | 05 | [Platform Requirements](../module-05-platform-requirements/module-05-platform-requirements-overview.md) | Saga | 30 min |
 | 06 | [Trigger Mapping](../module-06-trigger-mapping/module-06-overview.md) | Saga | 95-125 min |
 
-### Design Phase (Modules 7-16) — Agents: Freya + Idunn
+### Design Phase (Modules 7-13) — Agent: Freya
 
 | Module | Title | Agent | Focus | Time |
 |--------|-------|-------|-------|------|
@@ -104,11 +104,16 @@ Each module contains:
 | 11 | [Conceptual Specifications](../module-11-conceptual-specifications/module-11-conceptual-specifications-overview.md) | Freya | UX | 60 min |
 | 12 | [Functional Components](../module-12-functional-components/module-12-functional-components-overview.md) | Freya | UX | 45 min |
 | 13 | [Design System](../module-13-design-system/module-13-design-system-overview.md) | Freya | Systems | 30 min |
-| 14 | [Agentic Development](../module-14-agentic-development/module-14-agentic-development-overview.md) | Idunn | Prototyping | 60 min |
-| 15 | [Visual Design](../module-15-visual-design/module-15-visual-design-overview.md) | Freya | Visual | 60 min |
-| 16 | [Design Delivery](../module-16-design-delivery/module-16-design-delivery-overview.md) | Freya | Delivery | 45 min |
 
-### Verification Phase (Modules 17-18) — Agents: Freya + Idunn
+### Build & Deliver Phase (Modules 14-16) — Agents: Freya + Idunn
+
+| Module | Title | Agent | Focus | Time |
+|--------|-------|-------|-------|------|
+| 14 | [Agentic Development](../module-14-agentic-development/module-14-agentic-development-overview.md) | Idunn | 7-activity menu | 60 min |
+| 15 | [Visual Design & Assets](../module-15-visual-design/module-15-visual-design-overview.md) | Freya | Asset pipeline | 60 min |
+| 16 | [Design Delivery](../module-16-design-delivery/module-16-design-delivery-overview.md) | Freya | Handover | 45 min |
+
+### Validate & Evolve (Modules 17-18) — Agents: Freya + Idunn
 
 | Module | Title | Agent | Time |
 |--------|-------|-------|------|
@@ -125,7 +130,9 @@ Each module contains:
 
 **Strategy Only:** Modules 1-6 (~4 hours)
 
-**Design Deep Dive:** Modules 7-16 (~6 hours)
+**Design Deep Dive:** Modules 7-13 (~5 hours)
+
+**Build & Deliver:** Modules 14-16 (~3 hours)
 
 **Phase-Specific:** Jump to any phase as needed
 
@@ -137,11 +144,13 @@ WDS uses three AI agents, each with a specific domain:
 
 | Agent | Domain | Phase | Modules |
 |-------|--------|-------|---------|
-| **Saga** | Strategy | 1-Strategy | 3-6 |
-| **Freya** | UX & Visual Design | 2-Design | 7-13, 15-17 |
-| **Idunn** | Prototyping & Verification | 3-Build & Verify | 14, 18 |
+| **Saga** | Strategy | Strategy | 3-6 |
+| **Freya** | UX, Visual Design & Assets | Design & Deliver | 7-13, 15-17 |
+| **Idunn** | Development & Evolution | Build & Evolve | 14, 18 |
 
 Each agent maintains focus on their domain while coordinating with the others.
+
+**Idunn's 7 activities** (Module 14): Prototyping, Development, Bugfixing, Evolution, Analysis, Reverse Engineering, and Acceptance Testing — all menu-driven from a single entry point.
 
 ---
 

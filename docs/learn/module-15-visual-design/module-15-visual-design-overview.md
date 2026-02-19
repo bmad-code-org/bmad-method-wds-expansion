@@ -154,9 +154,24 @@ You interact with Figma through two tools:
 
 **Figma MCP** — connects your AI coding agent directly to Figma. The agent can read your Figma designs, extract styles, and apply them to code — without you manually exporting or copying values.
 
-### AI Image Generation
+### AI Asset Generation (Phase 6 Pipeline)
 
-Generate visual concepts, mood boards, or inspiration images to inform your design direction. Use these as input for specifications or as reference for the coding agent.
+WDS Phase 6 provides a full **creative production pipeline** for generating visual assets with AI:
+
+```
+[W] Wireframes       — Structural layouts from page specs
+[P] Page Designs     — Full page compositions
+[U] UI Elements      — Buttons, cards, forms, components
+[I] Icons            — Icon sets matching your design system
+[M] Images           — Photos, illustrations, backgrounds
+[V] Videos           — Motion content and animations
+[C] Content          — Strategic text (5-model framework)
+[E] Export to Figma  — Push assets to Figma
+```
+
+Each activity uses **style libraries** — predefined design styles (minimal, corporate, brutalist, organic, playful, editorial) and content styles (photorealistic, illustration, watercolor, isometric, flat design, etc.) with prompt keywords for consistent AI generation.
+
+**Batch mode** generates all assets of a type in one session, using earlier results as reference images for visual consistency across the set.
 
 ---
 

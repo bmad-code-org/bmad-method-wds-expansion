@@ -1,6 +1,6 @@
 # Module 16: Design Delivery
 
-**Time: 45 min | Agent: Freya | Phase: Design | Focus: Delivery**
+**Time: 45 min | Agent: Freya | Phase: UX Design [H] Handover | Focus: Delivery**
 
 ---
 
@@ -69,24 +69,26 @@ A design delivery must be a **complete, testable flow**. This means:
 - A button component (not a flow at all)
 - Half the dashboard with placeholder pages
 
-If a flow isn't complete, go back to Phase 4-5 and finish it.
+If a flow isn't complete, go back to the design activities in Phase 4 and finish it.
 
 ---
 
 ## The Delivery Process
 
+In the WDS workflow, design delivery is the **[H] Handover** activity within Phase 4 (UX Design). When Freya detects that a flow is complete, she initiates the handover:
+
 ```
-Phase 6.1: Is the flow complete?
+Step 1: Detect completion — Is the flow complete and testable?
     ↓
-Phase 6.2: Create Design Delivery (DD-XXX.yaml)
+Step 2: Create Design Delivery (DD-XXX.yaml)
     ↓
-Phase 6.3: Create Test Scenario (TS-XXX.yaml)
+Step 3: Create Test Scenario (TS-XXX.yaml)
     ↓
-Phase 6.4: Handoff Dialog (20-30 min with development team)
+Step 4: Handoff Dialog (20-30 min with development team)
     ↓
-Phase 6.5: Hand off (mark as in_development)
+Step 5: Hand off (mark as in_development)
     ↓
-Phase 6.6: Continue with next flow (return to Phase 4-5)
+Step 6: Continue with next flow (return to design activity)
 ```
 
 **This is iterative.** You don't deliver everything at once. As soon as one flow is complete, package it and hand it off. Then start the next flow while development builds the first one.

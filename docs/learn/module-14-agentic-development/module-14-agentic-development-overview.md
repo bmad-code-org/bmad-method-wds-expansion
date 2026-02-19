@@ -24,6 +24,24 @@ Whether you're exploring possibilities or building the final product, the proces
 
 ---
 
+## The 7-Activity Menu
+
+Agentic development is **menu-driven**, not linear. When you enter Phase 5, you choose what you need:
+
+```
+[P] Prototyping           — Build throwaway prototypes to validate ideas
+[D] Development           — Write production code from approved specs
+[F] Bugfixing             — Systematically fix bugs in existing code
+[E] Evolution             — Add features to existing products
+[A] Analysis              — Investigate codebase, architecture, patterns
+[R] Reverse Engineering   — Capture existing product as WDS specifications
+[T] Acceptance Testing    — Verify implementation against specs
+```
+
+Each activity has its own workflow with dedicated steps. The core agentic loop (plan → execute → evaluate → update) applies to all of them — the context differs.
+
+---
+
 ## The Agent Dialog
 
 Every agentic development session starts with an **Agent Dialog** — a structured document that organizes the work.
@@ -139,10 +157,10 @@ docs/F-Agent-Dialogs/
 
 Both Freya and Idunn can do agentic development:
 
-| Agent | When to use |
-|-------|-------------|
-| **Freya** | Design exploration — dream up visuals, components, page layouts. Generate inspiration for specifications. |
-| **Idunn** | Implementation — generate working code from specifications. Build prototypes, features, production code. |
+| Agent | Activities | When to use |
+|-------|-----------|-------------|
+| **Freya** | [P] Prototyping, [A] Analysis | Design exploration — dream up visuals, components, page layouts. Investigate and understand existing products. |
+| **Idunn** | [D] Development, [F] Bugfixing, [E] Evolution, [R] Reverse Engineering, [T] Acceptance Testing | Implementation — generate working code from specifications. Fix bugs, add features, test against specs. |
 
 The process is the same. The domain differs.
 
