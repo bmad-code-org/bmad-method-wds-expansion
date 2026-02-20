@@ -85,7 +85,7 @@ WDS UX Expert
 - Status: In Development (BMad)
 - Handed off: [Date]
 - Expected completion: [Date]
-- Next: Validation (Phase 9)
+- Next: Validation (Phase 5 [T] Acceptance Testing)
 
 ## DD-002: [Flow Name]
 
@@ -138,10 +138,10 @@ Week 1: Design Flow 1
 Week 2: Handoff Flow 1 → BMad builds Flow 1
         Design Flow 2
 Week 3: Handoff Flow 2 → BMad builds Flow 2
-        Test Flow 1 (Phase 9)
+        Test Flow 1 (Phase 5 [T])
         Design Flow 3
 Week 4: Handoff Flow 3 → BMad builds Flow 3
-        Test Flow 2 (Phase 9)
+        Test Flow 2 (Phase 5 [T])
         Design Flow 4
 ```
 
@@ -158,11 +158,11 @@ Week 2-4: BMad builds DD-001
 Week 3-4: Design DD-002
 Week 4: Handoff DD-002
 Week 4-6: BMad builds DD-002
-Week 5: Test DD-001 (Phase 9)
+Week 5: Test DD-001 (Phase 5 [T])
 Week 5-6: Design DD-003
 Week 6: Handoff DD-003
 Week 6-8: BMad builds DD-003
-Week 7: Test DD-002 (Phase 9)
+Week 7: Test DD-002 (Phase 5 [T])
 Week 7-8: Design DD-004
 ```
 

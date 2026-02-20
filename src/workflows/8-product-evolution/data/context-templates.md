@@ -1,6 +1,6 @@
 # Context Templates
 
-Templates for gathering context in Phase 10 (Product Evolution).
+Templates for gathering context in Phase 8 (Product Evolution).
 
 ---
 
@@ -216,11 +216,11 @@ Example:
 
 ## Next Steps
 
-1. Design inline onboarding (Step 10.3)
-2. Create Design Delivery (Step 10.4)
-3. Hand off to BMad (Step 10.5)
-4. Validate implementation (Step 10.6)
-5. Monitor impact (Step 10.7)
+1. Design inline onboarding (Step 03)
+2. Create Design Delivery (Step 04)
+3. Hand off to BMad (Step 05)
+4. Validate implementation (Step 06)
+5. Monitor impact (Step 07)
 ```
 
 ---

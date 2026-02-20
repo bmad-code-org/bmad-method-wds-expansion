@@ -1,6 +1,6 @@
 # Design Templates
 
-Templates for designing incremental updates in Phase 10.
+Templates for designing incremental updates in Phase 8 (Product Evolution).
 
 ---
 

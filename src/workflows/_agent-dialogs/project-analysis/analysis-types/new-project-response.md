@@ -127,7 +127,7 @@ Existing Documentation:
 
 **CRITICAL**: After presenting the analysis, immediately load and execute Phase 0.
 
-**Load**: `{project-root}/_bmad/wds/workflows/0-project-setup/steps/step-0.1-welcome.md`
+**Load**: `{project-root}/_bmad/wds/workflows/0-project-setup/steps/step-01-welcome.md`
 
 **Why Phase 0 first**:
 - Confirms greenfield vs brownfield (user validates your detection)
@@ -163,7 +163,7 @@ Phase 0: Project Setup
             └─→ Generate .wds-project-outline.yaml
                     │
                     ├─→ Greenfield → Phase 1: Project Brief
-                    └─→ Brownfield → Phase 10: Existing Product
+                    └─→ Brownfield → Phase 8: Product Evolution
 ```
 
 ---
@@ -210,7 +210,7 @@ through structured workflows.
 
 [B] EXISTING Product (Brownfield)
     You're improving something that exists.
-    → Leads to Phase 10: Existing Product Entry
+    → Leads to Phase 8: Product Evolution
 
 [C] NOT SURE
     → We'll analyze together

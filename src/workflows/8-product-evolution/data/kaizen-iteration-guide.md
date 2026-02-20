@@ -127,7 +127,7 @@ From monitoring and feedback - tackle new issues.
 ```
 [N] Return to Phase 4-5 (UX Design & Design System)
     Design new complete user flow
-    Then Phase 8 (Design Deliveries)
+    Then Phase 4 [H] Handover (Design Deliveries)
 ```
 
 ---

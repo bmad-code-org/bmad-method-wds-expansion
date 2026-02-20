@@ -1,6 +1,6 @@
 # Delivery Templates
 
-Templates for Design Deliveries and Test Scenarios in Phase 10.
+Templates for Design Deliveries and Test Scenarios in Phase 8 (Product Evolution).
 
 ---
 

@@ -9,7 +9,7 @@
 ## When to Use This Workflow
 
 **Triggers:**
-- Before handoff to development (Phase 8)
+- Before handoff to development (Phase 4 [H] Handover)
 - After completing scenario specifications
 - When reviewing existing specifications
 - Quality gate before prototype creation
@@ -615,8 +615,8 @@ For full validation including visual verification:
 
 **Workflow Placement:**
 - Phase 4 (UX Design) - Before prototype creation
-- Phase 8 (Design Deliveries) - Before development handoff
-- Phase 10 (Product Evolution) - When updating specifications
+- Phase 4 [H] Handover (Design Deliveries) - Before development handoff
+- Phase 8 (Product Evolution) - When updating specifications
 
 **Agent Integration:**
 - Freya runs audits on page specifications

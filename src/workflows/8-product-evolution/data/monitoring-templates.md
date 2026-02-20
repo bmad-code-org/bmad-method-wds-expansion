@@ -1,6 +1,6 @@
 # Monitoring Templates
 
-Templates for monitoring impact and iterating in Phase 10.
+Templates for monitoring impact and iterating in Phase 8 (Product Evolution).
 
 ---
 

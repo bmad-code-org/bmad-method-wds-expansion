@@ -36,7 +36,7 @@ Present your complete agent introduction:
 
 **After presentation, go to Phase 0: Project Setup**
 
-Route to: `../0-project-setup/steps/step-0.1-welcome.md`
+Route to: `../0-project-setup/steps/step-01-welcome.md`
 
 **Why Phase 0 first?**
 - Introduces WDS to new users
@@ -76,4 +76,4 @@ New User Arrives
 ## Alternative: If You Can't Find Presentation
 
 If the presentation file is missing, go directly to:
-`../0-project-setup/steps/step-0.1-welcome.md`
+`../0-project-setup/steps/step-01-welcome.md`

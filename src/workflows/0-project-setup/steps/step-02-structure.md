@@ -1,5 +1,5 @@
 ---
-name: 'step-0.2-structure'
+name: 'step-02-structure'
 description: 'Configure project settings create folder structure and generate project outline'
 
 # File References
@@ -50,7 +50,7 @@ Configure all project settings (name, complexity, tech stack, component library,
 - Available context: Project type (greenfield/brownfield) from step 0.1
 - Focus: Project configuration and structure creation
 - Limits: Configuration only - do not begin Phase 1 work
-- Dependencies: step-0.1-welcome must be completed
+- Dependencies: step-01-welcome must be completed
 
 ## Sequence of Instructions (Do not deviate, skip, or optimize)
 
@@ -182,7 +182,7 @@ Store all as `project_context` and `working_relationship` in outline.
 ### 12. Routing
 
 **Greenfield:** [A] -> Phase 1 workflow, [B] -> Hand off to Saga
-**Brownfield:** [A] -> Limited Brief, [B] -> Scan codebase, [C] -> Phase 10.1
+**Brownfield:** [A] -> Limited Brief, [B] -> Scan codebase, [C] -> Phase 8
 
 ### 13. Present MENU OPTIONS
 
@@ -222,4 +222,4 @@ ONLY WHEN the project is fully configured and structure is created will you pres
 
 ---
 
-_Phase 0: Project Setup - Step 0.2: Configuration & Structure_
+_Phase 0: Project Setup - Step 02: Configuration & Structure_

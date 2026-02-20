@@ -38,7 +38,7 @@ Load and read full config from `{project-root}/_bmad/wds/config.yaml` and resolv
 
 ### 2. First Step
 
-Load and execute `{installed_path}/steps/step-01-initialize-dialog.md` to begin the dialog workflow.
+Load and execute `./steps/step-01-initialize-dialog.md` to begin the dialog workflow.
 
 ### Output
 

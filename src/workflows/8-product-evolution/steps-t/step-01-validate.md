@@ -93,7 +93,7 @@ Guide user to open: `test-scenarios/TS-XXX.yaml`
 - Edge cases specific to the update
 - Accessibility
 
-**Explain:** This is similar to Phase 9 testing, but focused on the specific update.
+**Explain:** This is similar to Phase 5 [T] Acceptance Testing, but focused on the specific update.
 
 ### 3. Run Tests Systematically
 

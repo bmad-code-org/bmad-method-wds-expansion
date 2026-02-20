@@ -1,9 +1,9 @@
 ---
-name: 'step-0.1-welcome'
+name: 'step-01-welcome'
 description: 'Welcome user to WDS introduce methodology and determine project type and alignment needs'
 
 # File References
-nextStepFile: './step-0.2-structure.md'
+nextStepFile: './step-02-structure.md'
 workflowFile: '../workflow.md'
 ---
 
@@ -49,7 +49,7 @@ Welcome the user to WDS, introduce the methodology and agents, determine if this
 
 - Available context: Fresh start - no prior project context
 - Focus: Orientation, project type, alignment needs
-- Limits: Do not configure project details yet (that is step 0.2)
+- Limits: Do not configure project details yet (that is step 02)
 - Dependencies: None - this is the entry point
 
 ## Sequence of Instructions (Do not deviate, skip, or optimize)
@@ -68,13 +68,13 @@ WDS is a **design methodology** that helps you create great digital products thr
 - Phase 1: Define your vision (Project Brief)
 - Phase 2: Understand your users (Trigger Mapping)
 - Phase 3: Specify features (PRD Platform)
-- Phase 4: Design the experience (UX Design)
-- Phase 5: Build consistency (Design System)
-- Phase 6: Hand off to developers (Design Deliveries)
-- Phase 7: Validate quality (Testing)
+- Phase 4: Design the experience (UX Design) + Hand off to developers
+- Phase 5: Build with agentic development + Validate quality
+- Phase 6: Build consistency (Design System)
+- Phase 7: Launch & Go Live
 
 **For EXISTING products** (Brownfield):
-- Phase 10: Strategic improvements (Kaizen approach)
+- Phase 8: Strategic improvements (Kaizen approach)
 - Limited Brief (document what exists)
 - Focused improvements (not complete redesigns)
 - Continuous iteration cycles
@@ -110,7 +110,7 @@ You are currently working with one of these agents.
 Understanding your starting point ensures you follow the right workflow.
 
 **[A] NEW Product (Greenfield)** - Building from scratch -> Phase 1
-**[B] EXISTING Product (Brownfield)** - Improving what exists -> Phase 10
+**[B] EXISTING Product (Brownfield)** - Improving what exists -> Phase 8
 **[C] NOT SURE** - We will analyze together
 
 **Your choice (A, B, or C):**
@@ -134,8 +134,8 @@ Based on user responses:
 
 **If alignment = [A] Ready to start:**
 
-**If [A] NEW Product:** Continue to `step-0.2-structure.md` then Phase 1
-**If [B] EXISTING Product:** Continue to `step-0.2-structure.md` then Phase 10.1
+**If [A] NEW Product:** Continue to `step-02-structure.md` then Phase 1
+**If [B] EXISTING Product:** Continue to `step-02-structure.md` then Phase 8
 **If [C] NOT SURE:** Scan project, recommend path, then continue
 
 ### 5. Completion Output
@@ -145,7 +145,7 @@ Next: Set up your project structure.
 
 ### 6. Present MENU OPTIONS
 
-Display: "**Select an Option:** [C] Continue to step-0.2-structure"
+Display: "**Select an Option:** [C] Continue to Step 2: Configuration & Structure"
 
 #### Menu Handling Logic:
 - IF C: Update agent dialog, then load, read entire file, then execute {nextStepFile}
@@ -181,4 +181,4 @@ ONLY WHEN the project type is confirmed and alignment decision is made will you 
 
 ---
 
-_Phase 0: Project Setup - Step 0.1: Welcome & Orientation_
+_Phase 0: Project Setup - Step 01: Welcome & Orientation_

@@ -133,7 +133,7 @@ WDS Designer
 
 Explain to user:
 
-"For larger updates (> 3 days effort), use full handoff dialog process from Phase 8, Step 8.4."
+"For larger updates (> 3 days effort), use full handoff dialog process from Phase 4 [H] Handover, Step 04."
 
 **Key topics to cover in dialog:**
 1. Problem and solution overview

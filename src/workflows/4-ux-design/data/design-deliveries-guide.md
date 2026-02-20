@@ -1,4 +1,4 @@
-# Phase 8: Design Deliveries
+# Phase 4 [H] Handover: Design Deliveries
 
 **Package complete testable flows and hand off to development**
 
@@ -6,32 +6,32 @@
 
 ## Purpose
 
-Phase 8 is where you package complete testable flows and hand off to development.
+The Handover activity is where you package complete testable flows and hand off to development.
 
 **This is an iterative phase** - you'll repeat it for each complete flow you design.
 
 ---
 
-## Phase 8 Micro-Steps Overview
+## Handover Micro-Steps Overview
 
 ```
-Phase 8.1: Detect Epic Completion
+Step 01: Detect Epic Completion
     ↓ (Is flow complete and testable?)
-Phase 8.2: Create Design Delivery
+Step 02: Create Design Delivery
     ↓ (Package into DD-XXX.yaml)
-Phase 8.3: Create Test Scenario
+Step 03: Create Test Scenario
     ↓ (Define validation tests)
-Phase 8.4: Handoff Dialog
+Step 04: Handoff Dialog
     ↓ (20-30 min with BMad Architect)
-Phase 8.5: Hand Off to BMad
+Step 05: Hand Off to BMad
     ↓ (Mark as in_development)
-Phase 8.6: Continue with Next Flow
+Step 06: Continue with Next Flow
     ↓ (Return to Phase 4-5)
 ```
 
 ---
 
-## When to Enter Phase 8
+## When to Enter Handover
 
 **After completing ONE complete testable user flow:**
 
@@ -52,14 +52,14 @@ Flow: Login & Onboarding
 ✓ Components: Button, Input, Card
 ✓ Testable: App open → Dashboard
 ✓ Value: Users can access the app
-→ Ready for Phase 8!
+→ Ready for Handover!
 ```
 
 ---
 
-## Phase 8 Micro-Steps
+## Handover Micro-Steps
 
-### Phase 8.1: Detect Epic Completion
+### Step 01: Detect Epic Completion
 
 **Check if you have a complete testable flow:**
 
@@ -70,12 +70,12 @@ Flow: Login & Onboarding
 - ✅ Flow delivers user value
 - ✅ No blockers or dependencies
 
-**If YES:** Proceed to Phase 8.2
+**If YES:** Proceed to Step 02
 **If NO:** Return to Phase 4-5 and continue designing
 
 ---
 
-### Phase 8.2: Create Design Delivery
+### Step 02: Create Design Delivery
 
 **File:** `deliveries/DD-XXX-name.yaml`
 
@@ -117,7 +117,7 @@ user_value:
 
 ---
 
-### Phase 8.3: Create Test Scenario
+### Step 03: Create Test Scenario
 
 **File:** `test-scenarios/TS-XXX-name.yaml`
 
@@ -152,7 +152,7 @@ happy_path:
 
 ---
 
-### Phase 8.4: Handoff Dialog
+### Step 04: Handoff Dialog
 
 **Initiate conversation with BMad Architect**
 
@@ -191,7 +191,7 @@ WDS UX Expert: "Perfect! I'll start designing the next flow
 
 ---
 
-### Phase 8.5: Hand Off to BMad
+### Step 05: Hand Off to BMad
 
 **Mark delivery as handed off:**
 
@@ -219,7 +219,7 @@ delivery:
 
 ---
 
-### Phase 8.6: Continue with Next Flow
+### Step 06: Continue with Next Flow
 
 **While BMad builds this flow, you design the next one!**
 
@@ -229,7 +229,7 @@ delivery:
 - Create specifications
 - Define components
 
-**Then return to Phase 8:**
+**Then return to Handover:**
 
 - Create next Design Delivery
 - Hand off to BMad
@@ -243,9 +243,9 @@ Week 2: Handoff Flow 1 → BMad builds Flow 1
         Design Flow 2
 Week 3: Handoff Flow 2 → BMad builds Flow 2
         Design Flow 3
-        Test Flow 1 (Phase 9)
+        Test Flow 1 (Phase 5 [T])
 Week 4: Handoff Flow 3 → BMad builds Flow 3
-        Test Flow 2 (Phase 9)
+        Test Flow 2 (Phase 5 [T])
         Design Flow 4
 ```
 
@@ -449,18 +449,18 @@ Week 4: Handoff Flow 3 → BMad builds Flow 3
 
 - Don't hand off and vanish
 - Don't ignore questions
-- Don't skip validation (Phase 9)
+- Don't skip validation (Phase 5 [T] Acceptance Testing)
 
 ---
 
 ## Next Steps
 
-**After Phase 8:**
+**After Handover:**
 
 1. **BMad builds the flow** (Architecture → Implementation)
 2. **You design the next flow** (Return to Phase 4-5)
 3. **BMad notifies when ready** (Feature complete)
-4. **You validate** (Phase 9: Testing)
+4. **You validate** (Phase 5 [T] Acceptance Testing)
 5. **Iterate if needed** (Fix issues, retest)
 6. **Sign off** (When quality meets standards)
 7. **Repeat** (Next delivery)
@@ -486,4 +486,4 @@ Week 4: Handoff Flow 3 → BMad builds Flow 3
 
 ---
 
-**Phase 8 is where design becomes development! Package, handoff, and keep moving!** 📦✨
+**Handover is where design becomes development! Package, handoff, and keep moving!** 📦✨

@@ -1,4 +1,4 @@
-# Phase 9: Testing (Designer Validation)
+# Phase 5 [T] Acceptance Testing (Designer Validation)
 
 **Validate implementation matches design vision and quality standards**
 
@@ -6,7 +6,7 @@
 
 ## Purpose
 
-Phase 9 is where you:
+Acceptance Testing is where you:
 
 1. Wait for BMad to notify you that a feature is complete
 2. Run test scenarios to validate implementation
@@ -18,7 +18,7 @@ Phase 9 is where you:
 
 ---
 
-## When to Enter Phase 9
+## When to Enter Acceptance Testing
 
 **After BMad notifies you:**
 
@@ -46,7 +46,7 @@ WDS Analyst: "Received! Starting validation testing..."
 
 ---
 
-## Phase 9 Steps
+## Acceptance Testing Steps
 
 ### Step 1: Prepare for Testing
 
@@ -649,7 +649,7 @@ Date: ________________
 
 ## Next Steps
 
-**After Phase 9 (Sign-off):**
+**After Acceptance Testing (Sign-off):**
 
 1. **Feature ships** to production
 2. **Monitor** user feedback and metrics
@@ -679,4 +679,4 @@ Date: ________________
 
 ---
 
-**Phase 9 is where you ensure quality! Test thoroughly, communicate clearly, and sign off with confidence!** ✅✨
+**Acceptance Testing is where you ensure quality! Test thoroughly, communicate clearly, and sign off with confidence!** ✅✨

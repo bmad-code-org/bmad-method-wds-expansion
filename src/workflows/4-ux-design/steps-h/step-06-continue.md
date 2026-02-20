@@ -83,7 +83,7 @@ While BMad builds the current flow, start designing the next complete testable f
 ### 3. Balancing Design and Validation
 
 As flows complete, you'll be doing both:
-- **Early week:** Test completed flows (Phase 9)
+- **Early week:** Test completed flows (Phase 5 [T] Acceptance Testing)
 - **Late week:** Design new scenarios
 
 **When to pause designing:**
@@ -95,12 +95,12 @@ As flows complete, you'll be doing both:
 
 ### 4. Present MENU OPTIONS
 
-Display: "**Select an Option:** [D] Return to Phase 4-5 to design next flow | [V] Go to Phase 9 if a flow is ready for validation | [M] Return to Activity Menu"
+Display: "**Select an Option:** [D] Return to Phase 4-5 to design next flow | [V] Go to Phase 5 [T] Acceptance Testing if a flow is ready for validation | [M] Return to Activity Menu"
 
 #### Menu Handling Logic:
 
 - IF D: Return to {workflowFile} to start Phase 4-5 for next flow
-- IF V: Route to Phase 9 validation workflow
+- IF V: Route to Phase 5 [T] Acceptance Testing validation workflow
 - IF M: Return to {workflowFile} or {activityWorkflowFile}
 - IF Any other comments or queries: help user respond then [Redisplay Menu Options](#4-present-menu-options)
 

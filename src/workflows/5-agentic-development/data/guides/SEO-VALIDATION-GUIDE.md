@@ -467,9 +467,9 @@ Add SEO criteria to the story file's Agent-Verifiable section:
 
 ---
 
-## Integration with Phase 9 Testing
+## Integration with Acceptance Testing
 
-When creating test scenarios (Phase 8/9), include SEO as a test category:
+When creating test scenarios (Phase 4 [H] Handover / Phase 5 [T] Acceptance Testing), include SEO as a test category:
 
 ```yaml
 seo_checks:

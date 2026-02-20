@@ -1,6 +1,6 @@
 # Kaizen Principles
 
-Core principles and patterns for continuous improvement in Phase 10.
+Core principles and patterns for continuous improvement in Phase 8 (Product Evolution).
 
 ---
 
@@ -25,14 +25,14 @@ Ship → Monitor → Learn → Improve → Ship → Monitor → Learn...
 - **Small, incremental changes** (1-2 weeks)
 - **Low cost, low risk**
 - **Continuous, never stops**
-- **Phase 10: Product Evolution**
+- **Phase 8: Product Evolution**
 
 ### Kaikaku (改革) - Revolutionary Change
 
 - **Large, radical changes** (months)
 - **High cost, high risk**
 - **One-time transformation**
-- **Phases 1-9: New Product Development**
+- **Phases 1-7: New Product Development**
 
 **You're in Kaizen mode!** Small improvements that compound over time.
 

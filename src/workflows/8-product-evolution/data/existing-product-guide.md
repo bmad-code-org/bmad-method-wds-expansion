@@ -1,4 +1,4 @@
-# Phase 10: Product Evolution
+# Phase 8: Product Evolution
 
 **Jump into an existing product to make strategic improvements**
 
@@ -19,7 +19,7 @@
 
 ## Two Entry Points to WDS
 
-### **Entry Point 1: New Product (Phases 1-9) - Greenfield + Kaikaku**
+### **Entry Point 1: New Product (Phases 1-7) - Greenfield + Kaikaku**
 
 Starting from scratch, designing complete user flows
 
@@ -28,7 +28,7 @@ Starting from scratch, designing complete user flows
 - **Greenfield:** Building from scratch with no existing constraints
 - **Kaikaku (改革):** Revolutionary change, complete transformation
 
-### **Entry Point 2: Existing Product (Phase 10) - Brownfield + Kaizen**
+### **Entry Point 2: Existing Product (Phase 8) - Brownfield + Kaizen**
 
 Jumping into an existing product to make strategic changes
 
@@ -60,7 +60,7 @@ When joining an existing product, you:
 
 ---
 
-## Phase 10 Workflow (Existing Product)
+## Phase 8 Workflow (Existing Product)
 
 ```
 Existing Product
@@ -68,7 +68,7 @@ Existing Product
 Strategic Challenge Identified
     ↓
 ┌─────────────────────────────────────┐
-│ Phase 10.1: Project Brief (Adapted)  │
+│ Step 01: Project Brief (Adapted)     │
 │ - What strategic challenge?         │
 │ - What are we trying to solve?      │
 │ - Why bring in WDS designer?        │
@@ -76,7 +76,7 @@ Strategic Challenge Identified
 └─────────────────────────────────────┘
     ↓
 ┌─────────────────────────────────────┐
-│ Phase 10.2: Existing Context         │
+│ Step 02: Existing Context            │
 │ - Upload business goals             │
 │ - Upload target group material      │
 │ - Print out trigger map             │
@@ -84,7 +84,7 @@ Strategic Challenge Identified
 └─────────────────────────────────────┘
     ↓
 ┌─────────────────────────────────────┐
-│ Phase 10.3: Critical Updates         │
+│ Step 03: Critical Updates            │
 │ - Design targeted changes           │
 │ - Update existing screens           │
 │ - Add strategic features            │
@@ -92,13 +92,13 @@ Strategic Challenge Identified
 └─────────────────────────────────────┘
     ↓
 ┌─────────────────────────────────────┐
-│ Phase 10.4: Design Delivery          │
+│ Step 04: Design Delivery             │
 │ → [Touch Point 2: WDS → BMad]       │
 │   Hand off changes (DD-XXX)         │
 └─────────────────────────────────────┘
     ↓
 ┌─────────────────────────────────────┐
-│ Phase 10.5: Validation               │
+│ Step 05: Validation                  │
 │ ← [Touch Point 3: BMad → WDS]       │
 │   Designer validates                │
 └─────────────────────────────────────┘
@@ -120,10 +120,10 @@ Which type of project are you working on?
 1. New Product
    → Start with Phase 1 (Project Brief)
    → Design complete user flows from scratch
-   → Full WDS workflow (Phases 1-9)
+   → Full WDS workflow (Phases 1-7)
 
 2. Existing Product
-   → Start with Phase 10 (Existing Product Development)
+   → Start with Phase 8 (Product Evolution)
    → Make strategic improvements to existing product
    → Focused on critical updates, not complete redesign
 ```
@@ -134,11 +134,11 @@ Which type of project are you working on?
 - **Phase 2 (Trigger Map):** Optional - print out focused trigger map if needed
 - **Phase 3 (Platform Requirements):** Skip - tech stack already decided
 - **Phase 4-5:** Adapted - update existing screens, not complete flows
-- **Phase 8-9:** Same - deliveries and validation work the same way
+- **Handover & Testing:** Same - deliveries (Phase 4 [H]) and validation (Phase 5 [T]) work the same way
 
 ---
 
-## Phase 10.1: Project Brief (Adapted for Brownfield)
+## Step 01: Project Brief (Adapted for Brownfield)
 
 **IMPORTANT: You still create a Project Brief - just adapted to the existing product context.**
 
@@ -206,7 +206,7 @@ Example:
 
 ---
 
-## Phase 10.2: Existing Context
+## Step 02: Existing Context
 
 **Upload and review existing materials:**
 
@@ -282,7 +282,7 @@ Review:
 
 ---
 
-## Phase 10.3: Critical Updates (Not Complete Flows)
+## Step 03: Critical Updates (Not Complete Flows)
 
 **Key difference: You're updating existing screens, not designing from scratch**
 
@@ -566,13 +566,13 @@ estimated_complexity:
 
 ### Step 5: Hand Off to BMad
 
-**Same process as Phase 8:**
+**Same process as Phase 4 [H] Handover:**
 
 1. Create Design Delivery (DD-XXX.yaml)
 2. Create Test Scenario (TS-XXX.yaml)
 3. Handoff Dialog with BMad Architect
 4. BMad implements changes
-5. Designer validates (Phase 9)
+5. Designer validates (Phase 5 [T] Acceptance Testing)
 6. Sign off and deploy
 
 **BMad receives:**
@@ -905,8 +905,8 @@ THE END! 🎬
 **Product Evolution:**
 
 - Return to Phase 4-5 for changes
-- Use Phase 8 for Design Deliveries (small scope)
-- Use Phase 9 for validation
+- Use Phase 4 [H] Handover for Design Deliveries (small scope)
+- Use Phase 5 [T] Acceptance Testing for validation
 - Repeat indefinitely
 
 **Templates:**
