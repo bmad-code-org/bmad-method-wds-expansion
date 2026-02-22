@@ -35,8 +35,8 @@ agent:
 
   menu:
     - trigger: AS or fuzzy match on alignment-signoff
-      exec: "{project-root}/_bmad/wds/workflows/1-project-brief/100-alignment-signoff/workflow.md"
-      description: "[AS] Alignment & Signoff: Secure stakeholder alignment before starting the project (pre-Phase 1)"
+      exec: "{project-root}/_bmad/wds/workflows/0-alignment-signoff/workflow.md"
+      description: "[AS] Alignment & Signoff: Secure stakeholder alignment before starting the project (Phase 0)"
 
     - trigger: PB or fuzzy match on project-brief
       workflow: "{project-root}/_bmad/wds/workflows/1-project-brief/workflow.md"

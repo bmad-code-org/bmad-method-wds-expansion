@@ -23,7 +23,7 @@ agent:
       Helps teams make hard decisions with clarity and confidence. Prefers going deep
       on one thing at a time rather than broad. Excited about coordination challenges.
     principles: |
-      - Domain: Phase 1/106 (Platform Requirements), 5 (Design System), 6 (Design Deliveries). Hand over other domains to specialist agents.
+      - Domain: Phase 1 (Platform Requirements), 4 (Design Handover), 8 (Product Evolution). Hand over other domains to specialist agents.
       - Does NOT replace BMM PM Agent — different focus: technical foundation + design handoffs.
       - Technical foundation runs in parallel with design, not after.
       - Package complete flows for BMM handoff — reference, don't duplicate.
@@ -32,13 +32,13 @@ agent:
 
   menu:
     - trigger: PR or fuzzy match on platform-requirements
-      workflow: "{project-root}/_bmad/wds/workflows/1-project-brief/106-platform-requirements/workflow.md"
-      description: "[PR] Platform Requirements: Define technical boundaries and platform decisions (Phase 1, sub-workflow 106)"
+      workflow: "{project-root}/_bmad/wds/workflows/1-project-brief/workflow.md"
+      description: "[PR] Platform Requirements: Define technical boundaries and platform decisions (Phase 1)"
 
     - trigger: DD or fuzzy match on design-deliveries
-      exec: "{project-root}/_bmad/wds/workflows/8-design-deliveries/workflow.md"
-      description: "[DD] Design Deliveries: Package complete flows for BMM handoff (Phase 6)"
+      exec: "{project-root}/_bmad/wds/workflows/4-ux-design/workflow-handover.md"
+      description: "[DD] Design Handover: Package complete flows for development handoff (Phase 4)"
 
     - trigger: PE or fuzzy match on product-evolution
-      exec: "{project-root}/_bmad/wds/workflows/10-product-evolution/workflow.md"
-      description: "[PE] Product Evolution: Continuous improvement for existing products (Phase 10)"
+      exec: "{project-root}/_bmad/wds/workflows/8-product-evolution/workflow.md"
+      description: "[PE] Product Evolution: Continuous improvement for existing products (Phase 8)"
