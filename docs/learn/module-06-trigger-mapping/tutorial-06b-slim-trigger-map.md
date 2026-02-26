@@ -1,4 +1,6 @@
-# Tutorial 06B: Create Your Value Trigger Chain
+# Tutorial 06B: Create a Slim Trigger Map
+
+> **Note:** This tutorial previously covered "Value Trigger Chains (VTC)" which has been replaced by the simpler concept of a Slim Trigger Map — define one business goal, one target group, and their key driving forces. The core process is the same.
 
 **Quick strategic validation for focused user journeys**
 
@@ -6,17 +8,17 @@
 
 ## Overview
 
-This tutorial walks you through creating a Value Trigger Chain - a lightweight, streamlined version of Trigger Mapping. Perfect for when you need quick strategic validation or are working with a single, focused user journey.
+This tutorial walks you through creating a Slim Trigger Map — a lightweight, streamlined version of Trigger Mapping. Perfect for when you need quick strategic validation or are working with a single, focused user journey.
 
-**Time:** 15-20 minutes  
-**Prerequisites:** Module 04 completed (Product Brief created)  
-**What you'll create:** Single-chain map from business goal to user trigger
+**Time:** 15-20 minutes
+**Prerequisites:** Module 04 completed (Product Brief created)
+**What you'll create:** Slim Trigger Map with one goal, one target group, key driving forces
 
 ---
 
 ## When to Use This Approach
 
-**Value Trigger Chain is ideal for:**
+**Slim Trigger Map is ideal for:**
 - ✅ Smaller features or iterations
 - ✅ Single user journey focus
 - ✅ Quick strategic validation
@@ -58,14 +60,14 @@ This tutorial walks you through creating a Value Trigger Chain - a lightweight, 
 
 ---
 
-## The Value Trigger Chain Workshop
+## The Slim Trigger Map Workshop
 
 ### Starting the Workshop
 
 **In your IDE, activate Saga:**
 
 ```
-@saga I want to create a Value Trigger Chain for [brief description of feature/journey]. Let's do the lightweight version.
+@saga I want to create a Slim Trigger Map for [brief description of feature/journey]. Let's do the lightweight version.
 ```
 
 ---
@@ -199,9 +201,9 @@ This tutorial walks you through creating a Value Trigger Chain - a lightweight, 
 
 ---
 
-## Your Value Trigger Chain
+## Your Slim Trigger Map
 
-### The Complete Chain
+### The Complete Map
 
 ```
 Strategic Objective
@@ -294,7 +296,7 @@ Ask yourself:
 - Stakeholders need comprehensive justification
 - The project is more complex than initially thought
 
-**The Value Trigger Chain is a starting point.** If it reveals complexity, upgrade to Full Trigger Mapping.
+**The Slim Trigger Map is a starting point.** If it reveals complexity, upgrade to Full Trigger Mapping.
 
 ---
 

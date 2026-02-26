@@ -62,7 +62,7 @@ Freya examines:
 - Top driving forces per persona
 - Feature-to-driver connections
 
-**Then creates Value Trigger Chains** for potential scenarios.
+**Then selects strategic context** from the Trigger Map for potential scenarios.
 
 ### Freya presents ranked suggestions:
 
@@ -106,9 +106,9 @@ Freya examines:
 ### Freya starts with what she knows:
 
 **Freya:**
-> "Let's build S01-Family-Setup together. I already have the Value Trigger Chain from your Trigger Map:
+> "Let's build S01-Family-Setup together. I already have the strategic context from your Trigger Map:
 >
-> **VTC** ✓
+> **Strategic Context** ✓
 > - Business Goal: BG01 - Multi-user adoption
 > - Persona: Harriet the Household Manager
 > - Driver: Need to get whole family on same page
@@ -199,7 +199,7 @@ Freya examines:
 > - User: Household created, family invited, feels like real progress
 > - Business: Activated user + second user invited (retention signal + network effect)
 >
-> **Connections** (already established from VTC):
+> **Connections** (already established from Trigger Map):
 > - Persona: Harriet the Household Manager ✓
 > - Driving Force: "Need to get whole family on same page" ✓
 > - Business Goal: BG01 - Multi-user adoption ✓
@@ -217,7 +217,7 @@ Freya examines:
 ```markdown
 # S01-Family-Setup
 
-## Value Trigger Chain (VTC)
+## Strategic Context
 - Business Goal: BG01 - Multi-user adoption
 - Persona: Harriet the Household Manager (Priority #1)
 - Driving Force: "Need to get whole family on same page" (Top driver)
@@ -281,9 +281,9 @@ Harriet the Household Manager
 
 > "Agreed, let's do S02-Daily-Overview."
 
-### Freya already has the VTC:
+### Freya already has the strategic context:
 
-> "Here's the VTC for S02:
+> "Here's the strategic context for S02:
 > - Business Goal: BG02 - Daily active usage
 > - Persona: Felix the Full-Stack (Harriet's spouse)
 > - Driver: Quick visibility into what's needed
@@ -292,7 +292,7 @@ Harriet the Household Manager
 > Now, **Usage Situation** for Felix..."
 
 Work through S02 using the same collaborative pattern:
-1. Freya provides VTC (from Trigger Map)
+1. Freya provides strategic context (from Trigger Map)
 2. You provide Usage Situation
 3. You provide Natural Starting Point
 4. You define Current State + Desired State
@@ -335,15 +335,15 @@ C-UX-Scenarios/
 
 ### For each scenario:
 
-- **Value Trigger Chain** — Strategic foundation from Trigger Map (Freya provides)
+- **Strategic Context** — Strategic foundation from Trigger Map (Freya provides)
 - **Usage Situation** — When, why, emotional context (you provide)
 - **Natural Starting Point** — How they arrive (you provide)
 - **Current State** — Clear starting point (you define)
 - **Desired State** — Clear end goal (you define)
 - **Value Check** — User and business value confirmed
-- **Persona** — Connected to Trigger Map (from VTC)
+- **Persona** — Connected to Trigger Map
 - **Linear Flow** — Steps from start to finish (you map)
-- **Connections** — Linked to features and goals (from VTC + additions)
+- **Connections** — Linked to features and goals (from Trigger Map + additions)
 
 ### Your folder structure:
 

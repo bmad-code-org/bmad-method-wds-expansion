@@ -252,7 +252,7 @@ From your Trigger Map:
 Why linear journeys matter more than isolated screens
 
 ### [Lesson 2: From Trigger Map to Scenarios](lesson-02-from-trigger-map-to-scenarios.md)
-How to identify which scenarios to create using Value Trigger Chains
+How to identify which scenarios to create from your Trigger Map
 
 ### [Lesson 3: Mapping the Journey](lesson-03-mapping-the-journey.md)
 How to structure scenario outlines for clarity and action

@@ -2,7 +2,7 @@
 
 ## Lesson 2: From Trigger Map to Scenarios
 
-**How to identify which scenarios to create using Value Trigger Chains**
+**How to identify which scenarios to create from your Trigger Map**
 
 ---
 
@@ -21,9 +21,9 @@ This lesson bridges the gap. It shows you how to use your prioritized Trigger Ma
 
 ---
 
-## The Value Trigger Chain (TVC)
+## Strategic Context from the Trigger Map
 
-Every scenario needs a **Value Trigger Chain** — the strategic thread connecting business goals to user motivations through specific transactions.
+Every scenario needs **strategic context** — the thread connecting business goals to user motivations through specific transactions, selected from your Trigger Map.
 
 ```
 Business Goal → User Group → Driving Forces → Transaction → Scenario
@@ -43,7 +43,7 @@ Create first pulse check
 S01-First-Pulse-Check-Setup
 ```
 
-**The Value Trigger Chain answers:**
+**The strategic context answers:**
 - What's the most valuable transaction for our business?
 - What are we offering that's valuable for the end user?
 - How can we create a marriage between business goals and user driving forces?
@@ -124,12 +124,12 @@ Each valuable transaction becomes a scenario.
 
 Every scenario needs:
 
-### 1. Value Trigger Chain (TVC)
+### 1. Strategic Context
 
-The strategic thread from business goal through user psychology to specific transaction.
+The strategic thread from business goal through user psychology to specific transaction, selected from your Trigger Map.
 
 ```
-## Value Trigger Chain
+## Strategic Context
 - Business Goal: BG01 - 5,000 active teams
 - Persona: Harriet (Remote Team Lead)
 - Driving Forces: Fear of burnout, need for awareness
@@ -188,7 +188,7 @@ Alternative: Dashboard → "New Pulse Check" button (if returning later)
 - Connected to: BG01
 - Connected to: Harriet (fear of burnout)
 
-### Value Trigger Chain
+### Strategic Context (from Trigger Map)
 
 ```
 BG01: 5,000 active teams
@@ -218,7 +218,7 @@ S01-First-Pulse-Check
 ```markdown
 # S01-First-Pulse-Check
 
-## Value Trigger Chain
+## Strategic Context
 - Business Goal: BG01 - 5,000 active teams
 - Persona: Harriet (Remote Team Lead)
 - Driving Forces: Fear of burnout, awareness without micromanaging
@@ -448,7 +448,7 @@ Freya doesn't just help you create scenarios - she **proactively suggests them**
 - Feature-to-driver connections
 - Business goal alignments
 
-**Freya combines these to identify Value Trigger Chains automatically.**
+**Freya combines these to identify strategic context for scenarios automatically.**
 
 ### Freya's Suggestion Process
 
@@ -515,7 +515,7 @@ Once you select a scenario, Freya guides you through the outline:
 
 > **Freya:** "Let's outline S01-First-Pulse-Check together. I'll start with what I know from your Trigger Map, and you fill in the details.
 >
-> **Value Trigger Chain** ✓ (I have this from your map)
+> **Strategic Context** ✓ (I have this from your Trigger Map)
 > - Business Goal: BG01 - 5,000 active teams
 > - Persona: Remote Team Leads
 > - Driver: Fear of team burnout without noticing
@@ -656,7 +656,7 @@ Watch out for these signs that a scenario isn't ready:
 **Write it down:**
 
 ```
-## Value Trigger Chain
+## Strategic Context
 - Business Goal: [Your top goal]
 - Persona: [Critical persona]
 - Driving Forces: [Top 2-3]

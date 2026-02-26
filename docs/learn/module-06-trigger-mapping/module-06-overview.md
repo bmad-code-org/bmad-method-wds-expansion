@@ -180,14 +180,14 @@ Step-by-step hands-on guide to creating your complete Trigger Map with Saga thro
 
 ---
 
-### [Tutorial 06B: Create Your Value Trigger Chain](tutorial-06b-value-trigger-chain.md)
+### [Tutorial 06B: Create a Slim Trigger Map](tutorial-06b-slim-trigger-map.md)
 
 **Lightweight Alternative (Quick Validation)**
 
-Quick strategic validation for focused user journeys - streamlined single-workshop approach.
+Quick strategic validation for focused user journeys — one business goal, one target group, key driving forces.
 
-**Time:** 15-20 minutes  
-**What you'll create:** Single-chain map from goal to trigger  
+**Time:** 15-20 minutes
+**What you'll create:** Slim Trigger Map with one goal, one target group, key driving forces
 **Best for:** Smaller features, single journey, quick validation, time-constrained situations
 
 ---

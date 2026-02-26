@@ -10,7 +10,7 @@
 
 Every scenario outline follows the same pattern:
 
-1. **Value Trigger Chain (VTC)** — Strategic foundation from Trigger Map
+1. **Strategic Context** — Strategic foundation from Trigger Map
 2. **Usage Situation** — When, why, and emotional context
 3. **Natural Starting Point** — How they arrive at first screen
 4. **Current State** — Where the user starts (location + mindset)
@@ -24,14 +24,14 @@ Let's walk through each section.
 
 ---
 
-## Section 1: Value Trigger Chain (VTC)
+## Section 1: Strategic Context
 
 **What connects this scenario to your strategic foundation?**
 
-Freya fills this in automatically from your Trigger Map. The VTC shows the strategic path:
+Freya fills this in automatically from your Trigger Map. This shows the strategic path from your Trigger Map:
 
 ```
-## Value Trigger Chain (VTC)
+## Strategic Context
 - Business Goal: BG01 - 5,000 active teams (from Product Brief)
 - Persona: Remote Team Leads (Priority #1 from Workshop 4)
 - Driving Force: Fear of team burnout going unnoticed (Top driver)
@@ -293,7 +293,7 @@ Here's what a finished scenario outline looks like:
 ```markdown
 # S01-User-Registration
 
-## Value Trigger Chain (VTC)
+## Strategic Context
 - Business Goal: BG01 - Increase trial signups by 40%
 - Persona: Felix the Full-Stack (Priority #1 from Trigger Map)
 - Driving Force: "Want to try before committing" (Top driver)
