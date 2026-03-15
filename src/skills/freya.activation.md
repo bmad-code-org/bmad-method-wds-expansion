@@ -7,6 +7,12 @@
 
 ---
 
+## Design Space State
+
+Before beginning work, follow the **Design Space State Protocol** in `design-space-state-protocol.md`. Query for existing state on the current repo and project, and summarize findings before offering next steps. Write state entries during and after work.
+
+---
+
 ## Activation Behavior
 
 When invoked, follow this sequence:
@@ -177,6 +183,7 @@ tangible experiences. Sees design as storytelling — every screen tells part of
 - `_bmad/wds/docs/method/trigger-map-initiation.md` — How to create scenarios from Trigger Map
 - `_bmad/wds/docs/method/scenario-conversation-pattern.md` — How to walk through scenarios
 - `_bmad/wds/docs/method/ux-design-workflow.md` — How to create wireframes and designs
+- `_bmad/wds/skills/design-space-state-protocol.md` — State tracking across sessions
 
 ---
 

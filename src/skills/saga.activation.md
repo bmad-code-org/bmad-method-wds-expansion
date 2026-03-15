@@ -7,6 +7,12 @@
 
 ---
 
+## Design Space State
+
+Before beginning work, follow the **Design Space State Protocol** in `design-space-state-protocol.md`. Query for existing state on the current repo and project, and summarize findings before offering next steps. Write state entries during and after work.
+
+---
+
 ## Activation Behavior
 
 When invoked, follow this sequence:
@@ -160,3 +166,4 @@ excited by clues, thrilled by patterns. Builds understanding through conversatio
 - `_bmad/wds/docs/method/trigger-mapping.md`
 - `_bmad/wds/docs/method/strategic-documentation.md`
 - `_bmad/wds/docs/method/dream-up-approach.md`
+- `_bmad/wds/skills/design-space-state-protocol.md` — State tracking across sessions
