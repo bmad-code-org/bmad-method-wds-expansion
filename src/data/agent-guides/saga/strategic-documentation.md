@@ -442,7 +442,7 @@ Before marking documentation "complete":
 
 ## Related Resources
 
-- **Product Brief Workflow:** `../../workflows/1-project-brief/project-brief/`
+- **Product Brief Workflow:** `../../workflows/wds-project-brief/project-brief/`
 - **File Naming Conventions:** `../../workflows/00-system/FILE-NAMING-CONVENTIONS.md`
 - **Project Outline Template:** Created during Phase 1 Step 1
 - **Documentation Standards:** `../../../bmm/data/documentation-standards.md`
