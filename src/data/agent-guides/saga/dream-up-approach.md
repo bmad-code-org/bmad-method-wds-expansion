@@ -157,9 +157,9 @@ docs/method/dream-up-rubric-phase-2.md
 
 **Load these WDS learning materials:**
 ```
-src/workflows/3-scenarios/data/quality-checklist.md
-src/workflows/3-scenarios/data/scenario-outline-template.md
-src/workflows/3-scenarios/data/validation-standards.md
+src/workflows/wds-3-scenarios/data/quality-checklist.md
+src/workflows/wds-3-scenarios/data/scenario-outline-template.md
+src/workflows/wds-3-scenarios/data/validation-standards.md
 ```
 
 **Learn and internalize:**

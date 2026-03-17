@@ -43,7 +43,7 @@ C-UX-Scenarios/
 ## For Agents
 
 ### Scenario Outline (Saga)
-**Workflow:** `_bmad/wds/workflows/3-scenarios/workflow.md`
+**Workflow:** `_bmad/wds/workflows/wds-3-scenarios/workflow.md`
 **Agent trigger:** `SC` (Saga)
 
 ### Page Specifications (Freya)
