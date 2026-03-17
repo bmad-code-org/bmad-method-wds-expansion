@@ -197,8 +197,8 @@ See: `examples/dog-week-patterns/A-Product-Brief/` for a complete Product Brief 
 - [Golden Circle](../models/golden-circle.md) - WHY, HOW, WHAT framework (useful for vision)
 
 **Workflows:**
-- Product Brief Workflow: `workflows/1-project-brief/project-brief/complete/workflow.md`
-- Pitch & Signoff Workflow: `workflows/1-project-brief/alignment-signoff/workflow.md`
+- Product Brief Workflow: `workflows/wds-1-project-brief/project-brief/complete/workflow.md`
+- Pitch & Signoff Workflow: `workflows/wds-1-project-brief/alignment-signoff/workflow.md`
 
 ---
 

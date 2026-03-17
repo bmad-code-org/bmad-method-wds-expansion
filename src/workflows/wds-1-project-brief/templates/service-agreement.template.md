@@ -268,7 +268,7 @@ Date: _______________
 
 ### Reference Documents
 
-- Project Pitch: `docs/1-project-brief/pitch.md`
+- Project Pitch: `docs/wds-1-project-brief/pitch.md`
 - Project Brief: (To be created after agreement approval)
 
 ---

@@ -41,7 +41,7 @@ Finalize the signoff document, present it to the user, guide through the approva
 ## EXECUTION PROTOCOLS:
 
 - 🎯 Finalize and present the signoff document
-- 💾 Save signoff to `docs/1-project-brief/signoff.md`
+- 💾 Save signoff to `docs/wds-1-project-brief/signoff.md`
 - 📖 Explain the approval workflow
 - 🚫 Do not skip the review and adjustment opportunity
 
@@ -58,7 +58,7 @@ Finalize the signoff document, present it to the user, guide through the approva
 
 **After building the signoff document**:
 
-1. **Present the signoff**: "Your signoff document is ready at `docs/1-project-brief/signoff.md`."
+1. **Present the signoff**: "Your signoff document is ready at `docs/wds-1-project-brief/signoff.md`."
 
 2. **Explain next steps**:
    - "Share with stakeholders for approval"
@@ -77,7 +77,7 @@ Finalize the signoff document, present it to the user, guide through the approva
 - Ready to proceed to Project Brief
 
 **Next**: Full Project Brief workflow
-`{project-root}/_bmad/wds/workflows/1-project-brief/workflow.md`
+`{project-root}/_bmad/wds/workflows/wds-1-project-brief/workflow.md`
 
 ### 3. Update State
 

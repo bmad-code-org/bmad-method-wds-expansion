@@ -574,7 +574,7 @@ This quality workflow integrates with:
 **After:**
 - [Agentic Development](../../5-agentic-development/) - Builds HTML demos from specs
 - [Handover](../steps-h/) - Packages specs for handoff
-- [Platform Requirements](../../../1-project-brief/steps-c/ (steps 27-32)) - Technical boundaries from specs
+- [Platform Requirements](../../../wds-1-project-brief/steps-c/ (steps 27-32)) - Technical boundaries from specs
 
 ---
 

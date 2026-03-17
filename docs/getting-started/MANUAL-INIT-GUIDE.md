@@ -57,7 +57,7 @@ your-project/
 │           │   ├── freya-ux.agent.yaml
 │           │   └── saga-analyst.agent.yaml
 │           ├── workflows/
-│           │   ├── 1-project-brief/
+│           │   ├── wds-1-project-brief/
 │           │   ├── 2-trigger-mapping/
 │           │   ├── 3-prd-platform/
 │           │   ├── 4-ux-design/
@@ -182,7 +182,7 @@ Choose a workflow to start:
 
 **Solution:** Verify all workflow folders are present:
 ```
-.cursor/rules/wds/workflows/1-project-brief/
+.cursor/rules/wds/workflows/wds-1-project-brief/
 .cursor/rules/wds/workflows/2-trigger-mapping/
 .cursor/rules/wds/workflows/3-prd-platform/
 .cursor/rules/wds/workflows/4-ux-design/

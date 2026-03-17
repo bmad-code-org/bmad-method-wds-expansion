@@ -18,7 +18,7 @@
 
 ```
 docs/
-├── 1-project-brief/          ← Strategic Vision Hub
+├── wds-1-project-brief/          ← Strategic Vision Hub
 │   ├── 01-Product-Brief.md
 │   ├── 02-Competitive-Analysis.md
 │   ├── 03-Success-Metrics.md

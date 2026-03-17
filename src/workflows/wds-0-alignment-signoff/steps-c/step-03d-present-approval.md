@@ -42,7 +42,7 @@ Present the completed alignment document and guide the user through the stakehol
 
 - 🎯 Present document and guide through approval process
 - 💾 Track any changes made based on stakeholder feedback
-- 📖 Reference the alignment document at `docs/1-project-brief/pitch.md`
+- 📖 Reference the alignment document at `docs/wds-1-project-brief/pitch.md`
 - 🚫 Do not skip the feedback and iteration loop
 
 ## CONTEXT BOUNDARIES:
@@ -58,7 +58,7 @@ Present the completed alignment document and guide the user through the stakehol
 
 **Present the alignment document for review and approval**:
 
-"I've created your alignment document at `docs/1-project-brief/pitch.md`.
+"I've created your alignment document at `docs/wds-1-project-brief/pitch.md`.
 
 This alignment document is ready to share with your stakeholders. It's designed to be clear, brief, and compelling - readable in just 2-3 minutes.
 

@@ -41,7 +41,7 @@ Finalize the contract document, review it with the user, present it for signing,
 ## EXECUTION PROTOCOLS:
 
 - 🎯 Review and finalize the contract document
-- 💾 Save contract to `docs/1-project-brief/contract.md` (or `service-agreement.md`)
+- 💾 Save contract to `docs/wds-1-project-brief/contract.md` (or `service-agreement.md`)
 - 📖 Review all sections together with user
 - 🚫 Do not skip the review and adjustment opportunity
 
@@ -60,7 +60,7 @@ Finalize the contract document, review it with the user, present it for signing,
 
 1. **Review the contract**: "I've built your contract section by section. Let me review it with you..."
 
-2. **Present the contract**: "Your contract is ready at `docs/1-project-brief/contract.md` (or `service-agreement.md`)."
+2. **Present the contract**: "Your contract is ready at `docs/wds-1-project-brief/contract.md` (or `service-agreement.md`)."
 
 3. **Explain next steps**:
    - "Review the contract thoroughly"
@@ -78,7 +78,7 @@ Finalize the contract document, review it with the user, present it for signing,
 - Ready to proceed to Project Brief
 
 **Next**: Full Project Brief workflow
-`{project-root}/_bmad/wds/workflows/1-project-brief/workflow.md`
+`{project-root}/_bmad/wds/workflows/wds-1-project-brief/workflow.md`
 
 ### 3. Update State
 
