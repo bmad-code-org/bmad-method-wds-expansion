@@ -1,5 +1,5 @@
 ---
-name: 'step-07-design-system-separation'
+name: 'step-0wds-7-design-system-separation'
 description: 'Verify that page specification focuses on strategic design intent without CSS implementation details or unnecessary information'
 
 # File References

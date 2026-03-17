@@ -96,7 +96,7 @@ Generate or update the interactive HTML catalog from design system data. Load te
 Load catalog template:
 </action>
 
-**File:** `workflows/7-design-system/templates/catalog.template.html`
+**File:** `workflows/wds-7-design-system/templates/catalog.template.html`
 
 **Template variables:**
 
@@ -637,7 +637,7 @@ Changes committed to git.
 ```
 ⚠️ Catalog template missing
 
-Expected: workflows/7-design-system/templates/catalog.template.html
+Expected: workflows/wds-7-design-system/templates/catalog.template.html
 
 Please ensure WDS is properly installed.
 ```
