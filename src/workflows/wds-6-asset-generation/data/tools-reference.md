@@ -657,7 +657,7 @@ Area tags have limitations:
 
 **WDS Documentation:**
 - Prototype Workflow: `workflows/wds-4-ux-design/agentic-development/`
-- Figma Integration: `workflows/6-asset-generation/workflow-figma.md`
+- Figma Integration: `workflows/wds-6-asset-generation/workflow-figma.md`
 - Dev Mode: `workflows/wds-4-ux-design/agentic-development/templates/components/`
 
 ---

@@ -81,7 +81,7 @@ Supporting documentation for Figma integration workflows:
 ## Folder Structure
 
 ```
-6-asset-generation/
+wds-6-asset-generation/
 ├── code-to-figma/              # C2F Workshop
 │   ├── workflow.md
 │   └── steps/
@@ -422,7 +422,7 @@ Supporting documentation for Figma integration workflows:
 ## Contact and Support
 
 **Documentation Location:**
-- `workflows/6-asset-generation/6-asset-generation/`
+- `workflows/wds-6-asset-generation/wds-6-asset-generation/`
 
 **Related Documentation:**
 - Phase 4: UX Design workflows

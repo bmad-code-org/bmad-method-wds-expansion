@@ -43,7 +43,7 @@
 3. Agent links to Figma via Component ID
 4. Specification references Figma source
 
-**See:** `../../workflows/6-asset-generation/workflow-figma.md`
+**See:** `../../workflows/wds-6-asset-generation/workflow-figma.md`
 
 ---
 
@@ -324,7 +324,7 @@ Before marking a component "complete":
 ## Related Resources
 
 - **Phase 7 Workflow:** `../../workflows/7-design-system/`
-- **Figma Integration:** `../../workflows/6-asset-generation/workflow-figma.md`
+- **Figma Integration:** `../../workflows/wds-6-asset-generation/workflow-figma.md`
 - **Shared Knowledge:** `../design-system/` (tokens, naming, states, validation, boundaries)
 
 ---

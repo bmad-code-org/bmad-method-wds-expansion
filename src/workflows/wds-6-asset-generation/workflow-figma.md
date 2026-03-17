@@ -1,7 +1,6 @@
 ---
 name: figma-integration
 description: Code-to-Figma and Figma-to-code workflows for design review and visual iteration
-web_bundle: true
 ---
 
 # Figma Integration
