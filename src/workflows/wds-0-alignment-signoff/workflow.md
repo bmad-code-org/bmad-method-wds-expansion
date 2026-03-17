@@ -1,7 +1,6 @@
 ---
-name: alignment-signoff
+name: wds-0-alignment-signoff
 description: Create alignment around your idea before starting the project
-web_bundle: true
 ---
 
 # Alignment & Signoff Workflow
