@@ -222,7 +222,7 @@ Hands-on guide to preparing and running a usability test session
 
 ## Next Module
 
-**[Module 18: Product Evolution →](../module-18-product-evolution/module-18-product-evolution-overview.md)**
+**[Module 18: Product Evolution →](../module-1wds-8-product-evolution/module-1wds-8-product-evolution-overview.md)**
 
 Products don't end at launch.
 

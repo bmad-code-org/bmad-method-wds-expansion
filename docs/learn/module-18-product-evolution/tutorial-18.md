@@ -285,7 +285,7 @@ Whether you're starting from a blank page or improving a live product, the proce
 
 ---
 
-**[← Back to Lesson 2](lesson-02-update-spec-project-code.md)** | **[← Back to Module Overview](module-18-product-evolution-overview.md)** | **[Back to Course Overview](../00-course-overview/00-course-overview.md)**
+**[← Back to Lesson 2](lesson-02-update-spec-project-code.md)** | **[← Back to Module Overview](module-1wds-8-product-evolution-overview.md)** | **[Back to Course Overview](../00-course-overview/00-course-overview.md)**
 
 ---
 

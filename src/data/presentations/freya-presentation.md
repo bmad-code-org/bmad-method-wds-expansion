@@ -33,7 +33,7 @@ docs/
 │   ├── tokens/               ← Colors, fonts, spacing
 │   └── components/           ← Reusable UI elements
 │
-└── 8-product-evolution/      ← Continuous Improvement
+└── wds-8-product-evolution/      ← Continuous Improvement
     └── kaizen-cycles/
 ```
 

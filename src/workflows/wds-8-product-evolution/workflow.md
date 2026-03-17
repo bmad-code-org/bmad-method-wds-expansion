@@ -1,7 +1,6 @@
 ---
-name: product-evolution
+name: wds-8-product-evolution
 description: Brownfield improvements — the full WDS pipeline in miniature for existing products
-web_bundle: true
 ---
 
 # Phase 8: Product Evolution
