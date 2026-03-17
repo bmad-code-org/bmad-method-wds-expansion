@@ -427,7 +427,7 @@ See: `examples/dog-week-patterns/B-Trigger-Map/` for a complete Trigger Map with
 **Method Guides:**
 - [Phase 1: Product Exploration](./phase-1-product-exploration-guide.md) - Strategic foundation (prerequisite)
 - [Phase 3: UX Scenarios Guide](./phase-3-ux-scenarios-guide.md) - User journeys from Trigger Map
-- [Phase 4: UX Design Guide](./phase-4-ux-design-guide.md) - Using Trigger Map in scenarios
+- [Phase 4: UX Design Guide](./phase-wds-4-ux-design-guide.md) - Using Trigger Map in scenarios
 
 **Foundational Models:**
 - [Impact/Effect Mapping](../models/impact-effect-mapping.md) - The foundational methodology Trigger Mapping derives from

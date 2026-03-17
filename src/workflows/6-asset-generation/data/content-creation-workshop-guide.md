@@ -310,7 +310,7 @@ DESIGNER: "Make headline more fear-focused"
 - [Content Purpose Guide](../../../docs/method/content-purpose-guide.md) - **Start here for content effectiveness**
 
 **Workflows:**
-- [Phase 4: UX Design](../../../docs/method/phase-4-ux-design-guide.md)
+- [Phase 4: UX Design](../../../docs/method/phase-wds-4-ux-design-guide.md)
 - [Phase 1: Product Exploration](../../../docs/method/phase-1-product-exploration-guide.md)
 
 ---

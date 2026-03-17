@@ -184,7 +184,7 @@ Trigger Maps can include awareness positioning for each persona:
 - Scenarios designed to progress awareness
 - Content strategy matches awareness
 
-### [Scenario Definition (Phase 4)](../method/phase-4-ux-design-guide.md)
+### [Scenario Definition (Phase 4)](../method/phase-wds-4-ux-design-guide.md)
 
 Each scenario defines awareness progression:
 - Entry point awareness level
@@ -508,7 +508,7 @@ measurement:
 
 **Related Resources:**
 - [Trigger Mapping Guide](../method/phase-wds-2-trigger-mapping-guide.md) - Uses awareness to position personas
-- [Phase 4: UX Design Guide](../method/phase-4-ux-design-guide.md) - Applies awareness to scenarios
+- [Phase 4: UX Design Guide](../method/phase-wds-4-ux-design-guide.md) - Applies awareness to scenarios
 
 ---
 

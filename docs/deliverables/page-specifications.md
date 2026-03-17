@@ -146,9 +146,9 @@ Or simply upload a sketch image to any agent, and they'll recognize it and activ
 
 **Additional Tutorial:** [Module 12: Conceptual Specs](../module-12-conceptual-specs/tutorial-12.md)
 
-**Workflow Reference:** [UX Design Workflow](../src/workflows/4-ux-design/)
+**Workflow Reference:** [UX Design Workflow](../src/workflows/wds-4-ux-design/)
 
-**Quality Workflow:** [Page Specification Quality](../src/workflows/4-ux-design/page-specification-quality/)
+**Quality Workflow:** [Page Specification Quality](../src/workflows/wds-4-ux-design/page-specification-quality/)
 
 ---
 

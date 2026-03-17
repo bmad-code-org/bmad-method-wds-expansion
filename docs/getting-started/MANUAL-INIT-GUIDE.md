@@ -60,7 +60,7 @@ your-project/
 │           │   ├── wds-1-project-brief/
 │           │   ├── wds-2-trigger-mapping/
 │           │   ├── 3-prd-platform/
-│           │   ├── 4-ux-design/
+│           │   ├── wds-4-ux-design/
 │           │   └── 00-system/
 │           ├── getting-started/
 │           └── WDS-WORKFLOWS-GUIDE.md
@@ -190,7 +190,7 @@ Choose a workflow to start:
 .cursor/rules/wds/workflows/wds-2-trigger-mapping/
 >>>>>>> 24730d5 (feat: convert 2-trigger-mapping workflow to native skill format)
 .cursor/rules/wds/workflows/3-prd-platform/
-.cursor/rules/wds/workflows/4-ux-design/
+.cursor/rules/wds/workflows/wds-4-ux-design/
 .cursor/rules/wds/workflows/00-system/
 ```
 

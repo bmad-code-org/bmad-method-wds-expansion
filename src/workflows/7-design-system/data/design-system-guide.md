@@ -142,7 +142,7 @@ Component specified → Router checks design system
 
 ## Integration with Phase 4
 
-**Called from:** `workflows/4-ux-design/steps-p/step-03-components-objects.md`
+**Called from:** `workflows/wds-4-ux-design/steps-p/step-03-components-objects.md`
 
 **Integration Point:**
 

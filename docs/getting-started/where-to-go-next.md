@@ -65,7 +65,7 @@ Extract design tokens, create reusable components, and generate interactive HTML
 
 ### 📚 Reference Documentation
 
-**[Modular Architecture](../workflows/4-ux-design/modular-architecture/00-MODULAR-ARCHITECTURE-GUIDE.md)**
+**[Modular Architecture](../workflows/wds-4-ux-design/modular-architecture/00-MODULAR-ARCHITECTURE-GUIDE.md)**
 
 Technical details on:
 
@@ -125,8 +125,8 @@ Join the WDS community for:
 
 - [Course](../learn/00-course-overview.md)
 - [Workflows](../wds-workflows-guide.md)
-- [Modular Architecture](../src/workflows/4-ux-design/modular-architecture/00-MODULAR-ARCHITECTURE-GUIDE.md)
-- [Conceptual Specifications](../src/workflows/4-ux-design/CONCEPTUAL-SPECIFICATIONS.md)
+- [Modular Architecture](../src/workflows/wds-4-ux-design/modular-architecture/00-MODULAR-ARCHITECTURE-GUIDE.md)
+- [Conceptual Specifications](../src/workflows/wds-4-ux-design/CONCEPTUAL-SPECIFICATIONS.md)
 
 ---
 

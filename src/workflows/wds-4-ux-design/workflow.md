@@ -1,7 +1,6 @@
 ---
-name: ux-design
+name: wds-4-ux-design
 description: Transform ideas into detailed visual specifications through scenario-driven design
-web_bundle: true
 ---
 
 # Phase 4: UX Design
