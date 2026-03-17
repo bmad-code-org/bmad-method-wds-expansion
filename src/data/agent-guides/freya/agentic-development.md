@@ -216,7 +216,7 @@ For each Object ID:
 - **Design Log:** `{output_folder}/_progress/00-design-log.md`
 - **Agent Experiences:** `{output_folder}/_progress/agent-experiences/`
 - **Phase 4 UX Design:** `workflows/wds-4-ux-design/workflow.md`
-- **Inline Testing Guide:** `workflows/5-agentic-development/guides/INLINE-TESTING-GUIDE.md`
+- **Inline Testing Guide:** `workflows/wds-5-agentic-development/guides/INLINE-TESTING-GUIDE.md`
 
 ---
 

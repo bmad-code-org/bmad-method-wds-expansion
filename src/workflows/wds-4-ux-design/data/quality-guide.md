@@ -572,7 +572,7 @@ This quality workflow integrates with:
 - [Sketch Analysis](../steps-k/step-01-sketch-analysis.md) - Identifies page elements
 
 **After:**
-- [Agentic Development](../../5-agentic-development/) - Builds HTML demos from specs
+- [Agentic Development](../../wds-5-agentic-development/) - Builds HTML demos from specs
 - [Handover](../steps-h/) - Packages specs for handoff
 - [Platform Requirements](../../../wds-1-project-brief/steps-c/ (steps 27-32)) - Technical boundaries from specs
 
