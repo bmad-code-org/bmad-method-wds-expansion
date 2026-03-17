@@ -195,7 +195,7 @@ Search for "Effect Mapping inUse" for historical context
 
 ## Whiteport Methods That Harness This Model
 
-### [Trigger Mapping Guide](../method/phase-2-trigger-mapping-guide.md)
+### [Trigger Mapping Guide](../method/phase-wds-2-trigger-mapping-guide.md)
 
 Whiteport's enhanced adaptation of Effect/Impact Mapping:
 
@@ -231,7 +231,7 @@ Whiteport's enhanced adaptation of Effect/Impact Mapping:
 
 **Result:** A compact, long-lived strategic map that guides solution design without becoming outdated.
 
-### [Feature Impact Analysis](../method/phase-2-trigger-mapping-guide.md)
+### [Feature Impact Analysis](../method/phase-wds-2-trigger-mapping-guide.md)
 
 A separate method (also derived from Impact Mapping) that uses the Trigger Map:
 
@@ -590,7 +590,7 @@ Goal
 4. **Choose:** Decide if you need a slim Trigger Map, full Impact Map, or comprehensive Trigger Map
 
 **Related Resources:**
-- [Trigger Mapping Guide](../method/phase-2-trigger-mapping-guide.md) - Whiteport's adaptation
+- [Trigger Mapping Guide](../method/phase-wds-2-trigger-mapping-guide.md) - Whiteport's adaptation
 - [ImpactMapping.org](https://www.impactmapping.org) - Official resources
 
 ---

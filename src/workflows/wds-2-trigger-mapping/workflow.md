@@ -1,7 +1,6 @@
 ---
-name: trigger-mapping
+name: wds-2-trigger-mapping
 description: Map business goals to user psychology through structured workshops
-web_bundle: true
 ---
 
 # Phase 2: Trigger Mapping

@@ -364,7 +364,7 @@ Your specifications enable:
 
 **Method Guides:**
 - [Phase 3: UX Scenarios Guide](./phase-3-ux-scenarios-guide.md) - Scenario outlines that drive page design
-- [Phase 2: Trigger Mapping Guide](./phase-2-trigger-mapping-guide.md) - Source for user psychology
+- [Phase 2: Trigger Mapping Guide](./phase-wds-2-trigger-mapping-guide.md) - Source for user psychology
 
 **Strategic Models:**
 - [Customer Awareness Cycle](../models/customer-awareness-cycle.md) - User awareness positioning

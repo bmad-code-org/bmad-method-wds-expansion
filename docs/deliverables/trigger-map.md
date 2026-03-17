@@ -144,7 +144,7 @@ Cascade the Strategist will begin the conversation and guide you through the pro
 
 **Hands-on Tutorial:** [Module 04: Trigger Mapping](../module-04-map-triggers-outcomes/tutorial-04.md)
 
-**Workflow Reference:** [Trigger Mapping Workflow](../src/workflows/2-trigger-mapping/)
+**Workflow Reference:** [Trigger Mapping Workflow](../src/workflows/wds-2-trigger-mapping/)
 
 ---
 

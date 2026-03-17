@@ -23,7 +23,7 @@ Complete documentation for Whiteport Design Studio - a design-first methodology 
 
 - **[WDS Method Overview](method/wds-method-guide.md)** - Complete methodology guide
 - **[Phase 1: Product Exploration](method/phase-1-product-exploration-guide.md)** - Strategic foundation
-- **[Phase 2: Trigger Mapping](method/phase-2-trigger-mapping-guide.md)** - User psychology & business goals
+- **[Phase 2: Trigger Mapping](method/phase-wds-2-trigger-mapping-guide.md)** - User psychology & business goals
 - **[Phase 3: UX Scenarios](method/phase-3-ux-scenarios-guide.md)** - User journeys & scenario outlines
 - **[Phase 4: UX Design](method/phase-4-ux-design-guide.md)** - Page specifications & prototypes
 

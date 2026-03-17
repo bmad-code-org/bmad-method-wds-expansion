@@ -24,7 +24,7 @@ docs/
 │   ├── 03-Success-Metrics.md
 │   └── 04-Project-Scope.md
 │
-└── 2-trigger-mapping/        ← Journey Intelligence Center
+└── wds-2-trigger-mapping/        ← Journey Intelligence Center
     ├── 01-Business-Goals.md
     ├── 02-Target-Groups.md
     ├── 03-User-Personas.md

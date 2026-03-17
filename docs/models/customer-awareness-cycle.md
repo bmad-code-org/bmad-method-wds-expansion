@@ -177,7 +177,7 @@ While Schwartz focused on advertising copy, his framework applies powerfully to:
 
 ## Whiteport Methods That Harness This Model
 
-### [Trigger Mapping Guide](../method/phase-2-trigger-mapping-guide.md)
+### [Trigger Mapping Guide](../method/phase-wds-2-trigger-mapping-guide.md)
 
 Trigger Maps can include awareness positioning for each persona:
 - Different users at different awareness levels
@@ -507,7 +507,7 @@ measurement:
 5. **Test and measure:** Track progression through awareness stages
 
 **Related Resources:**
-- [Trigger Mapping Guide](../method/phase-2-trigger-mapping-guide.md) - Uses awareness to position personas
+- [Trigger Mapping Guide](../method/phase-wds-2-trigger-mapping-guide.md) - Uses awareness to position personas
 - [Phase 4: UX Design Guide](../method/phase-4-ux-design-guide.md) - Applies awareness to scenarios
 
 ---

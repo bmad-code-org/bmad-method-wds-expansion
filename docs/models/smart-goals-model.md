@@ -274,7 +274,7 @@ SMART goals are now standard practice in:
 - Doran, G. T. (1981). "There's a S.M.A.R.T. Way to Write Management's Goals and Objectives." *Management Review*, Vol. 70, Issue 11, pp. 35-36.
 
 **Related WDS Resources:**
-- [Phase 2: Trigger Mapping Guide](../method/phase-2-trigger-mapping-guide.md)
+- [Phase 2: Trigger Mapping Guide](../method/phase-wds-2-trigger-mapping-guide.md)
 - [Module 05: Trigger Mapping](../learn/module-05-trigger-mapping/module-05-overview.md)
 - [Lesson 3: The Five Workshops](../learn/module-05-trigger-mapping/lesson-03-five-workshops.md)
 

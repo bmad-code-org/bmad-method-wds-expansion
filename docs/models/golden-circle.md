@@ -523,7 +523,7 @@ We offer:
 
 **Related Resources:**
 - [Product Exploration Guide](../method/phase-1-product-exploration-guide.md) - Uses WHY-first discovery
-- [Trigger Mapping Guide](../method/phase-2-trigger-mapping-guide.md) - Connects business WHY to user WHY
+- [Trigger Mapping Guide](../method/phase-wds-2-trigger-mapping-guide.md) - Connects business WHY to user WHY
 
 ---
 

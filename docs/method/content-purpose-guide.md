@@ -425,7 +425,7 @@ When reviewing content, ask:
 - [Kathy Sierra Badass Users](../models/kathy-sierra-badass-users.md) - Empowerment framing
 
 **Whiteport Methods:**
-- [Trigger Mapping Guide](phase-2-trigger-mapping-guide.md) - Strategic context for content
+- [Trigger Mapping Guide](phase-wds-2-trigger-mapping-guide.md) - Strategic context for content
 
 **Workflows:**
 - [Content Creation Workshop](../src/workflows/shared/content-creation-workshop/content-creation-workshop-guide.md) - Using purpose in content generation
