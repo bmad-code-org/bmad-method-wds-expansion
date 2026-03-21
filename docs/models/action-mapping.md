@@ -224,7 +224,7 @@ By Cathy Moore (2017)
 
 ## Whiteport Methods That Harness This Model
 
-### [Phase 4: UX Design Guide](../method/phase-4-ux-design-guide.md)
+### [Phase 4: UX Design Guide](../method/phase-wds-4-ux-design-guide.md)
 
 Scenario design uses Action Mapping principles:
 
@@ -671,7 +671,7 @@ Action 1: [Observable behavior]
 4. **Apply:** Use action-focus in next scenario specification
 
 **Related Resources:**
-- [Phase 4: UX Design Guide](../method/phase-4-ux-design-guide.md) - Scenario design using action focus
+- [Phase 4: UX Design Guide](../method/phase-wds-4-ux-design-guide.md) - Scenario design using action focus
 - [Trigger Mapping Guide](../method/phase-wds-2-trigger-mapping-guide.md) - Connect actions to driving forces
 - [Blog.Cathy-Moore.com](https://blog.cathy-moore.com) - Original source and examples
 

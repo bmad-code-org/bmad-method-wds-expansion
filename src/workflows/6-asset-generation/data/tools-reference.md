@@ -434,7 +434,7 @@ Area tags have limitations:
 
 **Purpose:** Interactive tool for extracting Object IDs and area coordinates from prototypes
 
-**Location:** `workflows/4-ux-design/agentic-development/templates/components/dev-mode.js`
+**Location:** `workflows/wds-4-ux-design/agentic-development/templates/components/dev-mode.js`
 
 ### Features
 
@@ -656,9 +656,9 @@ Area tags have limitations:
 - W3C Spec: <https://www.w3.org/TR/html52/semantics-embedded-content.html#the-area-element>
 
 **WDS Documentation:**
-- Prototype Workflow: `workflows/4-ux-design/agentic-development/`
+- Prototype Workflow: `workflows/wds-4-ux-design/agentic-development/`
 - Figma Integration: `workflows/6-asset-generation/workflow-figma.md`
-- Dev Mode: `workflows/4-ux-design/agentic-development/templates/components/`
+- Dev Mode: `workflows/wds-4-ux-design/agentic-development/templates/components/`
 
 ---
 

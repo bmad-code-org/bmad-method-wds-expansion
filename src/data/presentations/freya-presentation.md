@@ -18,7 +18,7 @@
 
 ```
 docs/
-├── 4-ux-design/              ← Scenarios & Interactive Prototypes
+├── wds-4-ux-design/              ← Scenarios & Interactive Prototypes
 │   └── scenarios/
 │       ├── 01-onboarding/
 │       │   ├── 00-Scenario.md

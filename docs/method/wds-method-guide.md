@@ -132,7 +132,7 @@ Transform scenarios into detailed visual specifications. Freya helps you concept
 
 **Activities:** Conceptualize, Analyse Sketches, Suggest Interface, Dream Up Interface, Write Specifications, Visual Design, Manage Design System, Validate, Design Delivery
 
-See: [Phase 4: UX Design Guide](./phase-4-ux-design-guide.md)
+See: [Phase 4: UX Design Guide](./phase-wds-4-ux-design-guide.md)
 
 ---
 

@@ -542,7 +542,7 @@ These are all preventable by validating during development.
 
 - **Inline Testing Guide:** `INLINE-TESTING-GUIDE.md` — General Puppeteer verification
 - **SEO Strategy Guide:** `../../data/agent-guides/saga/seo-strategy-guide.md` — SEO reference
-- **SEO Content Instructions:** `../../4-ux-design/templates/instructions/seo-content.instructions.md` — Spec-level SEO
+- **SEO Content Instructions:** `../../wds-4-ux-design/templates/instructions/seo-content.instructions.md` — Spec-level SEO
 - **Specification Quality:** `../../data/agent-guides/freya/specification-quality.md` — Quality checklist
 - **Meta Content Guide:** `../../data/agent-guides/freya/meta-content-guide.md` — Meta tag details
 

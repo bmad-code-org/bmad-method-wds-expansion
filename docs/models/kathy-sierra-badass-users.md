@@ -664,7 +664,7 @@ For each screen/component, ask:
 **Related Resources:**
 - [Trigger Mapping Guide](../method/phase-wds-2-trigger-mapping-guide.md) - Driving forces include capability desires
 - [Action Mapping Model](./action-mapping.md) - Similar philosophy: focus on what users DO
-- [Phase 4: UX Design Guide](../method/phase-4-ux-design-guide.md) - Scenario design with user capability in mind
+- [Phase 4: UX Design Guide](../method/phase-wds-4-ux-design-guide.md) - Scenario design with user capability in mind
 
 ---
 

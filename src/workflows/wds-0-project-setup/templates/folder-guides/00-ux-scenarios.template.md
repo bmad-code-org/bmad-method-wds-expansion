@@ -47,15 +47,15 @@ C-UX-Scenarios/
 **Agent trigger:** `SC` (Saga)
 
 ### Page Specifications (Freya)
-**Workflow:** `_bmad/wds/workflows/4-ux-design/workflow.md`
+**Workflow:** `_bmad/wds/workflows/wds-4-ux-design/workflow.md`
 **Agent trigger:** `UX` (Freya)
-**Page template:** `_bmad/wds/workflows/4-ux-design/templates/page-specification.template.md`
-**Scenario template:** `_bmad/wds/workflows/4-ux-design/templates/scenario-overview.template.md`
+**Page template:** `_bmad/wds/workflows/wds-4-ux-design/templates/page-specification.template.md`
+**Scenario template:** `_bmad/wds/workflows/wds-4-ux-design/templates/scenario-overview.template.md`
 **Quality guide:** `_bmad/wds/data/agent-guides/freya/specification-quality.md`
-**Object types:** `_bmad/wds/workflows/4-ux-design/object-types/`
+**Object types:** `_bmad/wds/workflows/wds-4-ux-design/object-types/`
 
 ### Specification Audit (Freya)
-**Workflow:** `_bmad/wds/workflows/4-ux-design/specification-audit-workflow.md`
+**Workflow:** `_bmad/wds/workflows/wds-4-ux-design/specification-audit-workflow.md`
 **Agent trigger:** `SA` (Freya)
 
 **Before writing any page specification:**

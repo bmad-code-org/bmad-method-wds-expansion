@@ -1,7 +1,6 @@
 ---
 name: Modular Component Architecture
 description: Reference guides for three-tier specification system (Pages, Components, Features)
-web_bundle: true
 ---
 
 # Modular Component Architecture
