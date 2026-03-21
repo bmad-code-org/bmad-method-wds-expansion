@@ -1,7 +1,6 @@
 ---
 name: scenarios-validate
 description: Validate UX scenario outlines against WDS quality standards
-web_bundle: true
 validateWorkflow: './steps-v/step-01-scenario-coverage.md'
 ---
 
