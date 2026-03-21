@@ -93,8 +93,8 @@ Inform user: "I'm creating a design log to track my learning, research, generati
 Create session log at {output_folder}/_progress/agent-experiences/{date}-trigger-map-{{mode}}.md
 
 Execute Layer 1: Learn WDS Form (Static - loaded once)
-- Read docs/method/phase-2-trigger-mapping-guide.md
-- Read docs/quick-start/02-trigger-mapping.md
+- Read docs/method/phase-wds-2-trigger-mapping-guide.md
+- Read docs/quick-start/0wds-2-trigger-mapping.md
 - Read src/data/agent-guides/saga/trigger-mapping.md
 - Read docs/models/impact-effect-mapping.md
 - Read docs/method/dream-up-rubric-phase-2.md

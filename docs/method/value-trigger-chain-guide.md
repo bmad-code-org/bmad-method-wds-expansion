@@ -7,5 +7,5 @@ When a scenario or content piece needs strategic context, reference the Trigger 
 Phase 1 (Product Brief) is casual business discovery. Phase 2 (Trigger Mapping) is where strategic analysis happens. There is no separate "VTC" concept.
 
 See:
-- [Phase 2: Trigger Mapping Guide](./phase-2-trigger-mapping-guide.md) — the Trigger Map Workshop
+- [Phase 2: Trigger Mapping Guide](./phase-wds-2-trigger-mapping-guide.md) — the Trigger Map Workshop
 - [Phase 1: Product Exploration Guide](./phase-1-product-exploration-guide.md) — casual business discovery

@@ -189,7 +189,7 @@ See: `examples/dog-week-patterns/A-Product-Brief/` for a complete Product Brief 
 ## Related Resources
 
 **Method Guides:**
-- [Phase 2: Trigger Mapping Guide](./phase-2-trigger-mapping-guide.md) - Deep user psychology (next phase)
+- [Phase 2: Trigger Mapping Guide](./phase-wds-2-trigger-mapping-guide.md) - Deep user psychology (next phase)
 - [Phase 3: UX Scenarios Guide](./phase-3-ux-scenarios-guide.md) - User journeys from Trigger Map
 
 **Strategic Models:**

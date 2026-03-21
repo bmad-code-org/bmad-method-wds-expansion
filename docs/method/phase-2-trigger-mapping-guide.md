@@ -434,7 +434,7 @@ See: `examples/dog-week-patterns/B-Trigger-Map/` for a complete Trigger Map with
 - [Customer Awareness Cycle](../models/customer-awareness-cycle.md) - Understanding user awareness stages
 
 **Workflows:**
-- Trigger Mapping Workflow: `workflows/2-trigger-mapping/` (see workflow files)
+- Trigger Mapping Workflow: `workflows/wds-2-trigger-mapping/` (see workflow files)
 
 ---
 

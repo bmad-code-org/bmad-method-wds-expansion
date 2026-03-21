@@ -90,8 +90,8 @@ Choose: [W] Workshop | [S] Suggest | [D] Dream
 
 **Load these WDS learning materials:**
 ```
-docs/method/phase-2-trigger-mapping-guide.md
-docs/quick-start/02-trigger-mapping.md
+docs/method/phase-wds-2-trigger-mapping-guide.md
+docs/quick-start/0wds-2-trigger-mapping.md
 src/data/agent-guides/saga/trigger-mapping.md
 docs/models/impact-effect-mapping.md
 docs/method/dream-up-rubric-phase-2.md

@@ -54,7 +54,7 @@ Provide clear instructions for activating Phase 2 - this is the final step in th
 
 **Option 1: Direct Workflow**
 ```
-Load: workflows/2-trigger-mapping/instructions.md
+Load: workflows/wds-2-trigger-mapping/instructions.md
 ```
 
 **Option 2: Activate Saga**
