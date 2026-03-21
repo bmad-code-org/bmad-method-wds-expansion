@@ -41,7 +41,7 @@
 - Components extracted as discovered
 - Figma MCP endpoints for integration
 - **This workflow extracts and links to Figma**
-- **See:** `../6-asset-generation/workflow-figma.md` for complete Figma workflow
+- **See:** `../wds-6-asset-generation/workflow-figma.md` for complete Figma workflow
 
 ### Mode C: Component Library Design System
 
@@ -227,7 +227,7 @@ For each component:
 
 ## Figma Integration (Mode B)
 
-**Location:** `../6-asset-generation/workflow-figma.md`
+**Location:** `../wds-6-asset-generation/workflow-figma.md`
 
 **Purpose:** Enable seamless Figma ↔ WDS synchronization for custom design systems
 

@@ -1,7 +1,6 @@
 ---
-name: asset-generation
+name: wds-6-asset-generation
 description: Generate visual and text assets from specifications through AI-powered creative production
-web_bundle: true
 ---
 
 # Phase 6: Asset Generation

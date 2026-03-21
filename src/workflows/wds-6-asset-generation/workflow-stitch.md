@@ -1,7 +1,6 @@
 ---
 name: stitch-generation
 description: AI-assisted UI design using Google Stitch from specifications and sketches
-web_bundle: true
 ---
 
 # Stitch UI Generation
