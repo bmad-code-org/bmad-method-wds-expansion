@@ -4,7 +4,7 @@
 
 **Copy to project:**
 ```bash
-cp -r workflows/1-project-brief/templates/project-brief-dialog projects/{{slug}}/dialog
+cp -r workflows/wds-1-project-brief/templates/project-brief-dialog projects/{{slug}}/dialog
 ```
 
 **Update as you progress:**

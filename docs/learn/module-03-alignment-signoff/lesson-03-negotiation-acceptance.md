@@ -23,7 +23,7 @@
 ## Sharing with Stakeholders
 
 **Present your alignment document:**
-- Share `docs/1-project-brief/pitch.md`
+- Share `docs/wds-1-project-brief/pitch.md`
 - Explain that this is a draft for discussion
 - Invite feedback and questions
 - Be open to changes

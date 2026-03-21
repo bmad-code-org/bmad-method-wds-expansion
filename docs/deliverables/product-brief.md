@@ -88,7 +88,7 @@ You: "Yes! But add 'time tracking' to must-haves."
 Saga the Analyst: "Updated! ✅ Brief is ready."
 ```
 
-**Result:** Product Brief saved to `/docs/1-project-brief/01-product-brief.md`
+**Result:** Product Brief saved to `/docs/wds-1-project-brief/01-product-brief.md`
 
 ---
 
@@ -109,7 +109,7 @@ Saga the Analyst: "Updated! ✅ Brief is ready."
 
 ## Example
 
-See the [WDS Presentation Project - Product Brief](../../examples/WDS-Presentation/docs/1-project-brief/01-product-brief.md)
+See the [WDS Presentation Project - Product Brief](../../examples/WDS-Presentation/docs/wds-1-project-brief/01-product-brief.md)
 
 ---
 
@@ -129,7 +129,7 @@ Saga the Analyst will begin the conversation and guide you through the process.
 
 **Hands-on Tutorial:** [Module 04: Project Brief](../module-04-project-brief/tutorial-04.md)
 
-**Workflow Reference:** [Project Brief Workflow](../src/workflows/1-project-brief/)
+**Workflow Reference:** [Project Brief Workflow](../src/workflows/wds-1-project-brief/)
 
 ---
 

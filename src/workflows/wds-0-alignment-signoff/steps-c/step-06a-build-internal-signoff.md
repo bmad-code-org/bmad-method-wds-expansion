@@ -41,7 +41,7 @@ Build an internal signoff document for company projects, covering goals, budget,
 ## EXECUTION PROTOCOLS:
 
 - 🎯 Build internal signoff document with all required sections
-- 💾 Save to `docs/1-project-brief/signoff.md`
+- 💾 Save to `docs/wds-1-project-brief/signoff.md`
 - 📖 Focus on internal company needs (goals, budget, ownership, approval)
 - 🚫 Do not use external contract language
 

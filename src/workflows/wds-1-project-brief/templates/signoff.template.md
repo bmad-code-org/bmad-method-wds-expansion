@@ -179,7 +179,7 @@ Any changes to scope, timeline, or investment must be agreed upon by all signato
 
 ### Reference Documents
 
-- Project Pitch: `docs/1-project-brief/pitch.md`
+- Project Pitch: `docs/wds-1-project-brief/pitch.md`
 - Project Brief: (To be created after signoff)
 
 ---

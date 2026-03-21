@@ -341,7 +341,7 @@ The WDS landing page messaging uses Golden Circle structure:
 **WHAT (Features Section):**
 "Trigger mapping, UX specifications, design system generation, developer handoff"
 
-**See:** [WDS Presentation Product Brief](../examples/WDS-Presentation/docs/1-project-brief/01-product-brief.md)
+**See:** [WDS Presentation Product Brief](../examples/WDS-Presentation/docs/wds-1-project-brief/01-product-brief.md)
 
 The Product Brief was developed using WHY-first discovery conversations, ensuring the messaging hierarchy reflects true purpose.
 

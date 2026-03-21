@@ -199,7 +199,7 @@ Share your discovery notes with Saga. She will help you extract:
 
 **Saga will help you create:**
 
-`docs/1-project-brief/pitch.md`
+`docs/wds-1-project-brief/pitch.md`
 
 - Clear, brief, readable in 2-3 minutes
 - Makes the case for the project using their language
@@ -266,7 +266,7 @@ The Strategic Professional emphasizes: "Long contracts are hard to understand, a
 
 **The contract references the pitch** - Everything points back to the accepted alignment document. This keeps it short, clear, and aligned.
 
-**Output:** `docs/1-project-brief/[contract/service-agreement/signoff].md`
+**Output:** `docs/wds-1-project-brief/[contract/service-agreement/signoff].md`
 
 ---
 

@@ -41,8 +41,8 @@ Create the alignment document from all explored sections, using framework thinki
 ## EXECUTION PROTOCOLS:
 
 - 🎯 Create the alignment document using confirmed content
-- 💾 Save to `docs/1-project-brief/pitch.md`
-- 📖 Use template at `../../1-project-brief/templates/pitch.template.md`
+- 💾 Save to `docs/wds-1-project-brief/pitch.md`
+- 📖 Use template at `../../wds-1-project-brief/templates/pitch.template.md`
 - 🚫 Do not add content that wasn't confirmed in step-03a
 
 ## CONTEXT BOUNDARIES:
@@ -74,13 +74,13 @@ Help crystallize into a clear, compelling narrative using framework thinking:
 
 ### 3. Create Alignment Document
 
-**Output file**: `docs/1-project-brief/pitch.md` (deliverable name: "pitch")
+**Output file**: `docs/wds-1-project-brief/pitch.md` (deliverable name: "pitch")
 
 **Format**: Clear, brief, readable in 2-3 minutes
 
 **Structure**: Use the 10-section structure covered in the exploration
 
-**Template reference**: `../../1-project-brief/templates/pitch.template.md`
+**Template reference**: `../../wds-1-project-brief/templates/pitch.template.md`
 
 **Ask**: "Does this present your idea in the best light?"
 

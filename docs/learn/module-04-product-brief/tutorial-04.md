@@ -322,7 +322,7 @@ Agent: "Let me review your project brief:
 
 **Create file:** `A-Project-Brief/project-brief.md`
 
-**Use template from:** `workflows/1-project-brief/project-brief/complete/project-brief.template.md`
+**Use template from:** `workflows/wds-1-project-brief/project-brief/complete/project-brief.template.md`
 
 **Populate with your content:**
 

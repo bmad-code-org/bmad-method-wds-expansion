@@ -268,7 +268,7 @@ Work through these sections **in whatever order makes sense** for your thinking:
 - Saga will help you synthesize into a clear, compelling document
 - Review together: "Does this capture your idea?"
 - Make adjustments until it's right
-- Create: `docs/1-project-brief/pitch.md`
+- Create: `docs/wds-1-project-brief/pitch.md`
 
 ---
 

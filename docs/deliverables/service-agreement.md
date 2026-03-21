@@ -135,7 +135,7 @@ Saga the Analyst will begin the conversation and guide you through the process.
 
 **Hands-on Tutorial:** [Module 03: Alignment & Signoff](../module-03-alignment-signoff/tutorial-03.md)
 
-**Workflow Reference:** [Alignment & Signoff Workflow](../src/workflows/1-project-brief/alignment-signoff/)
+**Workflow Reference:** [Alignment & Signoff Workflow](../src/workflows/wds-1-project-brief/alignment-signoff/)
 
 ---
 
