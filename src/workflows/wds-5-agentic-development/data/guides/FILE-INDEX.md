@@ -1,6 +1,6 @@
 # Agentic Development - File Index
 
-**Location**: `src/workflows/5-agentic-development/`
+**Location**: `src/workflows/wds-5-agentic-development/`
 
 ---
 

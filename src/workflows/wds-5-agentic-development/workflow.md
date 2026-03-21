@@ -1,7 +1,6 @@
 ---
-name: agentic-development
+name: wds-5-agentic-development
 description: AI-assisted development, testing, and reverse engineering through structured agent collaboration
-web_bundle: true
 ---
 
 # Phase 5: Agentic Development

@@ -183,7 +183,7 @@ design_system_checks:
 
 **Run SEO validation for all public pages:**
 
-Reference: `../5-agentic-development/guides/SEO-VALIDATION-GUIDE.md`
+Reference: `../wds-5-agentic-development/guides/SEO-VALIDATION-GUIDE.md`
 
 ```yaml
 seo_checks:
