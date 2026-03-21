@@ -3,7 +3,7 @@ name: 'step-06-object-registry'
 description: 'Verify that page specification includes complete Object Registry with 100% coverage of all Object IDs'
 
 # File References
-nextStepFile: './step-07-design-system-separation.md'
+nextStepFile: './step-0wds-7-design-system-separation.md'
 workflowFile: '../workflow.md'
 activityWorkflowFile: '../workflow-validate.md'
 ---

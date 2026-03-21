@@ -29,7 +29,7 @@ docs/
 │       │       └── interactive-demo.html
 │       └── 02-feature/
 │
-├── 7-design-system/          ← Component Library
+├── wds-7-design-system/          ← Component Library
 │   ├── tokens/               ← Colors, fonts, spacing
 │   └── components/           ← Reusable UI elements
 │

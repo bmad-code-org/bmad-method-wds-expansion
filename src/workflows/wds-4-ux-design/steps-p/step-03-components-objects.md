@@ -90,7 +90,7 @@ Describe what you see:</ask>
 
 #### Design System Check (If Enabled)
 
-<action>After component specification complete: 1. Check project config: Is design system enabled? 2. If YES: Load and execute `workflows/7-design-system/design-system-router.md` 3. Design system router will: - Check for similar components - Run opportunity/risk assessment if needed - Extract component-level info to design system - Return component reference - Update page spec with reference 4. If NO: Keep complete specification on page 5. Continue to next object
+<action>After component specification complete: 1. Check project config: Is design system enabled? 2. If YES: Load and execute `workflows/wds-7-design-system/design-system-router.md` 3. Design system router will: - Check for similar components - Run opportunity/risk assessment if needed - Extract component-level info to design system - Return component reference - Update page spec with reference 4. If NO: Keep complete specification on page 5. Continue to next object
 </action>
 
 <ask>**More objects in {{section_name}}?**

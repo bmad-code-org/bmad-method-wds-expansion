@@ -1,7 +1,6 @@
 ---
-name: design-system
+name: wds-7-design-system
 description: Create, import, browse, and maintain design system components and tokens
-web_bundle: true
 ---
 
 # Phase 7: Design System
