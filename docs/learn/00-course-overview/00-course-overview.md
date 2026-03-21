@@ -118,7 +118,7 @@ Each module contains:
 | Module | Title | Agent | Time |
 |--------|-------|-------|------|
 | 17 | [Usability Testing](../module-17-usability-testing/module-17-usability-testing-overview.md) | Freya | 45 min |
-| 18 | [Product Evolution](../module-18-product-evolution/module-18-product-evolution-overview.md) | Freya | 30 min |
+| 18 | [Product Evolution](../module-1wds-8-product-evolution/module-1wds-8-product-evolution-overview.md) | Freya | 30 min |
 
 ---
 

@@ -224,6 +224,6 @@ In the tutorial, you'll run a complete evolution cycle — from receiving feedba
 
 ---
 
-[← Back to Lesson 1](lesson-01-continuous-improvement.md) | [Module Overview](module-18-product-evolution-overview.md)
+[← Back to Lesson 1](lesson-01-continuous-improvement.md) | [Module Overview](module-1wds-8-product-evolution-overview.md)
 
 *Part of Module 18: Product Evolution*
