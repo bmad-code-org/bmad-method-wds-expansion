@@ -2,6 +2,7 @@
   "$schema": "https://json.schemastore.org/package.json",
   "name": "bmad-wds",
   "version": "0.3.1",
+  "private": true,
   "description": "Whiteport Design Studio - BMAD expansion module for strategic design methodology",
   "keywords": [
     "design",
