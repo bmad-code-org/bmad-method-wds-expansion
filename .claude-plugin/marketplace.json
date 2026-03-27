@@ -1,0 +1,28 @@
+{
+  "name": "bmad-wds",
+  "owner": {
+    "name": "Mårten Angner"
+  },
+  "plugins": [
+    {
+      "name": "bmad-wds",
+      "source": "./",
+      "description": "Whiteport Design Studio — strategic design methodology with analyst and UX agents plus phased workflows from setup through design systems.",
+      "version": "0.3.1",
+      "skills": [
+        "./src/agents/wds-agent-freya-ux",
+        "./src/agents/wds-agent-saga-analyst",
+        "./src/workflows/wds-0-alignment-signoff",
+        "./src/workflows/wds-0-project-setup",
+        "./src/workflows/wds-1-project-brief",
+        "./src/workflows/wds-2-trigger-mapping",
+        "./src/workflows/wds-3-scenarios",
+        "./src/workflows/wds-4-ux-design",
+        "./src/workflows/wds-5-agentic-development",
+        "./src/workflows/wds-6-asset-generation",
+        "./src/workflows/wds-7-design-system",
+        "./src/workflows/wds-8-product-evolution"
+      ]
+    }
+  ]
+}
