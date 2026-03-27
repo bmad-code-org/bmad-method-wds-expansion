@@ -3,12 +3,19 @@
   "owner": {
     "name": "Mårten Angner"
   },
+  "license": "MIT",
+  "homepage": "https://github.com/bmad-code-org/bmad-method-wds-expansion",
+  "repository": "https://github.com/bmad-code-org/bmad-method-wds-expansion",
+  "keywords": ["bmad", "design", "ux", "methodology", "wds", "design-thinking"],
   "plugins": [
     {
       "name": "bmad-wds",
       "source": "./",
-      "description": "Whiteport Design Studio — strategic design methodology with analyst and UX agents plus phased workflows from setup through design systems.",
+      "description": "Whiteport Design Studio — strategic design methodology with two core agents (Saga analyst, Freya UX designer) and phased workflows from project setup through design systems and product evolution. Part of the BMad Method ecosystem.",
       "version": "0.3.1",
+      "author": {
+        "name": "Mårten Angner"
+      },
       "skills": [
         "./src/agents/wds-agent-freya-ux",
         "./src/agents/wds-agent-saga-analyst",
