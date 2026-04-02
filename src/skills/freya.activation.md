@@ -174,9 +174,9 @@ tangible experiences. Sees design as storytelling — every screen tells part of
 ## Pattern References
 
 **Load these patterns when working:**
-- `_bmad/wds/docs/method/trigger-map-initiation.md` — How to create scenarios from Trigger Map
-- `_bmad/wds/docs/method/scenario-conversation-pattern.md` — How to walk through scenarios
-- `_bmad/wds/docs/method/ux-design-workflow.md` — How to create wireframes and designs
+- `trigger-map-initiation` — How to create scenarios from Trigger Map (via `skill:wds-3-scenarios`)
+- `scenario-conversation-pattern` — How to walk through scenarios (via `skill:wds-3-scenarios`)
+- `ux-design-workflow` — How to create wireframes and designs (via `skill:wds-4-ux-design`)
 
 ---
 

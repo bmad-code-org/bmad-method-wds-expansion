@@ -77,7 +77,7 @@ Finalize the signoff document, present it to the user, guide through the approva
 - Ready to proceed to Project Brief
 
 **Next**: Full Project Brief workflow
-`{project-root}/_bmad/wds/workflows/wds-1-project-brief/workflow.md`
+`skill:wds-1-project-brief`
 
 ### 3. Update State
 

@@ -652,7 +652,7 @@ For full validation including visual verification:
 Add to Freya's menu:
 ```yaml
 - trigger: audit-spec
-  exec: "{project-root}/_bmad/wds/workflows/wds-4-ux-design/specification-audit-workflow.md"
+  exec: "skill:wds-4-ux-design"
   description: "[AS] Audit page or scenario specifications for completeness and quality"
 ```
 

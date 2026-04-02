@@ -78,7 +78,7 @@ Finalize the contract document, review it with the user, present it for signing,
 - Ready to proceed to Project Brief
 
 **Next**: Full Project Brief workflow
-`{project-root}/_bmad/wds/workflows/wds-1-project-brief/workflow.md`
+`skill:wds-1-project-brief`
 
 ### 3. Update State
 
