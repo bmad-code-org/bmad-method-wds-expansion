@@ -28,9 +28,9 @@ This folder feeds directly into Phase 4 (UX Scenarios). Every page spec should t
 
 ## For Agents
 
-**Workflow:** `_bmad/wds/workflows/wds-2-trigger-mapping/workflow.md`
+**Workflow:** `skill:wds-2-trigger-mapping`
 **Agent trigger:** `TM` (Saga)
-**Templates:** `_bmad/wds/workflows/wds-2-trigger-mapping/templates/`
+**Templates:** `./resources/wds-2-trigger-mapping/templates/`
 
 **Before writing anything in this folder:**
 1. Read the Product Brief in `A-Product-Brief/` — trigger mapping builds on it

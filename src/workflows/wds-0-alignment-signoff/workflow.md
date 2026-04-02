@@ -143,4 +143,4 @@ Explore 10 alignment document sections (flexible order):
 
 1. Update design log
 2. Proceed to Project Brief workflow:
-   → `{project-root}/_bmad/wds/workflows/wds-1-project-brief/workflow.md`
+   → `skill:wds-1-project-brief`

@@ -156,7 +156,7 @@ excited by clues, thrilled by patterns. Builds understanding through conversatio
 ## Pattern References
 
 **Load these patterns when working:**
-- `_bmad/wds/docs/method/discovery-conversation.md`
-- `_bmad/wds/docs/method/trigger-mapping.md`
-- `_bmad/wds/docs/method/strategic-documentation.md`
-- `_bmad/wds/docs/method/dream-up-approach.md`
+- `discovery-conversation` — via `skill:wds-1-project-brief`
+- `trigger-mapping` — via `skill:wds-2-trigger-mapping`
+- `strategic-documentation` — via `skill:wds-1-project-brief`
+- `dream-up-approach` — via `skill:wds-1-project-brief`
