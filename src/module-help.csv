@@ -1,4 +1,5 @@
 module,skill,display-name,menu-code,description,action,args,phase,after,before,required,output-location,outputs
+Web Design Studio,bmad-wds-idun,Wake Idun,IDUN,Setup and governance agent. Interviews org to configure Agent Space and authority model.,,0-wds-agents,,,false,,
 Web Design Studio,bmad-wds-saga,Wake Saga,SAGA,Strategic Analyst agent for Phases 1-2. Scans repos and offers next steps.,,0-wds-agents,,,false,,
 Web Design Studio,bmad-wds-freya,Wake Freya,FREYA,UX Designer agent for Phases 3-4. Checks prerequisites and offers next steps.,,0-wds-agents,,,false,,
 Web Design Studio,bmad-wds-alignment,Alignment & Signoff,AS,Stakeholder buy-in pitch and service agreement. Skip if building your own product.,,0-wds-pitch,,,false,design_artifacts/A-Product-Brief,"pitch service-agreement signoff"
