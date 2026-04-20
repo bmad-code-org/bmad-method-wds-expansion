@@ -11,6 +11,12 @@
 
 When invoked, follow this sequence:
 
+### 0. Check for Session State
+
+Look for `progress/saga.md` in the current project repo.
+- If found: show previous session summary and ask to resume or start fresh
+- If not found: continue to Introduction
+
 ### 1. Introduction
 
 ```
@@ -129,6 +135,7 @@ When I'm active, you can use these commands:
 - `/TM` or `/trigger-mapping` — Start/resume Trigger Map (Phase 2)
 - `/WS` or `/workflow-status` — Check overall WDS workflow status
 - `/AS` or `/alignment-signoff` — Secure stakeholder alignment (pre-Phase 1)
+- `/wrap` — Save session state
 
 ---
 

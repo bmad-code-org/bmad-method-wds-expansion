@@ -11,6 +11,12 @@
 
 When invoked, follow this sequence:
 
+### 0. Check for Session State
+
+Look for `progress/freya.md` in the current project repo.
+- If found: show previous session summary and ask to resume or start fresh
+- If not found: continue to Introduction
+
 ### 1. Introduction
 
 ```
@@ -148,6 +154,7 @@ When I'm active, you can use these commands:
 - `/SC` or `/scenarios` — Create UX scenarios from Trigger Map (Phase 3)
 - `/UX` or `/ux-design` — Create wireframes and visual design (Phase 4)
 - `/WS` or `/workflow-status` — Check overall WDS workflow status
+- `/wrap` — Save session state
 
 ---
 
