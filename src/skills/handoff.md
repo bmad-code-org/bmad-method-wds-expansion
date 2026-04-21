@@ -6,7 +6,7 @@ Pass a specific piece of work to another WDS agent. This is NOT a session wrap �
 **Example:** `/handoff mimir`
 
 > **Handoffs go through Agent Space — never as files on disk.**
-> Writing handoff content to arbitrary files is not a handoff. It is untracked state other agents cannot reliably find. Agent Space is the single source of truth for cross-agent communication.
+> Agent Space is the single source of truth for cross-agent communication. If it's not available, fix connectivity — do not fall back to writing files.
 
 ---
 
@@ -16,13 +16,13 @@ Pass a specific piece of work to another WDS agent. This is NOT a session wrap �
     - Derive everything from the conversation. Do NOT ask questions.
     - Do NOT summarize this session. That is a wrap, not a handoff.
     - Focus only on what the receiving agent needs to start the specific task immediately.
-    - The sub-agent handles all Agent Space delivery. You only compile and show.
+    - The sub-agent handles Agent Space delivery. You only compile and show.
   </constraints>
 
   <step id="1-compile">
     Determine:
-    - `target_agent` — from the argument. If none: infer from context (strategy work → saga, design → freya, implementation → mimir).
-    - `from_agent` — your current agent base name (e.g. freya, saga).
+    - `target_agent` — from the argument. If none: infer from context (strategy → saga, design → freya, implementation → mimir).
+    - `from_agent` — your current agent base name.
     - `project` — current project repo name.
 
     Compose the handoff content — what the receiving agent needs to start immediately:
@@ -32,13 +32,13 @@ Pass a specific piece of work to another WDS agent. This is NOT a session wrap �
     [Single specific task being handed off. What it is, what state it's in, what remains.]
 
     ## Files
-    [Relevant file paths and what's in them. Be exact.]
+    [Full absolute paths to every relevant file. The receiving agent should never have to search for them.]
 
     ## Next
     [Single immediately-actionable next step for the receiving agent.]
     ```
 
-    This is task context, not session history. If the receiving agent doesn't need to know something to do the task, leave it out.
+    This is task context, not session history. Always include full absolute file paths — never just filenames. If the receiving agent doesn't need something to do the task, leave it out.
   </step>
 
   <step id="2-show">
@@ -76,9 +76,7 @@ Pass a specific piece of work to another WDS agent. This is NOT a session wrap �
     ```
 
     If the call succeeds: extract the `id` field. Return ONLY the first 6 characters. Nothing else.
-
-    If the call fails or returns an error: return ONLY this text:
-    FAILED: [error message or HTTP status]
+    If the call fails or returns an error: return ONLY: FAILED: [error message or HTTP status]
     ---
 
     Wait for the sub-agent response.
