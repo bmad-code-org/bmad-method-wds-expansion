@@ -3,7 +3,7 @@ name: 'step-01-init'
 description: 'Welcome user and set expectations for the Product Brief workflow'
 
 # File References
-nextStepFile: './step-02-vision.md'
+nextStepFile: './step-01a-client-profile.md'
 workflowFile: '../workflow.md'
 ---
 
