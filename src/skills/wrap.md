@@ -198,6 +198,7 @@ With `[target-agent]`: wraps own session AND sends a handoff to the target agent
     ```
     /[target_agent] [6chars]
     ```
+    Then print: `→ Open a new chat and run the command above.`
 
     **If sub-agent returns FAILED:** warn the user:
     ```
@@ -205,7 +206,7 @@ With `[target-agent]`: wraps own session AND sends a handoff to the target agent
     Check Bitwarden for Agent Space credentials.
     ```
 
-    Session complete. Stop.
+    Session complete. Do not respond to further input.
   </step>
 
 </wrap-steps>
