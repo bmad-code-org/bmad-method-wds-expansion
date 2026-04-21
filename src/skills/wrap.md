@@ -195,10 +195,10 @@ With `[target-agent]`: wraps own session AND sends a handoff to the target agent
     ---
 
     **If sub-agent returns 6 characters:** print EXACTLY this — nothing before, nothing after:
+    → Open a new chat and run:
     ```
     /[target_agent] [6chars]
     ```
-    Then print: `→ Open a new chat and run the command above.`
 
     **If sub-agent returns FAILED:** warn the user:
     ```
