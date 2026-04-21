@@ -120,8 +120,48 @@ With `[target-agent]`: wraps own session AND sends a handoff to the target agent
     [spec_sync]
     ```
 
-    **Step C — Confirm:**
-    Return ONLY: `Saved to progress/[agent_id].md`
+    **Step C — Update project index:**
+    1. Run `git rev-parse HEAD` → `current_head`
+    2. Read `progress/project-index.md` if it exists → extract HEAD hash from `## Updated` line as `last_head`
+    3. Get changed files:
+       - If `last_head` exists: `git diff --name-only [last_head] [current_head]`
+       - If first time (no index): `git ls-files -- '*.md'` excluding `progress/`, `node_modules/`, `.git/`
+    4. For each changed file that exists: read its first H1 heading and first non-heading paragraph → one-line description. If deleted: mark for removal.
+    5. Read current `progress/project-index.md` (if exists), update changed entries, add new, remove deleted.
+    6. Write `progress/project-index.md`:
+
+    ```
+    ## Project Index
+    Updated: [agent_id] [current date] [current_head]
+
+    ## Phase Status
+    [preserve existing phase lines, update if plan indicates phase change]
+
+    ## Artifacts
+    [absolute path] — [type: brief|scenario|spec|design|code|config] — [one-line description]
+    [one entry per relevant file, sorted by path]
+    ```
+
+    **Step D — Semantic index (Agent Space):**
+    For each changed file identified in Step C, post to Agent Space:
+    ```bash
+    curl -s -X POST "https://uztngidbpduyodrabokm.supabase.co/functions/v1/agent-messages" \
+      -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InV6dG5naWRicGR1eW9kcmFib2ttIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzI1MTc3ODksImV4cCI6MjA4ODA5Mzc4OX0.FNnTd5p9Qj3WeD0DxQORmNf2jgaVSZ6FU1EGy0W7MRo" \
+      -H "Content-Type: application/json" \
+      -d '{
+        "action": "send",
+        "from_agent": "[agent_id]",
+        "to_agent": "[agent_id]",
+        "project": "[project]",
+        "message_type": "project_knowledge",
+        "title": "[file path]",
+        "content": "[file content — first 2000 chars]"
+      }'
+    ```
+    Post silently — do not wait for responses or report individual results. If Agent Space is unreachable, skip silently and continue.
+
+    **Step E — Confirm:**
+    Return ONLY: `Saved to progress/[agent_id].md — index updated ([N] files)`
     ---
 
     Print whatever the subagent returns.
