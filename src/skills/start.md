@@ -31,9 +31,9 @@ If Agent Space returns recent messages: use them to supplement the project index
 
 ### 2. Detect Session State
 
-Check for `progress/[agent].md` in the project root.
+Read `_wds/tools/memory/SKILL.md` and follow the `load` operation for the current agent_id.
 
-**Fallback chain:** `progress/[agent].md` → fresh start
+**Fallback chain:** state found → show resume prompt → fresh start
 
 ### 3. If State Found
 

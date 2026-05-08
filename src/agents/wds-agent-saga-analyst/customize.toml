@@ -55,11 +55,6 @@ description = "Trigger Mapping: Create trigger map with user psychology and busi
 skill = "bmad-wds-trigger-mapping"
 
 [[agent.menu]]
-code = "SC"
-description = "Scenarios: Create UX scenarios from Trigger Map using Dialog/Suggest/Dream modes (Phase 3)"
-skill = "bmad-wds-outline-scenarios"
-
-[[agent.menu]]
 code = "BP"
 description = "Brainstorm Project: Guided brainstorming session to explore project vision and goals"
 skill = "bmad-brainstorming"

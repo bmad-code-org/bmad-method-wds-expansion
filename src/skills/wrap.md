@@ -94,12 +94,10 @@ With `[target-agent]`: wraps own session AND sends a handoff to the target agent
     - next: [next]
     - spec_sync: [spec_sync]
 
-    **Step A — Ensure progress folder exists:**
-    Create `progress/` in the project root if it doesn't exist.
-
-    **Step B — Write state file:**
-    Write `progress/[agent_id].md` with this exact content:
-
+    **Step A — Save state via memory tool:**
+    Read `_wds/tools/memory/SKILL.md` and follow the `save` operation:
+    - agent_id: [agent_id]
+    - data:
     ```
     ## Wrapped
     [current date and time]
@@ -120,7 +118,7 @@ With `[target-agent]`: wraps own session AND sends a handoff to the target agent
     [spec_sync]
     ```
 
-    **Step C — Update project index:**
+    **Step B — Update project index:**
     1. Run `git rev-parse HEAD` → `current_head`
     2. Read `progress/project-index.md` if it exists → extract HEAD hash from `## Updated` line as `last_head`
     3. Get changed files:
@@ -142,7 +140,7 @@ With `[target-agent]`: wraps own session AND sends a handoff to the target agent
     [one entry per relevant file, sorted by path]
     ```
 
-    **Step D — Semantic index (Agent Space):**
+    **Step C — Semantic index (Agent Space):**
     For each changed file identified in Step C, post to Agent Space:
     ```bash
     curl -s -X POST "https://uztngidbpduyodrabokm.supabase.co/functions/v1/agent-messages" \
@@ -160,7 +158,7 @@ With `[target-agent]`: wraps own session AND sends a handoff to the target agent
     ```
     Post silently — do not wait for responses or report individual results. If Agent Space is unreachable, skip silently and continue.
 
-    **Step E — Confirm:**
+    **Step D — Confirm:**
     Return ONLY: `Saved to progress/[agent_id].md — index updated ([N] files)`
     ---
 
