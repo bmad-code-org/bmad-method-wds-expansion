@@ -1,11 +1,10 @@
-#!/usr/bin/env node
 // wds-init-page.js — WDS scaffold: initialize new page spec
 // Usage: node src/scripts/wds-init-page.js --page "01 Start" --scenario "01 Onboarding"
 
 'use strict';
 
-const fs = require('fs');
-const path = require('path');
+const fs = require('node:fs');
+const path = require('node:path');
 
 function parseArgs(argv) {
   const args = {};
@@ -21,23 +20,25 @@ function parseArgs(argv) {
 }
 
 function toSlug(str) {
-  return str.toLowerCase().replace(/\s+/g, '-');
+  return str.toLowerCase().replaceAll(/\s+/g, '-');
 }
 
 function printUsage() {
-  process.stdout.write([
-    'Usage: node src/scripts/wds-init-page.js --page "01 Start" --scenario "01 Onboarding" [options]',
-    '',
-    'Required:',
-    '  --page        Page name with number, e.g. "01 Start"',
-    '  --scenario    Scenario name, e.g. "01 New User Onboarding"',
-    '',
-    'Optional:',
-    '  --platform    Platform value (default: "Mobile web")',
-    '  --visibility  Visibility value (default: "Public")',
-    '  --output      Base path to write to (default: current directory)',
-    '',
-  ].join('\n'));
+  process.stdout.write(
+    [
+      'Usage: node src/scripts/wds-init-page.js --page "01 Start" --scenario "01 Onboarding" [options]',
+      '',
+      'Required:',
+      '  --page        Page name with number, e.g. "01 Start"',
+      '  --scenario    Scenario name, e.g. "01 New User Onboarding"',
+      '',
+      'Optional:',
+      '  --platform    Platform value (default: "Mobile web")',
+      '  --visibility  Visibility value (default: "Public")',
+      '  --output      Base path to write to (default: current directory)',
+      '',
+    ].join('\n'),
+  );
 }
 
 function buildTemplate({ pageSlug, pageName, scenarioSlug, scenarioName, platform, visibility }) {
@@ -206,8 +207,8 @@ function main() {
   try {
     fs.mkdirSync(pageDir, { recursive: true });
     fs.mkdirSync(sketchesDir, { recursive: true });
-  } catch (err) {
-    process.stderr.write(`Error creating directories: ${err.message}\n`);
+  } catch (error) {
+    process.stderr.write(`Error creating directories: ${error.message}\n`);
     process.exit(1);
   }
 
@@ -215,8 +216,8 @@ function main() {
 
   try {
     fs.writeFileSync(pageFile, content, 'utf8');
-  } catch (err) {
-    process.stderr.write(`Error writing file: ${err.message}\n`);
+  } catch (error) {
+    process.stderr.write(`Error writing file: ${error.message}\n`);
     process.exit(1);
   }
 

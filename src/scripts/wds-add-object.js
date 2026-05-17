@@ -1,4 +1,3 @@
-#!/usr/bin/env node
 // wds-add-object.js — WDS scaffold: append an object spec block to a page spec file
 // Usage: node src/scripts/wds-add-object.js --page "C-UX-Scenarios/01-onboarding/01-start/01-start.md" \
 //          --section "Hero" --object "Primary Headline" --component "H1 heading" \
@@ -6,8 +5,8 @@
 
 'use strict';
 
-const fs = require('fs');
-const path = require('path');
+const fs = require('node:fs');
+const path = require('node:path');
 
 function parseArgs(argv) {
   const args = {};
@@ -23,27 +22,29 @@ function parseArgs(argv) {
 }
 
 function toSlug(str) {
-  return str.toLowerCase().replace(/\s+/g, '-');
+  return str.toLowerCase().replaceAll(/\s+/g, '-');
 }
 
 function printUsage() {
-  process.stdout.write([
-    'Usage: node src/scripts/wds-add-object.js --page <path> --section <name> --object <name> [options]',
-    '',
-    'Required:',
-    '  --page        Path to the page spec .md file',
-    '  --section     Section name (e.g. "Hero")',
-    '  --object      Object name (e.g. "Primary Headline")',
-    '',
-    'Optional:',
-    '  --component   Component name (default: "—")',
-    '  --translation Translation key (auto-derived if omitted)',
-    '  --se          Swedish text content',
-    '  --en          English text content',
-    '  --behavior    Behavior description (e.g. "onClick: submit form")',
-    '  --component-path  Path to component file (default: "—")',
-    '',
-  ].join('\n'));
+  process.stdout.write(
+    [
+      'Usage: node src/scripts/wds-add-object.js --page <path> --section <name> --object <name> [options]',
+      '',
+      'Required:',
+      '  --page        Path to the page spec .md file',
+      '  --section     Section name (e.g. "Hero")',
+      '  --object      Object name (e.g. "Primary Headline")',
+      '',
+      'Optional:',
+      '  --component   Component name (default: "—")',
+      '  --translation Translation key (auto-derived if omitted)',
+      '  --se          Swedish text content',
+      '  --en          English text content',
+      '  --behavior    Behavior description (e.g. "onClick: submit form")',
+      '  --component-path  Path to component file (default: "—")',
+      '',
+    ].join('\n'),
+  );
 }
 
 // Derive page slug from file path: "01-start/01-start.md" -> "01-start"
@@ -65,9 +66,7 @@ function deriveObjectId(pageSlug, sectionName, objectName) {
 }
 
 function buildObjectBlock({ objectName, objectId, component, componentPath, translationKey, se, en, behavior }) {
-  const compDisplay = componentPath && componentPath !== '—'
-    ? `[${component}](${componentPath})`
-    : component || '—';
+  const compDisplay = componentPath && componentPath !== '—' ? `[${component}](${componentPath})` : component || '—';
 
   const lines = [
     `#### ${objectName}`,
@@ -91,9 +90,28 @@ function buildObjectBlock({ objectName, objectId, component, componentPath, tran
 function insertUnderSection(content, sectionHeading, objectBlock) {
   const lines = content.split('\n');
   const headingLine = `### Section: ${sectionHeading}`;
-  const headingIdx = lines.findIndex(l => l.trim() === headingLine);
+  const headingIdx = lines.findIndex((l) => l.trim() === headingLine);
 
-  if (headingIdx !== -1) {
+  if (headingIdx === -1) {
+    // Section doesn't exist — append it before the next ## heading after ## Page Sections
+    const pageSectionsIdx = lines.findIndex((l) => l.trim() === '## Page Sections');
+    if (pageSectionsIdx === -1) {
+      // Just append at end before last nav row
+      return content + `\n${headingLine}\n\n${objectBlock}\n`;
+    }
+
+    // Find end of ## Page Sections block
+    let insertIdx = pageSectionsIdx + 1;
+    while (insertIdx < lines.length) {
+      const t = lines[insertIdx].trim();
+      if (t.startsWith('## ') || t === '---') break;
+      insertIdx++;
+    }
+
+    const before = lines.slice(0, insertIdx);
+    const after = lines.slice(insertIdx);
+    return [...before, '', headingLine, '', objectBlock, ...after].join('\n');
+  } else {
     // Find the end of this section (next ### or ## or end of file)
     let insertIdx = headingIdx + 1;
     // Skip blank lines after heading
@@ -113,25 +131,6 @@ function insertUnderSection(content, sectionHeading, objectBlock) {
     const before = lines.slice(0, endIdx);
     const after = lines.slice(endIdx);
     return [...before, '', objectBlock, ...after].join('\n');
-  } else {
-    // Section doesn't exist — append it before the next ## heading after ## Page Sections
-    const pageSectionsIdx = lines.findIndex(l => l.trim() === '## Page Sections');
-    if (pageSectionsIdx === -1) {
-      // Just append at end before last nav row
-      return content + `\n${headingLine}\n\n${objectBlock}\n`;
-    }
-
-    // Find end of ## Page Sections block
-    let insertIdx = pageSectionsIdx + 1;
-    while (insertIdx < lines.length) {
-      const t = lines[insertIdx].trim();
-      if (t.startsWith('## ') || t === '---') break;
-      insertIdx++;
-    }
-
-    const before = lines.slice(0, insertIdx);
-    const after = lines.slice(insertIdx);
-    return [...before, '', headingLine, '', objectBlock, ...after].join('\n');
   }
 }
 
@@ -160,7 +159,7 @@ function main() {
   const objectId = deriveObjectId(pageSlug, args.section, args.object);
 
   // Auto-derive translation key from objectId
-  const translationKey = args.translation || objectId.replace(/-/g, '.');
+  const translationKey = args.translation || objectId.replaceAll('-', '.');
 
   const objectBlock = buildObjectBlock({
     objectName: args.object,
@@ -176,8 +175,8 @@ function main() {
   let content;
   try {
     content = fs.readFileSync(filePath, 'utf8');
-  } catch (err) {
-    process.stderr.write(`Error reading file: ${err.message}\n`);
+  } catch (error) {
+    process.stderr.write(`Error reading file: ${error.message}\n`);
     process.exit(1);
   }
 
@@ -191,8 +190,8 @@ function main() {
 
   try {
     fs.writeFileSync(filePath, updated, 'utf8');
-  } catch (err) {
-    process.stderr.write(`Error writing file: ${err.message}\n`);
+  } catch (error) {
+    process.stderr.write(`Error writing file: ${error.message}\n`);
     process.exit(1);
   }
 

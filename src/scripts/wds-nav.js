@@ -1,12 +1,11 @@
-#!/usr/bin/env node
 // wds-nav.js — WDS scaffold: generate/update navigation links across all pages in a scenario
 // Usage: node src/scripts/wds-nav.js --scenario "01 Onboarding"
 //        node src/scripts/wds-nav.js --all
 
 'use strict';
 
-const fs = require('fs');
-const path = require('path');
+const fs = require('node:fs');
+const path = require('node:path');
 
 function parseArgs(argv) {
   const args = {};
@@ -22,20 +21,22 @@ function parseArgs(argv) {
 }
 
 function toSlug(str) {
-  return str.toLowerCase().replace(/\s+/g, '-');
+  return str.toLowerCase().replaceAll(/\s+/g, '-');
 }
 
 function printUsage() {
-  process.stdout.write([
-    'Usage: node src/scripts/wds-nav.js --scenario "01 Onboarding"',
-    '       node src/scripts/wds-nav.js --all',
-    '',
-    'Options:',
-    '  --scenario    Scenario name or slug to update',
-    '  --all         Update all scenarios',
-    '  --output      Base path (default: current directory)',
-    '',
-  ].join('\n'));
+  process.stdout.write(
+    [
+      'Usage: node src/scripts/wds-nav.js --scenario "01 Onboarding"',
+      '       node src/scripts/wds-nav.js --all',
+      '',
+      'Options:',
+      '  --scenario    Scenario name or slug to update',
+      '  --all         Update all scenarios',
+      '  --output      Base path (default: current directory)',
+      '',
+    ].join('\n'),
+  );
 }
 
 // Build a human-readable page name from the slug for nav labels
@@ -43,17 +44,13 @@ function printUsage() {
 function slugToLabel(slug) {
   return slug
     .split('-')
-    .map((part, i) => i === 0 ? part : part.charAt(0).toUpperCase() + part.slice(1))
+    .map((part, i) => (i === 0 ? part : part.charAt(0).toUpperCase() + part.slice(1)))
     .join(' ');
 }
 
 function buildNavRow(prev, next) {
-  const leftPart = prev
-    ? `← [${slugToLabel(prev.slug)}](../${prev.slug}/${prev.slug}.md)`
-    : '←';
-  const rightPart = next
-    ? `[${slugToLabel(next.slug)} →](../${next.slug}/${next.slug}.md)`
-    : '→';
+  const leftPart = prev ? `← [${slugToLabel(prev.slug)}](../${prev.slug}/${prev.slug}.md)` : '←';
+  const rightPart = next ? `[${slugToLabel(next.slug)} →](../${next.slug}/${next.slug}.md)` : '→';
   return `${leftPart} | ${rightPart}`;
 }
 
@@ -83,14 +80,14 @@ function getPageFolders(scenarioDir) {
   let entries;
   try {
     entries = fs.readdirSync(scenarioDir, { withFileTypes: true });
-  } catch (err) {
+  } catch {
     return [];
   }
 
   return entries
-    .filter(e => e.isDirectory())
-    .map(e => e.name)
-    .filter(name => {
+    .filter((e) => e.isDirectory())
+    .map((e) => e.name)
+    .filter((name) => {
       // Must have a matching .md file inside
       const mdFile = path.join(scenarioDir, name, `${name}.md`);
       return fs.existsSync(mdFile);
@@ -125,8 +122,8 @@ function processScenario(scenariosBase, scenarioSlug) {
     let content;
     try {
       content = fs.readFileSync(mdFile, 'utf8');
-    } catch (err) {
-      process.stderr.write(`  Error reading ${mdFile}: ${err.message}\n`);
+    } catch (error) {
+      process.stderr.write(`  Error reading ${mdFile}: ${error.message}\n`);
       continue;
     }
 
@@ -139,8 +136,8 @@ function processScenario(scenariosBase, scenarioSlug) {
     try {
       fs.writeFileSync(mdFile, newContent, 'utf8');
       updated++;
-    } catch (err) {
-      process.stderr.write(`  Error writing ${mdFile}: ${err.message}\n`);
+    } catch (error) {
+      process.stderr.write(`  Error writing ${mdFile}: ${error.message}\n`);
     }
   }
 
@@ -174,14 +171,14 @@ function main() {
     let entries;
     try {
       entries = fs.readdirSync(scenariosBase, { withFileTypes: true });
-    } catch (err) {
-      process.stderr.write(`Error reading C-UX-Scenarios: ${err.message}\n`);
+    } catch (error) {
+      process.stderr.write(`Error reading C-UX-Scenarios: ${error.message}\n`);
       process.exit(1);
     }
 
     const scenarios = entries
-      .filter(e => e.isDirectory())
-      .map(e => e.name)
+      .filter((e) => e.isDirectory())
+      .map((e) => e.name)
       .sort();
 
     if (scenarios.length === 0) {

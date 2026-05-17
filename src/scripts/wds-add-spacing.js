@@ -1,12 +1,11 @@
-#!/usr/bin/env node
 // wds-add-spacing.js — WDS scaffold: append a spacing object to a page spec file
 // Usage: node src/scripts/wds-add-spacing.js --page "C-UX-Scenarios/01-onboarding/01-start/01-start.md" \
 //          --direction v --type space --size xl --reason "major section boundary between hero and features"
 
 'use strict';
 
-const fs = require('fs');
-const path = require('path');
+const fs = require('node:fs');
+const path = require('node:path');
 
 function parseArgs(argv) {
   const args = {};
@@ -22,23 +21,25 @@ function parseArgs(argv) {
 }
 
 function printUsage() {
-  process.stdout.write([
-    'Usage: node src/scripts/wds-add-spacing.js --page <path> --direction <v|h> --type <type> --size <size> [options]',
-    '',
-    'Required:',
-    '  --page        Path to the page spec .md file',
-    '  --direction   v (vertical) or h (horizontal)',
-    '  --type        space | separator | line',
-    '  --size        zero | sm | md | lg | xl | 2xl | 3xl | flex',
-    '',
-    'Optional:',
-    '  --reason      Why this spacing exists',
-    '',
-    'Valid directions: v, h',
-    'Valid types:      space, separator, line',
-    'Valid sizes:      zero, sm, md, lg, xl, 2xl, 3xl, flex',
-    '',
-  ].join('\n'));
+  process.stdout.write(
+    [
+      'Usage: node src/scripts/wds-add-spacing.js --page <path> --direction <v|h> --type <type> --size <size> [options]',
+      '',
+      'Required:',
+      '  --page        Path to the page spec .md file',
+      '  --direction   v (vertical) or h (horizontal)',
+      '  --type        space | separator | line',
+      '  --size        zero | sm | md | lg | xl | 2xl | 3xl | flex',
+      '',
+      'Optional:',
+      '  --reason      Why this spacing exists',
+      '',
+      'Valid directions: v, h',
+      'Valid types:      space, separator, line',
+      'Valid sizes:      zero, sm, md, lg, xl, 2xl, 3xl, flex',
+      '',
+    ].join('\n'),
+  );
 }
 
 const VALID_DIRECTIONS = ['v', 'h'];
@@ -63,7 +64,7 @@ function buildSpacingBlock(spacingId, reason) {
 
 function appendToSpacingSection(content, spacingBlock) {
   const lines = content.split('\n');
-  const spacingIdx = lines.findIndex(l => l.trim() === '## Spacing');
+  const spacingIdx = lines.findIndex((l) => l.trim() === '## Spacing');
 
   if (spacingIdx === -1) {
     // No spacing section — append before first ## after metadata
@@ -92,7 +93,7 @@ function main() {
     process.exit(0);
   }
 
-  if (!args.page || !args.direction || !args.type || !args.size) {
+  if (!args.page || !args.direction || !args.type || args.size === 0) {
     process.stderr.write('Error: --page, --direction, --type, and --size are required.\n\n');
     printUsage();
     process.exit(1);
@@ -128,8 +129,8 @@ function main() {
   let content;
   try {
     content = fs.readFileSync(filePath, 'utf8');
-  } catch (err) {
-    process.stderr.write(`Error reading file: ${err.message}\n`);
+  } catch (error) {
+    process.stderr.write(`Error reading file: ${error.message}\n`);
     process.exit(1);
   }
 
@@ -145,8 +146,8 @@ function main() {
 
   try {
     fs.writeFileSync(filePath, updated, 'utf8');
-  } catch (err) {
-    process.stderr.write(`Error writing file: ${err.message}\n`);
+  } catch (error) {
+    process.stderr.write(`Error writing file: ${error.message}\n`);
     process.exit(1);
   }
 

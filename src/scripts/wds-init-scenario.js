@@ -1,11 +1,10 @@
-#!/usr/bin/env node
 // wds-init-scenario.js — WDS scaffold: initialize new scenario folder
 // Usage: node src/scripts/wds-init-scenario.js --scenario "01 Onboarding" --description "New user first visit to account creation"
 
 'use strict';
 
-const fs = require('fs');
-const path = require('path');
+const fs = require('node:fs');
+const path = require('node:path');
 
 function parseArgs(argv) {
   const args = {};
@@ -21,21 +20,23 @@ function parseArgs(argv) {
 }
 
 function toSlug(str) {
-  return str.toLowerCase().replace(/\s+/g, '-');
+  return str.toLowerCase().replaceAll(/\s+/g, '-');
 }
 
 function printUsage() {
-  process.stdout.write([
-    'Usage: node src/scripts/wds-init-scenario.js --scenario "01 Onboarding" [options]',
-    '',
-    'Required:',
-    '  --scenario      Scenario name with number, e.g. "01 New User Onboarding"',
-    '',
-    'Optional:',
-    '  --description   Short description of the scenario',
-    '  --output        Base path to write to (default: current directory)',
-    '',
-  ].join('\n'));
+  process.stdout.write(
+    [
+      'Usage: node src/scripts/wds-init-scenario.js --scenario "01 Onboarding" [options]',
+      '',
+      'Required:',
+      '  --scenario      Scenario name with number, e.g. "01 New User Onboarding"',
+      '',
+      'Optional:',
+      '  --description   Short description of the scenario',
+      '  --output        Base path to write to (default: current directory)',
+      '',
+    ].join('\n'),
+  );
 }
 
 function buildReadme({ scenarioName, scenarioSlug, description }) {
@@ -97,8 +98,8 @@ function main() {
 
   try {
     fs.mkdirSync(scenarioDir, { recursive: true });
-  } catch (err) {
-    process.stderr.write(`Error creating directory: ${err.message}\n`);
+  } catch (error) {
+    process.stderr.write(`Error creating directory: ${error.message}\n`);
     process.exit(1);
   }
 
@@ -106,8 +107,8 @@ function main() {
 
   try {
     fs.writeFileSync(readmeFile, content, 'utf8');
-  } catch (err) {
-    process.stderr.write(`Error writing README: ${err.message}\n`);
+  } catch (error) {
+    process.stderr.write(`Error writing README: ${error.message}\n`);
     process.exit(1);
   }
 
