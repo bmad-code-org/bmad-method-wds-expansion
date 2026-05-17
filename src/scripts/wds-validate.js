@@ -1,4 +1,3 @@
-#!/usr/bin/env node
 // wds-validate.js — WDS scaffold: validate page spec files for correctness
 // Usage: node src/scripts/wds-validate.js --page "C-UX-Scenarios/01-onboarding/01-start/01-start.md"
 //        node src/scripts/wds-validate.js --scenario "01 Onboarding"
@@ -6,8 +5,8 @@
 
 'use strict';
 
-const fs = require('fs');
-const path = require('path');
+const fs = require('node:fs');
+const path = require('node:path');
 
 function parseArgs(argv) {
   const args = {};
@@ -23,22 +22,24 @@ function parseArgs(argv) {
 }
 
 function toSlug(str) {
-  return str.toLowerCase().replace(/\s+/g, '-');
+  return str.toLowerCase().replaceAll(/\s+/g, '-');
 }
 
 function printUsage() {
-  process.stdout.write([
-    'Usage: node src/scripts/wds-validate.js --page <path>',
-    '       node src/scripts/wds-validate.js --scenario "01 Onboarding"',
-    '       node src/scripts/wds-validate.js --all',
-    '',
-    'Options:',
-    '  --page        Path to a single page spec .md file',
-    '  --scenario    Scenario name or slug to validate all pages',
-    '  --all         Validate all scenarios',
-    '  --output      Base path (default: current directory)',
-    '',
-  ].join('\n'));
+  process.stdout.write(
+    [
+      'Usage: node src/scripts/wds-validate.js --page <path>',
+      '       node src/scripts/wds-validate.js --scenario "01 Onboarding"',
+      '       node src/scripts/wds-validate.js --all',
+      '',
+      'Options:',
+      '  --page        Path to a single page spec .md file',
+      '  --scenario    Scenario name or slug to validate all pages',
+      '  --all         Validate all scenarios',
+      '  --output      Base path (default: current directory)',
+      '',
+    ].join('\n'),
+  );
 }
 
 const REQUIRED_SECTIONS = [
@@ -52,15 +53,7 @@ const REQUIRED_SECTIONS = [
   '## Checklist',
 ];
 
-const REQUIRED_METADATA_PROPS = [
-  'Scenario',
-  'Page Number',
-  'Platform',
-  'Page Type',
-  'Viewport',
-  'Interaction',
-  'Visibility',
-];
+const REQUIRED_METADATA_PROPS = ['Scenario', 'Page Number', 'Platform', 'Page Type', 'Viewport', 'Interaction', 'Visibility'];
 
 const KEBAB_CASE_RE = /^[a-z0-9]+(-[a-z0-9]+)*$/;
 
@@ -89,7 +82,7 @@ function extractSpacingIds(content) {
 // Count nav rows: lines starting with '←'
 function countNavRows(content) {
   const lines = content.split('\n');
-  return lines.filter(l => l.trim().startsWith('←')).length;
+  return lines.filter((l) => l.trim().startsWith('←')).length;
 }
 
 // Check Swedish + English content: for each object block, look for SE and EN rows
@@ -102,22 +95,22 @@ function checkObjectContent(content) {
     if (!idMatch) continue;
     const objectId = idMatch[1];
     // Check for SE row
-    if (!block.includes('| SE |')) {
-      missing.push(`Object "${objectId}" missing SE content field`);
-    } else {
+    if (block.includes('| SE |')) {
       const seMatch = block.match(/\| SE \| "([^"]*)"/);
       if (!seMatch || seMatch[1].trim() === '' || seMatch[1].trim() === '—') {
         missing.push(`Object "${objectId}" has empty SE content`);
       }
+    } else {
+      missing.push(`Object "${objectId}" missing SE content field`);
     }
     // Check for EN row
-    if (!block.includes('| EN |')) {
-      missing.push(`Object "${objectId}" missing EN content field`);
-    } else {
+    if (block.includes('| EN |')) {
       const enMatch = block.match(/\| EN \| "([^"]*)"/);
       if (!enMatch || enMatch[1].trim() === '' || enMatch[1].trim() === '—') {
         missing.push(`Object "${objectId}" has empty EN content`);
       }
+    } else {
+      missing.push(`Object "${objectId}" missing EN content field`);
     }
   }
   return missing;
@@ -134,8 +127,8 @@ function validatePage(filePath) {
   let content;
   try {
     content = fs.readFileSync(filePath, 'utf8');
-  } catch (err) {
-    return { errors: [`Cannot read file: ${err.message}`], warnings: [], objectCount: 0, spacingCount: 0 };
+  } catch (error) {
+    return { errors: [`Cannot read file: ${error.message}`], warnings: [], objectCount: 0, spacingCount: 0 };
   }
 
   const pageSlug = path.basename(filePath, '.md');
@@ -233,8 +226,8 @@ function getPageFiles(scenarioDir) {
   }
 
   return entries
-    .filter(e => e.isDirectory())
-    .map(e => {
+    .filter((e) => e.isDirectory())
+    .map((e) => {
       const mdFile = path.join(scenarioDir, e.name, `${e.name}.md`);
       return fs.existsSync(mdFile) ? mdFile : null;
     })
@@ -279,11 +272,11 @@ function main() {
     let entries;
     try {
       entries = fs.readdirSync(scenariosBase, { withFileTypes: true });
-    } catch (err) {
-      process.stderr.write(`Error reading scenarios: ${err.message}\n`);
+    } catch (error) {
+      process.stderr.write(`Error reading scenarios: ${error.message}\n`);
       process.exit(1);
     }
-    for (const e of entries.filter(e => e.isDirectory()).sort()) {
+    for (const e of entries.filter((e) => e.isDirectory()).sort()) {
       const pages = getPageFiles(path.join(scenariosBase, e.name));
       filesToValidate.push(...pages);
     }
