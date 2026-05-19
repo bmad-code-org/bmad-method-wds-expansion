@@ -1,7 +1,7 @@
 ---
-name: memory
+name: wds-memory
 version: "1.0.0"
-description: Session state backend for WDS. Called by wrap, start, and handoff tools — never directly by users. This file-based version writes to progress/ in the project repo. WDS-E replaces this file with an Agent Space backend.
+description: Session state backend for WDS. Called by wrap, start, and handoff tools — never directly by users. Writes to progress/ in the project repo.
 agents: [saga, freya, mimir]
 ---
 
@@ -48,4 +48,4 @@ State lives in `progress/` at the project root. This folder is project-scoped �
 
 - `progress/` should be in `.gitignore`. It is machine-local session context, not project content.
 - Both save and load are synchronous file operations — no tokens, no async, no IDs.
-- WDS-E replaces this file with `tools/memory/SKILL.md` that routes to Agent Space instead. The interface (save/load inputs and return values) is identical — only the storage destination changes.
+- This is the canonical storage backend. State is local to the machine and project — not synced, not shared.

@@ -4,7 +4,7 @@
 **Works for:** any agent (saga, freya, mimir)
 
 With no argument: wraps own session and saves state.
-With `[target-agent]`: wraps own session AND sends a handoff to the target agent via Agent Space. Use when the work is complete and changes character — e.g. strategy is done, mimir should build.
+With `[target-agent]`: wraps own session AND writes a handoff to `progress/[target_agent].md`. Use when work is complete and changes character — e.g. strategy done, mimir should build.
 
 ---
 
@@ -15,7 +15,7 @@ With `[target-agent]`: wraps own session AND sends a handoff to the target agent
     - Your agent_id is your WDS base name: saga, freya, or mimir. Never a project name.
     - Show substance to user BEFORE spawning subagent — user must see what is being saved.
     - The subagent handles all mechanical execution. You only compile and show.
-    - If `[target-agent]` was given: after saving state, also send a handoff to that agent via Agent Space (step 4). Never write handoff to a file on disk.
+    - If `[target-agent]` was given: after saving state, also write a handoff to `progress/[target_agent].md` (step 4).
   </constraints>
 
   <step id="0-milestone-check">
@@ -95,7 +95,7 @@ With `[target-agent]`: wraps own session AND sends a handoff to the target agent
     - spec_sync: [spec_sync]
 
     **Step A — Save state via memory tool:**
-    Read `_wds/tools/memory/SKILL.md` and follow the `save` operation:
+    Read `~/.claude/wds/src/tools/memory/SKILL.md` and follow the `save` operation:
     - agent_id: [agent_id]
     - data:
     ```
@@ -125,7 +125,7 @@ With `[target-agent]`: wraps own session AND sends a handoff to the target agent
        - If `last_head` exists: `git diff --name-only [last_head] [current_head]`
        - If first time (no index): `git ls-files -- '*.md'` excluding `progress/`, `node_modules/`, `.git/`
     4. For each changed file that exists: read its first H1 heading and first non-heading paragraph → one-line description. If deleted: mark for removal.
-    5. Read current `progress/project-index.md` (if exists), update changed entries, add new, remove deleted.
+    5. Read current `progress/project-index.md` (if exists), update changed entries, add new ones, remove deleted ones.
     6. Write `progress/project-index.md`:
 
     ```
@@ -140,71 +140,59 @@ With `[target-agent]`: wraps own session AND sends a handoff to the target agent
     [one entry per relevant file, sorted by path]
     ```
 
-    **Step C — Semantic index (Agent Space):**
-    For each changed file identified in Step C, post to Agent Space:
-    ```bash
-    curl -s -X POST "https://uztngidbpduyodrabokm.supabase.co/functions/v1/agent-messages" \
-      -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InV6dG5naWRicGR1eW9kcmFib2ttIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzI1MTc3ODksImV4cCI6MjA4ODA5Mzc4OX0.FNnTd5p9Qj3WeD0DxQORmNf2jgaVSZ6FU1EGy0W7MRo" \
-      -H "Content-Type: application/json" \
-      -d '{
-        "action": "send",
-        "from_agent": "[agent_id]",
-        "to_agent": "[agent_id]",
-        "project": "[project]",
-        "message_type": "project_knowledge",
-        "title": "[file path]",
-        "content": "[file content — first 2000 chars]"
-      }'
-    ```
-    Post silently — do not wait for responses or report individual results. If Agent Space is unreachable, skip silently and continue.
-
     **Step D — Confirm:**
     Return ONLY: `Saved to progress/[agent_id].md — index updated ([N] files)`
     ---
 
     Print whatever the subagent returns.
+
+    **If the subagent fails at any step:** complete the remaining steps manually.
+    Failure does not excuse skipping the final output.
   </step>
 
   <step id="4-handoff" condition="only if target-agent argument was given">
     Spawn a second sub-agent with this exact prompt — substitute the bracketed values:
 
     ---
-    You are a delivery agent. Your only job is to post a handoff to Agent Space and return the token.
+    You are a handoff writer. Your only job is to save a handoff file via the memory tool.
 
-    Send this request:
+    **Step A — Save handoff via memory tool:**
+    Read `~/.claude/wds/src/tools/memory/SKILL.md` and follow the `save` operation:
+    - agent_id: [target_agent]
+    - data:
+    ```
+    ## Wrapped
+    [current date and time]
 
-    ```bash
-    curl -s -X POST "https://uztngidbpduyodrabokm.supabase.co/functions/v1/agent-messages" \
-      -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InV6dG5naWRicGR1eW9kcmFib2ttIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzI1MTc3ODksImV4cCI6MjA4ODA5Mzc4OX0.FNnTd5p9Qj3WeD0DxQORmNf2jgaVSZ6FU1EGy0W7MRo" \
-      -H "Content-Type: application/json" \
-      -d '{
-        "action": "send",
-        "from_agent": "[agent_id]",
-        "to_agent": "[target_agent]",
-        "project": "[project]",
-        "message_type": "handoff",
-        "title": "[next — stripped of MODEL prefix]",
-        "content": "[context]\n\n## Next\n[next]"
-      }'
+    ## Context
+    [context]
+
+    ## Next
+    [next]
+
+    ## Learned
+    [learned]
+
+    ## Spec Sync
+    [spec_sync]
     ```
 
-    If the call succeeds: extract the `id` field. Return ONLY the first 6 characters. Nothing else.
-    If the call fails: return ONLY: FAILED: [error]
+    **Step B — Confirm:**
+    Return ONLY: `done`
     ---
 
-    **If sub-agent returns 6 characters:** print EXACTLY these two lines — the label, then the command in a code block:
+    Wait for the sub-agent to return. Then print EXACTLY these two lines — the label, then the command in a code block:
     → Open a new chat and run:
     ```
-    /[target_agent] [6chars]
+    /[target_agent] progress/[target_agent].md
     ```
 
-    **If sub-agent returns FAILED:** warn the user:
-    ```
-    ⚠️ Agent Space unreachable — handoff to [target_agent] not sent.
-    Check Bitwarden for Agent Space credentials.
-    ```
+    **If the sub-agent fails:** write the handoff file manually, then still output the command block above.
 
     Session complete. Do not respond to further input.
+
+    **The command block above is always the last thing output. Nothing is printed after it —
+    no summary, no explanation, no confirmation. The block is the signal that the wrap is complete.**
   </step>
 
 </wrap-steps>

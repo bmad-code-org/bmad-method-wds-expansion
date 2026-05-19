@@ -5,9 +5,6 @@ Pass a specific piece of work to another WDS agent. This is NOT a session wrap �
 **Usage:** `/handoff [target-agent]`
 **Example:** `/handoff mimir`
 
-> **Handoffs go through Agent Space — never as files on disk.**
-> Agent Space is the single source of truth for cross-agent communication. If it's not available, fix connectivity — do not fall back to writing files.
-
 ---
 
 <handoff-steps>
@@ -16,7 +13,7 @@ Pass a specific piece of work to another WDS agent. This is NOT a session wrap �
     - Derive everything from the conversation. Do NOT ask questions.
     - Do NOT summarize this session. That is a wrap, not a handoff.
     - Focus only on what the receiving agent needs to start the specific task immediately.
-    - The sub-agent handles Agent Space delivery. You only compile and show.
+    - Handoff is written to `progress/[target_agent].md` — the receiving agent picks it up via `/start`.
   </constraints>
 
   <step id="1-compile">
@@ -52,49 +49,43 @@ Pass a specific piece of work to another WDS agent. This is NOT a session wrap �
     Then proceed immediately to step 3.
   </step>
 
-  <step id="3-subagent">
+  <step id="3-write">
     Spawn a sub-agent with this exact prompt — substitute the bracketed values:
 
     ---
-    You are a delivery agent. Your only job is to post a handoff to Agent Space and return the token.
+    You are a handoff writer. Your only job is to save a handoff file via the memory tool.
 
-    Send this request:
+    **Step A — Save handoff via memory tool:**
+    Read `~/.claude/wds/src/tools/memory/SKILL.md` and follow the `save` operation:
+    - agent_id: [target_agent]
+    - data:
+    ```
+    ## Wrapped
+    [current date and time]
 
-    ```bash
-    curl -s -X POST "https://uztngidbpduyodrabokm.supabase.co/functions/v1/agent-messages" \
-      -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InV6dG5naWRicGR1eW9kcmFib2ttIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzI1MTc3ODksImV4cCI6MjA4ODA5Mzc4OX0.FNnTd5p9Qj3WeD0DxQORmNf2jgaVSZ6FU1EGy0W7MRo" \
-      -H "Content-Type: application/json" \
-      -d '{
-        "action": "send",
-        "from_agent": "[from_agent]",
-        "to_agent": "[target_agent]",
-        "project": "[project]",
-        "message_type": "handoff",
-        "title": "[one-line task description]",
-        "content": "[full handoff content — escaped for JSON]"
-      }'
+    ## Context
+    [task content from step 1]
+
+    ## Next
+    [next line from step 1]
+
+    ## Learned
+    None
+
+    ## Spec Sync
+    None
     ```
 
-    If the call succeeds: extract the `id` field. Return ONLY the first 6 characters. Nothing else.
-    If the call fails or returns an error: return ONLY: FAILED: [error message or HTTP status]
+    **Step B — Confirm:**
+    Return ONLY: `done`
     ---
 
-    Wait for the sub-agent response.
-
-    **If sub-agent returns 6 characters:** print EXACTLY this — nothing before, nothing after:
+    Wait for the sub-agent to return. Then print EXACTLY this — nothing before, nothing after:
     ```
-    /[target_agent] [6chars]
+    /[target_agent] progress/[target_agent].md
     ```
 
-    **If sub-agent returns FAILED:** stop and warn the user:
-    ```
-    ⚠️ Agent Space unreachable — handoff not sent.
-    Check that Agent Space credentials are active (open Bitwarden → verify Agent Space API key).
-
-    Handoff content (copy if needed):
-    [full handoff content]
-    ```
-    Do NOT write the handoff to a file on disk.
+    Session continues.
   </step>
 
 </handoff-steps>

@@ -20,18 +20,9 @@ Loads project state and session context. Always reads the project index first �
 If found: parse Phase Status and Artifacts sections. Hold this as project context — it informs everything below.
 If not found: proceed silently. The index will be built on first wrap.
 
-**Additionally (Agent Space):** query Agent Space for recent project knowledge:
-```bash
-curl -s -X POST "https://uztngidbpduyodrabokm.supabase.co/functions/v1/agent-messages" \
-  -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InV6dG5naWRicGR1eW9kcmFib2ttIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzI1MTc3ODksImV4cCI6MjA4ODA5Mzc4OX0.FNnTd5p9Qj3WeD0DxQORmNf2jgaVSZ6FU1EGy0W7MRo" \
-  -H "Content-Type: application/json" \
-  -d '{"action": "list", "to_agent": "[agent_id]", "project": "[project]", "limit": 5}'
-```
-If Agent Space returns recent messages: use them to supplement the project index. If unavailable: proceed with the file index only — do not block on this.
-
 ### 2. Detect Session State
 
-Read `_wds/tools/memory/SKILL.md` and follow the `load` operation for the current agent_id.
+Read `~/.claude/wds/src/tools/memory/SKILL.md` and follow the `load` operation for the current agent_id.
 
 **Fallback chain:** state found → show resume prompt → fresh start
 
@@ -104,6 +95,5 @@ Do not mention /start or the absence of a state file.
 ## Notes
 
 - Always read `progress/project-index.md` — never skip it. It is the project's memory.
-- Agent Space supplements the index but never replaces it. File is authoritative.
 - The state file lives at `progress/[agent].md` relative to the project root.
 - On resume, get back to work quickly. The user knows the context.
