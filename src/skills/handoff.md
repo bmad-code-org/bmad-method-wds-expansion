@@ -56,7 +56,7 @@ Pass a specific piece of work to another WDS agent. This is NOT a session wrap â
     You are a handoff writer. Your only job is to save a handoff file via the memory tool.
 
     **Step A â€” Save handoff via memory tool:**
-    Read `~/.claude/wds/src/tools/memory/SKILL.md` and follow the `save` operation:
+    Read `~/.claude/wds/tools/memory/SKILL.md` and follow the `save` operation:
     - agent_id: [target_agent]
     - data:
     ```
