@@ -1,5 +1,5 @@
 ---
-name: wds-sync
+name: sync
 version: "1.0.0"
 description: Syncs WDS skills from the current project (_bmad/wds/) to ~/.claude/commands/ so they work in any project. Called automatically on every agent activation.
 agents: [saga, freya, mimir]

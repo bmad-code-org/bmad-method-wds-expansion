@@ -1,5 +1,5 @@
 ---
-name: wds-memory
+name: memory
 version: "1.0.0"
 description: Session state backend for WDS. Called by wrap, start, and handoff tools — never directly by users. Writes to progress/ in the project repo.
 agents: [saga, freya, mimir]
